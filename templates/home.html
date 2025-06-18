@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Bosh sahifa{% endblock %}
+{% block content %}
+<div class="jumbotron text-center bg-light p-5 rounded">
+    <h1>Xush kelibsiz!</h1>
+    <p>DTM test tizimida o'zingizni sinab ko'ring va oliygohga tayyorgarlik ko'ring.</p>
+    {% if error %}
+    <div class="alert alert-danger">{{ error }}</div>
+    {% endif %}
+</div>
+<h2>Fanlar</h2>
+<div class="row">
+    {% for subject in subjects %}
+    <div class="col-md-4 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ subject.name }}</h5>
+                <a href="{% url 'app:start_test' subject_slug=subject.slug %}" class="btn btn-primary">Test boshlash</a>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <p>Hech qanday fan mavjud emas.</p>
+    {% endfor %}
+</div>
+{% endblock %}

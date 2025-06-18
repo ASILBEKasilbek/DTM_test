@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{{ session.subject.name }} Testi{% endblock %}
+{% block content %}
+<h2>{{ session.subject.name }} Testi</h2>
+<p>Savol {{ current_index }} / {{ total_questions }}</p>
+<div class="card">
+    <div class="card-body">
+        <p>{{ question.text }}</p>
+        {% if question.image %}
+        <img src="{{ question.image.url }}" alt="Savol rasmi" class="img-fluid mb-3">
+        {% endif %}
+        <form id="answer-form">
+            {% csrf_token %}
+            {% for option in question.options.all %}
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer_id" id="option_{{ option.id }}" value="{{ option.id }}" required>
+                <label class="form-check-label" for="option_{{ option.id }}">
+                    {{ option.label }}. {{ option.text }}
+                </label>
+            </div>
+            {% endfor %}
+            <button type="submit" class="btn btn-primary mt-3">Javobni saqlash</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{% static 'js/test.js' %}"></script>
+<script>
+    $(document).ready(function() {
+        $('#answer-form').submit(function(e) {
+            e.preventDefault();
+            $.ajax({
+                url: "{% url 'app:save_answer' session_id=session.id question_id=question.id %}",
+                type: 'POST',
+                data: $(this).serialize(),
+                success: function(response) {
+                    if (response.status === 'success') {
+                        window.location.reload(); // Keyingi savolga o'tish
+                    }
+                },
+                error: function() {
+                    alert('Xatolik yuz berdi.');
+                }
+            });
+        });
+    });
+</script>
+{% endblock %}

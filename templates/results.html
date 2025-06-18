@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Test Natijalari</h2>
+<p>Fan: {{ session.subject.name }}</p>
+<p>To'g'ri javoblar: {{ result.correct_answers }} / {{ result.total_questions }}</p>
+<p>Foiz: {{ result.percent }}%</p>
+<p>Ball: {{ result.score }}</p>
+<h3>Javoblar</h3>
+<ul>
+{% for answer in answers %}
+    <li>
+        {{ answer.question.text|truncatechars:50 }}:
+        {% if answer.is_correct %}
+            ✅ To'g'ri
+        {% else %}
+            ❌ Noto'g'ri (Tanlangan: {{ answer.selected_option.text }})
+        {% endif %}
+    </li>
+{% endfor %}
+</ul>
+{% endblock %}
