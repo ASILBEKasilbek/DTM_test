@@ -1,34 +1,46 @@
 {% extends 'base.html' %}
-{% load static %}
 {% block title %}{{ session.subject.name }} Testi{% endblock %}
 {% block content %}
-<h2>{{ session.subject.name }} Testi</h2>
-<p>Savol {{ current_index }} / {{ total_questions }}</p>
-<div class="card">
-    <div class="card-body">
-        <p>{{ question.text }}</p>
-        {% if question.image %}
-        <img src="{{ question.image.url }}" alt="Savol rasmi" class="img-fluid mb-3">
-        {% endif %}
-        <form id="answer-form">
-            {% csrf_token %}
-            {% for option in question.options.all %}
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="answer_id" id="option_{{ option.id }}" value="{{ option.id }}" required>
-                <label class="form-check-label" for="option_{{ option.id }}">
-                    {{ option.label }}. {{ option.text }}
-                </label>
-            </div>
-            {% endfor %}
-            <button type="submit" class="btn btn-primary mt-3">Javobni saqlash</button>
-        </form>
+<div class="container">
+    <h2>{{ session.subject.name }} Testi</h2>
+    {% if error %}
+    <div class="alert alert-danger">{{ error }}</div>
+    <a href="{% url 'app:home' %}" class="btn btn-primary">Bosh sahifaga qaytish</a>
+    {% else %}
+    <p>Savol {{ current_index }} / {{ total_questions }}</p>
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text">{{ question.text }}</p>
+            {% if question.image %}
+            <img src="{{ question.image.url }}" alt="Savol rasmi" class="img-fluid mb-3" style="max-width: 300px;">
+            {% endif %}
+            <form id="answer-form">
+                {% csrf_token %}
+                {% for option in options %}
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="answer_id" id="option_{{ option.id }}" value="{{ option.id }}" required>
+                    <label class="form-check-label" for="option_{{ option.id }}">
+                        {{ option.label }}. {{ option.text }}
+                    </label>
+                </div>
+                {% empty %}
+                <p>Bu savol uchun variantlar mavjud emas.</p>
+                {% endfor %}
+                <button type="submit" class="btn btn-primary mt-3" disabled>Javobni saqlash</button>
+            </form>
+        </div>
     </div>
+    {% endif %}
 </div>
 {% endblock %}
 {% block scripts %}
+{% if not error %}
 <script src="{% static 'js/test.js' %}"></script>
 <script>
     $(document).ready(function() {
+        $('input[name="answer_id"]').change(function() {
+            $('#answer-form button').prop('disabled', false);
+        });
         $('#answer-form').submit(function(e) {
             e.preventDefault();
             $.ajax({
@@ -40,11 +52,12 @@
                         window.location.reload(); // Keyingi savolga o'tish
                     }
                 },
-                error: function() {
-                    alert('Xatolik yuz berdi.');
+                error: function(xhr) {
+                    alert('Xatolik yuz berdi: ' + (xhr.responseJSON ? xhr.responseJSON.message : 'Server xatosi'));
                 }
             });
         });
     });
 </script>
-{% endblock %}
+{% endif %}
+</block>
