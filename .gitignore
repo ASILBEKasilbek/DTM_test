@@ -63,3 +63,4 @@ pip-log.txt
 # dotenv
 .env.*
 .env
+users.db
