@@ -108,16 +108,15 @@ class AnswerOption(BaseModel):
     is_correct = models.BooleanField(default=False)
 
     def clean(self):
-        if self.is_correct:
+        if self.is_correct and self.question and self.question.pk:  # Savol saqlanganligini tekshirish
             exists = AnswerOption.objects.filter(
                 question=self.question,
                 is_correct=True
             ).exclude(pk=self.pk).exists()
             if exists:
                 raise ValidationError("Bu savolda allaqachon to‘g‘ri javob belgilangan.")
-
-    def __str__(self):
-        return f"{self.label}. {self.text} {'✅' if self.is_correct else '❌'}"
+        def __str__(self):
+            return f"{self.label}. {self.text} {'✅' if self.is_correct else '❌'}"
 
     class Meta:
         unique_together = ('question', 'label')
@@ -132,6 +131,7 @@ class TestSession(BaseModel):
     ended_at = models.DateTimeField(null=True, blank=True)
     completed = models.BooleanField(default=False)
     score = models.FloatField(default=0.0)
+    questions = models.ManyToManyField(Question, blank=True) 
 
     @property
     def duration(self):

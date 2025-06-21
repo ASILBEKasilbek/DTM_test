@@ -1,35 +1,46 @@
 {% extends 'base.html' %}
 {% block title %}{{ session.subject.name }} Testi{% endblock %}
 {% block content %}
-<div class="container">
-    <h2>{{ session.subject.name }} Testi</h2>
+<div class="container mt-4">
+    <h2 class="mb-3">{{ session.subject.name }} Testi</h2>
     {% if error %}
-    <div class="alert alert-danger">{{ error }}</div>
-    <a href="{% url 'app:home' %}" class="btn btn-primary">Bosh sahifaga qaytish</a>
-    {% else %}
-    <p>Savol {{ current_index }} / {{ total_questions }}</p>
-    <div class="card">
-        <div class="card-body">
-            <p class="card-text">{{ question.text }}</p>
-            {% if question.image %}
-            <img src="{{ question.image.url }}" alt="Savol rasmi" class="img-fluid mb-3" style="max-width: 300px;">
-            {% endif %}
-            <form id="answer-form">
-                {% csrf_token %}
-                {% for option in options %}
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="answer_id" id="option_{{ option.id }}" value="{{ option.id }}" required>
-                    <label class="form-check-label" for="option_{{ option.id }}">
-                        {{ option.label }}. {{ option.text }}
-                    </label>
-                </div>
-                {% empty %}
-                <p>Bu savol uchun variantlar mavjud emas.</p>
-                {% endfor %}
-                <button type="submit" class="btn btn-primary mt-3" disabled>Javobni saqlash</button>
-            </form>
+        <div class="alert alert-danger" role="alert">
+            {{ error }}
         </div>
-    </div>
+        <a href="{% url 'app:home' %}" class="btn btn-primary">Bosh sahifaga qaytish</a>
+    {% else %}
+        <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: {{ current_index|floatformat:2|div:total_questions|mul:100 }}%;"
+            aria-valuenow="{{ current_index }}" aria-valuemin="1" aria-valuemax="{{ total_questions }}">
+                {{ current_index }} / {{ total_questions }}
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h5>Savol {{ current_index }} / {{ total_questions }}</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{ question.text }}</p>
+                {% if question.image %}
+                    <img src="{{ question.image.url }}" alt="Savol rasmi" class="img-fluid mb-3" style="max-width: 300px;">
+                {% endif %}
+                <form id="answer-form" action="{% url 'app:save_answer' session_id=session.id question_id=question.id %}" method="POST">
+                    {% csrf_token %}
+                    {% for option in options %}
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="answer_id" id="option_{{ option.id }}" 
+                                   value="{{ option.id }}" required>
+                            <label class="form-check-label" for="option_{{ option.id }}">
+                                {{ option.label }}. {{ option.text }}
+                            </label>
+                        </div>
+                    {% empty %}
+                        <div class="alert alert-warning">Bu savol uchun variantlar mavjud emas.</div>
+                    {% endfor %}
+                    <button type="submit" class="btn btn-primary mt-3" disabled>Javobni saqlash</button>
+                </form>
+            </div>
+        </div>
     {% endif %}
 </div>
 {% endblock %}
@@ -38,18 +49,23 @@
 <script src="{% static 'js/test.js' %}"></script>
 <script>
     $(document).ready(function() {
+        // Radio tugmasi tanlanganda "Saqlash" tugmasini faollashtirish
         $('input[name="answer_id"]').change(function() {
             $('#answer-form button').prop('disabled', false);
         });
+
+        // Formani AJAX orqali yuborish
         $('#answer-form').submit(function(e) {
             e.preventDefault();
             $.ajax({
-                url: "{% url 'app:save_answer' session_id=session.id question_id=question.id %}",
+                url: $(this).attr('action'),
                 type: 'POST',
                 data: $(this).serialize(),
                 success: function(response) {
                     if (response.status === 'success') {
-                        window.location.reload(); // Keyingi savolga o'tish
+                        window.location.reload(); // Keyingi savolga o‘tish
+                    } else {
+                        alert('Xatolik: ' + (response.message || 'Javob saqlanmadi.'));
                     }
                 },
                 error: function(xhr) {
@@ -60,4 +76,4 @@
     });
 </script>
 {% endif %}
-</block>
+{% endblock %}

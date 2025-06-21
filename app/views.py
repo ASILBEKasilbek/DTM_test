@@ -73,7 +73,6 @@ def test_session(request, session_id):
         return redirect('app:view_results', session_id=session.id)
 
     questions = session.questions.all().order_by('id')  # Avval tanlanganlar
-
     current_question_index = request.session.get('current_question_index', 0)
     if current_question_index >= len(questions):
         session.completed = True
@@ -84,7 +83,7 @@ def test_session(request, session_id):
         return redirect('app:view_results', session_id=session.id)
 
     current_question = questions[current_question_index]
-    options = current_question.options.order_by('label')[:4]
+    options = current_question.options.order_by('label')[:4]  # 4 ta variant
 
     return render(request, 'test_session.html', {
         'session': session,
@@ -93,7 +92,6 @@ def test_session(request, session_id):
         'current_index': current_question_index + 1,
         'total_questions': len(questions)
     })
-
 @csrf_exempt
 def save_answer(request, session_id, question_id):
     if request.method == 'POST':
