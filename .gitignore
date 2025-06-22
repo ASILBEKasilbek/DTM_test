@@ -64,3 +64,4 @@ pip-log.txt
 .env.*
 .env
 users.db
+users.db
