@@ -1,8 +1,13 @@
 {% extends 'base.html' %}
+{% load static %}
+{% load math_filters %}
+
 {% block title %}{{ session.subject.name }} Testi{% endblock %}
+
 {% block content %}
 <div class="container mt-4">
     <h2 class="mb-3">{{ session.subject.name }} Testi</h2>
+
     {% if error %}
         <div class="alert alert-danger" role="alert">
             {{ error }}
@@ -10,20 +15,24 @@
         <a href="{% url 'app:home' %}" class="btn btn-primary">Bosh sahifaga qaytish</a>
     {% else %}
         <div class="progress mb-3">
-            <div class="progress-bar" role="progressbar" style="width: {{ current_index|floatformat:2|div:total_questions|mul:100 }}%;"
-            aria-valuenow="{{ current_index }}" aria-valuemin="1" aria-valuemax="{{ total_questions }}">
+            <div class="progress-bar" role="progressbar"
+                style="width: {{ current_index|div:total_questions|mul:100|floatformat:0 }}%;"
+                aria-valuenow="{{ current_index }}" aria-valuemin="1" aria-valuemax="{{ total_questions }}">
                 {{ current_index }} / {{ total_questions }}
             </div>
         </div>
+
         <div class="card">
             <div class="card-header">
                 <h5>Savol {{ current_index }} / {{ total_questions }}</h5>
             </div>
             <div class="card-body">
                 <p class="card-text">{{ question.text }}</p>
+
                 {% if question.image %}
                     <img src="{{ question.image.url }}" alt="Savol rasmi" class="img-fluid mb-3" style="max-width: 300px;">
                 {% endif %}
+
                 <form id="answer-form" action="{% url 'app:save_answer' session_id=session.id question_id=question.id %}" method="POST">
                     {% csrf_token %}
                     {% for option in options %}
@@ -37,6 +46,7 @@
                     {% empty %}
                         <div class="alert alert-warning">Bu savol uchun variantlar mavjud emas.</div>
                     {% endfor %}
+
                     <button type="submit" class="btn btn-primary mt-3" disabled>Javobni saqlash</button>
                 </form>
             </div>
@@ -44,33 +54,43 @@
     {% endif %}
 </div>
 {% endblock %}
+
 {% block scripts %}
 {% if not error %}
 <script src="{% static 'js/test.js' %}"></script>
 <script>
-    $(document).ready(function() {
-        // Radio tugmasi tanlanganda "Saqlash" tugmasini faollashtirish
-        $('input[name="answer_id"]').change(function() {
-            $('#answer-form button').prop('disabled', false);
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("answer-form");
+        const submitBtn = form.querySelector("button[type='submit']");
+        const radios = form.querySelectorAll("input[name='answer_id']");
+
+        radios.forEach(radio => {
+            radio.addEventListener("change", () => {
+                submitBtn.disabled = false;
+            });
         });
 
-        // Formani AJAX orqali yuborish
-        $('#answer-form').submit(function(e) {
+        form.addEventListener("submit", function (e) {
             e.preventDefault();
-            $.ajax({
-                url: $(this).attr('action'),
-                type: 'POST',
-                data: $(this).serialize(),
-                success: function(response) {
-                    if (response.status === 'success') {
-                        window.location.reload(); // Keyingi savolga o‘tish
-                    } else {
-                        alert('Xatolik: ' + (response.message || 'Javob saqlanmadi.'));
-                    }
+
+            fetch(form.action, {
+                method: "POST",
+                headers: {
+                    "X-CSRFToken": form.querySelector("[name='csrfmiddlewaretoken']").value,
+                    "Content-Type": "application/x-www-form-urlencoded"
                 },
-                error: function(xhr) {
-                    alert('Xatolik yuz berdi: ' + (xhr.responseJSON ? xhr.responseJSON.message : 'Server xatosi'));
+                body: new URLSearchParams(new FormData(form))
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === "success") {
+                    window.location.reload();  // Keyingi savol
+                } else {
+                    alert("Xatolik: " + (data.message || "Javob saqlanmadi."));
                 }
+            })
+            .catch(error => {
+                alert("Xatolik yuz berdi: " + error);
             });
         });
     });
