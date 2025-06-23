@@ -39,7 +39,7 @@ class Subject(BaseModel):
     name = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(unique=True, blank=True)
     description = models.TextField(blank=True)
-
+    is_deleted = models.BooleanField(default=False) 
     def save(self, *args, **kwargs):
         if not self.slug:
             self.slug = self.generate_unique_slug()
