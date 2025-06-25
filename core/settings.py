@@ -117,8 +117,10 @@ USE_TZ = True
 ADMIN_TELEGRAM_ID=5306481482
 
 SESSION_COOKIE_AGE = 1209600  # 2 hafta
-SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = False
 SESSION_COOKIE_SAMESITE = 'Lax'
+SESSION_SAVE_EVERY_REQUEST = True
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # yoki cached_db
 
 TELEGRAM_BOT_TOKEN=os.getenv("BOT_TOKEN")
 # Static files (CSS, JavaScript, Images)

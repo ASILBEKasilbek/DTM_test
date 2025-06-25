@@ -14,6 +14,7 @@ from django.db.models import Count
 from django.views.decorators.http import require_POST
 from django_ratelimit.decorators import ratelimit
 import re
+import sqlite3
 from .models import *
 logger = logging.getLogger(__name__)
 
@@ -99,7 +100,20 @@ def contact(request):
 def about(request):
     return render(request, 'about.html')
 
+import sqlite3
+import secrets
+import requests
+from django.contrib.auth import login
+from django.conf import settings
+from django.shortcuts import render
+from django.contrib.auth.models import User
+from app.models import UserProfile, Subject  # model nomlarini moslashtir
+import logging
+
+logger = logging.getLogger(__name__)
+
 def telegram_auth(request, telegram_id):
+    # 1. Telegram orqali ID ni tekshirish
     try:
         response = requests.get(
             f"https://api.telegram.org/bot{settings.TELEGRAM_BOT_TOKEN}/getChat",
@@ -113,56 +127,63 @@ def telegram_auth(request, telegram_id):
         logger.error(f"Telegram API error: {e}")
         return render(request, 'home.html', {'error': "Telegram autentifikatsiyasi xatosi."})
 
-    try:
-        user = User.objects.get(username=telegram_id)
-    except User.DoesNotExist:
-        user = User.objects.create_user(
-            username=telegram_id,
-            password=secrets.token_hex(8),
-            email=f"{telegram_id}@example.com"
-        )
-        UserProfile.objects.create(user=user)
-        logger.info(f"New user created: {telegram_id}")
+    # 2. SQLite bazadan foydalanuvchi ma'lumotini olish
+    conn = sqlite3.connect("users.db")
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM users WHERE telegram_id = ?", (telegram_id,))
+    user_data = cursor.fetchone()
+    conn.close()
 
+    if not user_data:
+        logger.warning(f"Telegram ID {telegram_id} users.db bazasida topilmadi.")
+        return render(request, 'home.html', {'error': "Foydalanuvchi bazada topilmadi."})
+    print(user_data)
+    # user_data indekslari: (id, telegram_id, first_name, last_name, phone_number, banned, created_at)
+    _, tg_id, first_name, last_name, phone, created_at = user_data
+
+    try:
+        user = User.objects.get(username=tg_id)
+    except User.DoesNotExist:
+        # Yangi foydalanuvchini ro'yxatdan o'tkazamiz
+        user = User.objects.create_user(
+            username=tg_id,
+            password=secrets.token_hex(8),
+            email=f"{tg_id}@example.com",
+            first_name=first_name,
+            last_name=last_name
+        )
+        UserProfile.objects.create(user=user, phone_number=phone)
+        logger.info(f"Yangi foydalanuvchi yaratildi: {tg_id}")
+
+    # 4. Login qildiramiz
     login(request, user, backend='django.contrib.auth.backends.ModelBackend')
+    logger.info(f"Telegram orqali login qilindi: {tg_id}")
+    print(f"User {user.username} ({user.first_name} {user.last_name}) Telegram orqali tizimga kirdi.")
+
     subjects = Subject.objects.filter(is_deleted=False)
     return render(request, 'home.html', {'subjects': subjects})
 
 def start_test(request, subject_slug):
+    logger.info(f"User: {request.user.username if request.user.is_authenticated else 'None'}")
     if not request.user.is_authenticated:
-        return redirect('app:telegram_auth', telegram_id='anonymous')
-
+        logger.warning("Unauthenticated user attempted to start test")
+        return render(request, 'home.html', {'error': 'Iltimos, avval tizimga kiring.'})
     try:
         subject = Subject.objects.get(slug=subject_slug, is_deleted=False)
     except Subject.DoesNotExist:
-        logger.error(f"Subject not found: {subject_slug}")
         raise Http404("Fan topilmadi.")
-
     with transaction.atomic():
-        session = TestSession.objects.create(
-            user=request.user,
-            subject=subject
-        )
+        session = TestSession.objects.create(user=request.user, subject=subject)
         question_ids = list(Question.objects.filter(
-            topic__subject=subject,
-            is_active=True,
-            is_deleted=False
-        ).annotate(
-            option_count=Count('options')
-        ).filter(option_count=OPTIONS_PER_QUESTION).values_list('id', flat=True))
-        
+            topic__subject=subject, is_active=True, is_deleted=False
+        ).annotate(option_count=Count('options')).filter(option_count=OPTIONS_PER_QUESTION).values_list('id', flat=True))
         if len(question_ids) < DEFAULT_QUESTION_COUNT:
-            logger.warning(f"Insufficient questions for subject {subject.name}")
             return render(request, 'home.html', {'error': 'Bu fanda yetarli savol mavjud emas.'})
-
         selected_ids = random.sample(question_ids, min(DEFAULT_QUESTION_COUNT, len(question_ids)))
         session.randomized_question_ids = selected_ids
         session.save()
         request.session['selected_answers'] = {}
-        logger.info(f"Test session {session.id} started for user {request.user.username}")
-
     return redirect('app:test_session', session_id=session.id)
-
 def test_session(request, session_id):
     try:
         session = TestSession.objects.prefetch_related('answers__question__options').get(
