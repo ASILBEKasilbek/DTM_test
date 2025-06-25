@@ -59,13 +59,13 @@ def telegram_auth(request, telegram_id):
         logger.info(f"New user created: {telegram_id}")
 
     login(request, user, backend='django.contrib.auth.backends.ModelBackend')
+    return render(request,'base.html', {'user': user})
+    # subject = Subject.objects.filter(is_deleted=False).first()
+    # if not subject:
+    #     logger.warning("No subjects available")
+    #     return render(request, 'home.html', {'error': "Hech qanday fan mavjud emas."})
 
-    subject = Subject.objects.filter(is_deleted=False).first()
-    if not subject:
-        logger.warning("No subjects available")
-        return render(request, 'home.html', {'error': "Hech qanday fan mavjud emas."})
-
-    return redirect('app:start_test', subject_slug=subject.slug)
+    # return redirect('app:start_test', subject_slug=subject.slug)
 
 def start_test(request, subject_slug):
     if not request.user.is_authenticated:
