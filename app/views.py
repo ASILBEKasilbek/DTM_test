@@ -59,7 +59,7 @@ def telegram_auth(request, telegram_id):
         logger.info(f"New user created: {telegram_id}")
 
     login(request, user, backend='django.contrib.auth.backends.ModelBackend')
-    return render(request,'base.html', {'user': user})
+    return render(request,'home.html', {'user': user})
     # subject = Subject.objects.filter(is_deleted=False).first()
     # if not subject:
     #     logger.warning("No subjects available")
