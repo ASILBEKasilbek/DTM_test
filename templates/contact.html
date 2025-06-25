@@ -1,11 +1,102 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}Aloqa{% endblock %}
 {% block content %}
-<h2>Aloqa</h2>
-<p>Biz bilan bog'lanish uchun quyidagi ma'lumotlardan foydalaning:</p>
-<ul>
-    <li>Email: info@dtmtest.uz</li>
-    <li>Telefon: +998 71 123 45 67</li>
-    <li>Manzil: Toshkent sh., Test ko'chasi, 123</li>
-</ul>
+<div class="container mx-auto max-w-4xl px-4 py-8">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Biz bilan aloqa</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <!-- Forma -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Xabar yuborish</h3>
+            <p class="text-gray-600 mb-4">Savol yoki takliflaringiz bo‘lsa, quyidagi forma orqali bizga yozing.</p>
+            <form id="contact-form" method="POST" action="{% url 'app:contact' %}">
+                {% csrf_token %}
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-medium mb-2">Ismingiz</label>
+                    <input type="text" id="name" name="name" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-gray-700 font-medium mb-2">Telefon raqami</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+998 90 123 45 67" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-medium mb-2">Xabar</label>
+                    <textarea id="message" name="message" rows="5" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500" required></textarea>
+                </div>
+                <button type="submit" id="submit-btn" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition flex items-center justify-center gap-2">
+                    <span id="submit-text">Yuborish</span>
+                    <svg id="loading-spinner" class="hidden animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.4 0 0 5.4 0 12h4zm2 5.3A8 8 0 014 12H0c0 3 1.1 5.8 3 7.9l3-2.6z"/>
+                    </svg>
+                </button>
+            </form>
+            <div id="form-message" class="mt-4 hidden"></div>
+        </div>
+        <!-- Aloqa ma'lumotlari -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Bizning kontaktlar</h3>
+            <ul class="space-y-3 text-gray-600">
+                <li><strong>Email:</strong> <a href="mailto:info@dtmtest.uz" class="text-blue-600 hover:underline">info@dtmtest.uz</a></li>
+                <li><strong>Telefon:</strong> <a href="tel:+998888648807" class="text-blue-600 hover:underline">+998 88 864 88 07</a></li>
+                <li><strong>Manzil:</strong> Toshkent shahar</li>
+                <li><strong>Telegram:</strong> <a href="https://t.me/dtmtest_uz" class="text-blue-600 hover:underline">@dtmtest_uz</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+    const submitBtn = document.getElementById("submit-btn");
+    const submitText = document.getElementById("submit-text");
+    const spinner = document.getElementById("loading-spinner");
+    const messageDiv = document.getElementById("form-message");
+    const csrfToken = form.querySelector("[name='csrfmiddlewaretoken']").value;
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        submitBtn.disabled = true;
+        submitText.textContent = "Yuborilmoqda...";
+        spinner.classList.remove("hidden");
+        messageDiv.classList.add("hidden");
+
+        fetch(form.action, {
+            method: "POST",
+            credentials: 'same-origin',
+            headers: {
+                "X-CSRFToken": csrfToken,
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: new URLSearchParams(new FormData(form))
+        })
+        .then(res => res.json())
+        .then(data => {
+            submitBtn.disabled = false;
+            submitText.textContent = "Yuborish";
+            spinner.classList.add("hidden");
+            messageDiv.classList.remove("hidden");
+            if (data.status === "success") {
+                messageDiv.classList.add("bg-green-100", "border-green-400", "text-green-700");
+                messageDiv.textContent = data.message || "Xabar muvaffaqiyatli yuborildi!";
+                form.reset();
+            } else {
+                messageDiv.classList.add("bg-red-100", "border-red-400", "text-red-700");
+                messageDiv.textContent = data.message || "Xabar yuborishda xato yuz berdi.";
+            }
+        })
+        .catch(error => {
+            submitBtn.disabled = false;
+            submitText.textContent = "Yuborish";
+            spinner.classList.add("hidden");
+            messageDiv.classList.remove("hidden");
+            messageDiv.classList.add("bg-red-100", "border-red-400", "text-red-700");
+            messageDiv.textContent = "Xato yuz berdi: " + error;
+        });
+    });
+});
+</script>
 {% endblock %}

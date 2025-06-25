@@ -114,8 +114,13 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+ADMIN_TELEGRAM_ID=5306481482
 
+SESSION_COOKIE_AGE = 1209600  # 2 hafta
+SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SAMESITE = 'Lax'
 
+TELEGRAM_BOT_TOKEN=os.getenv("BOT_TOKEN")
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 

@@ -1,0 +1,332 @@
+[
+    {
+        "text": "Alisher Navoiyning 'Xamsa' asaridagi birinchi doston qaysi?",
+        "difficulty": "medium",
+        "explanation": "'Xamsa'dagi birinchi doston 'Hayrat ul-abror'dir.",
+        "options": [
+            {"label": "A", "text": "Sabbayi sayyor", "is_correct": false},
+            {"label": "B", "text": "Hayrat ul-abror", "is_correct": true},
+            {"label": "C", "text": "Saddi Iskandari", "is_correct": false},
+            {"label": "D", "text": "Valliyi shariat", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Abdulla Qodiriyning 'O‘tgan kunlar' romani qaysi janrga kiradi?",
+        "difficulty": "medium",
+        "explanation": "'O‘tgan kunlar' o‘zbek adabiyotidagi ilk romanlardan biri bo‘lib, realist romandir.",
+        "options": [
+            {"label": "A", "text": "Doston", "is_correct": false},
+            {"label": "B", "text": "Realist roman", "is_correct": true},
+            {"label": "C", "text": "Drama", "is_correct": false},
+            {"label": "D", "text": "Lirika", "is_correct": false}
+        ]
+    },
+    {
+        "text": "'Alpomish' dostonining asosiy qahramoni kim?",
+        "difficulty": "medium",
+        "explanation": "'Alpomish' dostonining asosiy qahramoni Alpomishdir.",
+        "options": [
+            {"label": "A", "text": "Rustam", "is_correct": false},
+            {"label": "B", "text": "Alpomish", "is_correct": true},
+            {"label": "C", "text": "G‘o‘ro‘g‘li", "is_correct": false},
+            {"label": "D", "text": "Barchin", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Navoiyning 'Xamsa' asarida nechta doston mavjud?",
+        "difficulty": "medium",
+        "explanation": "'Xamsa' beshta dostonni o‘z ichiga oladi.",
+        "options": [
+            {"label": "A", "text": "Uchta", "is_correct": false},
+            {"label": "B", "text": "Beshta", "is_correct": true},
+            {"label": "C", "text": "Ettita", "is_correct": false},
+            {"label": "D", "text": "To‘rtta", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Cholponning 'Kecha va kunduz' romani qaysi davrda yozilgan?",
+        "difficulty": "medium",
+        "explanation": "Roman 20-asr boshlarida, 1920-yillarda yozilgan.",
+        "options": [
+            {"label": "A", "text": "19-asr", "is_correct": false},
+            {"label": "B", "text": "20-asr", "is_correct": true},
+            {"label": "C", "text": "18-asr", "is_correct": false},
+            {"label": "D", "text": "21-asr", "is_correct": false}
+        ]
+    },
+    {
+        "text": "O‘zbek xalq og‘zaki ijodidagi 'Kuntug‘mish' qanday janrga kiradi?",
+        "difficulty": "medium",
+        "explanation": "'Kuntug‘mish' o‘zbek xalq og‘zaki ijodidagi alpamis dostonlar turkumiga kiradi.",
+        "options": [
+            {"label": "A", "text": "Ertak", "is_correct": false},
+            {"label": "B", "text": "Doston", "is_correct": true},
+            {"label": "C", "text": "Maqol", "is_correct": false},
+            {"label": "D", "text": "Rivoyat", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Abdurauf Fitratning 'Chin sevgi' asari qanday janrda yozilgan?",
+        "difficulty": "medium",
+        "explanation": "'Chin sevgi' Abdurauf Fitratning drama janridagi asaridir.",
+        "options": [
+            {"label": "A", "text": "Roman", "is_correct": false},
+            {"label": "B", "text": "Drama", "is_correct": true},
+            {"label": "C", "text": "She’r", "is_correct": false},
+            {"label": "D", "text": "Hikoya", "is_correct": false}
+        ]
+    },
+    {
+        "text": "'G‘o‘ro‘g‘li' dostonidagi asosiy qahramon qanday nomlanadi?",
+        "difficulty": "medium",
+        "explanation": "'G‘o‘ro‘g‘li' dostonining asosiy qahramoni G‘o‘ro‘g‘lidir.",
+        "options": [
+            {"label": "A", "text": "Alpomish", "is_correct": false},
+            {"label": "B", "text": "G‘o‘ro‘g‘li", "is_correct": true},
+            {"label": "C", "text": "Rustam", "is_correct": false},
+            {"label": "D", "text": "Barchin", "is_correct": false}
+        ]
+    },
+    {
+        "text": "O‘zbek adabiyotidagi 'Xurshidbonu' dostonining muallifi kim?",
+        "difficulty": "medium",
+        "explanation": "'Xurshidbonu' dostonining muallifi Alisher Navoiydir.",
+        "options": [
+            {"label": "A", "text": "Lutfiy", "is_correct": false},
+            {"label": "B", "text": "Alisher Navoiy", "is_correct": true},
+            {"label": "C", "text": "Cholpon", "is_correct": false},
+            {"label": "D", "text": "Abdulla Qodiriy", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Xamza Hakimzoda Niyoziyning 'Yusuf va Zulayho' asari qanday janrga kiradi?",
+        "difficulty": "medium",
+        "explanation": "'Yusuf va Zulayho' – Xamza Hakimzoda Niyoziyning diniy-axloqiy dostonidir.",
+        "options": [
+            {"label": "A", "text": "Roman", "is_correct": false},
+            {"label": "B", "text": "Doston", "is_correct": true},
+            {"label": "C", "text": "Hikoya", "is_correct": false},
+            {"label": "D", "text": "Drama", "is_correct": false}
+        ]
+    },
+    {
+        "text": "'Boburnoma' asarining muallifi kim?",
+        "difficulty": "medium",
+        "explanation": "'Boburnoma' Zahiriddin Muhammad Bobur tomonidan yozilgan avtobiografik asardir.",
+        "options": [
+            {"label": "A", "text": "Alisher Navoiy", "is_correct": false},
+            {"label": "B", "text": "Zahiriddin Muhammad Bobur", "is_correct": true},
+            {"label": "C", "text": "Abdulla Qodiriy", "is_correct": false},
+            {"label": "D", "text": "Cholpon", "is_correct": false}
+        ]
+    },
+    {
+        "text": "O‘zbek adabiyotidagi jadidchilik harakati qachon faol bo‘lgan?",
+        "difficulty": "medium",
+        "explanation": "Jadidchilik harakati 20-asr boshlarida, xususan 1900–1920-yillarda faol bo‘lgan.",
+        "options": [
+            {"label": "A", "text": "18-asr", "is_correct": false},
+            {"label": "B", "text": "20-asr boshlari", "is_correct": true},
+            {"label": "C", "text": "19-asr o‘rtalari", "is_correct": false},
+            {"label": "D", "text": "21-asr", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Navoiyning 'Lison ut-tayr' asari qanday janrga kiradi?",
+        "difficulty": "medium",
+        "explanation": "'Lison ut-tayr' tasavvufiy doston bo‘lib, 'Xamsa'dan tashqari alohida asardir.",
+        "options": [
+            {"label": "A", "text": "Roman", "is_correct": false},
+            {"label": "B", "text": "Tasavvufiy doston", "is_correct": true},
+            {"label": "C", "text": "Hikoya", "is_correct": false},
+            {"label": "D", "text": "She’r", "is_correct": false}
+        ]
+    },
+    {
+        "text": "O‘zbek xalq ertaklarida qaysi qahramon ko‘proq uchraydi?",
+        "difficulty": "medium",
+        "explanation": "O‘zbek xalq ertaklarida 'Aldar Kosa' ayyorlik va zukkolik ramzi sifatida ko‘p uchraydi.",
+        "options": [
+            {"label": "A", "text": "Rustam", "is_correct": false},
+            {"label": "B", "text": "Aldar Kosa", "is_correct": true},
+            {"label": "C", "text": "G‘o‘ro‘g‘li", "is_correct": false},
+            {"label": "D", "text": "Alpomish", "is_correct": false}
+        ]
+    },
+    {
+        "text": "'Mehr va muhabbat' asarining muallifi kim?",
+        "difficulty": "medium",
+        "explanation": "'Mehr va muhabbat' asari Abdulla Qodiriy tomonidan yozilgan.",
+        "options": [
+            {"label": "A", "text": "Cholpon", "is_correct": false},
+            {"label": "B", "text": "Abdulla Qodiriy", "is_correct": true},
+            {"label": "C", "text": "Fitrat", "is_correct": false},
+            {"label": "D", "text": "G‘afur G‘ulom", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Navoiyning 'Xusrav va Shirin' dostonida asosiy mavzu nima?",
+        "difficulty": "hard",
+        "explanation": "'Xusrav va Shirin' dostonida fojiali sevgi hikoyasi tasvirlanadi.",
+        "options": [
+            {"label": "A", "text": "Do‘stlik hikoyasi", "is_correct": false},
+            {"label": "B", "text": "Fojiali sevgi hikoyasi", "is_correct": true},
+            {"label": "C", "text": "Tarixiy voqea", "is_correct": false},
+            {"label": "D", "text": "Diniy mavzu", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Chingiz Aytmatovning 'Jamila' asarida qanday muhit tasvirlanadi?",
+        "difficulty": "hard",
+        "explanation": "'Jamila' asarida sevgi hikoyasi urush davridagi qirg‘iz qishlog‘i muhitida tasvirlanadi.",
+        "options": [
+            {"label": "A", "text": "Shahar muhiti", "is_correct": false},
+            {"label": "B", "text": "Urush davri qishloq muhiti", "is_correct": true},
+            {"label": "C", "text": "Sovet Ittifoqi poytaxti", "is_correct": false},
+            {"label": "D", "text": "Dasht muhiti", "is_correct": false}
+        ]
+    },
+    {
+        "text": "O‘zbek adabiyotidagi 'Yor-yor' qo‘shiqlari qanday holatda ijro etiladi?",
+        "difficulty": "hard",
+        "explanation": "'Yor-yor' qo‘shiqlari o‘zbek xalq to‘ylarida, xususan kelin olib kelish marosimida ijro etiladi.",
+        "options": [
+            {"label": "A", "text": "Diniy marosimlarda", "is_correct": false},
+            {"label": "B", "text": "To‘y marosimlarida", "is_correct": true},
+            {"label": "C", "text": "Motam marosimlarida", "is_correct": false},
+            {"label": "D", "text": "Mavsumiy bayramlarda", "is_correct": false}
+        ]
+    },
+    {
+        "text": "'Boburnoma' asarida qanday tarixiy shaxs tasvirlanadi?",
+        "difficulty": "hard",
+        "explanation": "'Boburnoma'da Zahiriddin Muhammad Boburning hayoti va faoliyati tasvirlanadi.",
+        "options": [
+            {"label": "A", "text": "Alisher Navoiy", "is_correct": false},
+            {"label": "B", "text": "Zahiriddin Muhammad Bobur", "is_correct": true},
+            {"label": "C", "text": "Amir Temur", "is_correct": false},
+            {"label": "D", "text": "Ulug‘bek", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fitratning 'Shaytaning tangriga isyoni' asari qanday janrda yozilgan?",
+        "difficulty": "hard",
+        "explanation": "Bu asar falsafiy drama sifatida yozilgan.",
+        "options": [
+            {"label": "A", "text": "Roman", "is_correct": false},
+            {"label": "B", "text": "Falsafiy drama", "is_correct": true},
+            {"label": "C", "text": "Hikoya", "is_correct": false},
+            {"label": "D", "text": "She’r", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Navoiyning 'Sabbayi sayyor' dostonida qanday syujet tasvirlanadi?",
+        "difficulty": "hard",
+        "explanation": "'Sabbayi sayyor' dostonida yetti sayyora ramziy ma’noda tasvirlanib, axloqiy mavzular ochiladi.",
+        "options": [
+            {"label": "A", "text": "Sevgi hikoyasi", "is_correct": false},
+            {"label": "B", "text": "Axloqiy mavzular", "is_correct": true},
+            {"label": "C", "text": "Tarixiy voqealar", "is_correct": false},
+            {"label": "D", "text": "Diniy hikoyalar", "is_correct": false}
+        ]
+    },
+    {
+        "text": "O‘zbek adabiyotidagi 'Qirq qiz' dostonining asosiy qahramoni kim?",
+        "difficulty": "hard",
+        "explanation": "'Qirq qiz' dostonida Gulayim asosiy qahramondir.",
+        "options": [
+            {"label": "A", "text": "Barchin", "is_correct": false},
+            {"label": "B", "text": "Gulayim", "is_correct": true},
+            {"label": "C", "text": "Zulayho", "is_correct": false},
+            {"label": "D", "text": "Shirin", "is_correct": false}
+        ]
+    },
+    {
+        "text": "G‘afur G‘ulomning 'Shum bola' asarining asosiy mavzusi nima?",
+        "difficulty": "hard",
+        "explanation": "'Shum bola' asarida bolalarning o‘ynoqi hayoti va ijtimoiy adolatsizlik tasvirlanadi.",
+        "options": [
+            {"label": "A", "text": "Sevgi hikoyasi", "is_correct": false},
+            {"label": "B", "text": "Ijtimoiy adolatsizlik", "is_correct": true},
+            {"label": "C", "text": "Urush va tinchlik", "is_correct": false},
+            {"label": "D", "text": "Tabiat va inson", "is_correct": false}
+        ]
+    },
+    {
+        "text": "O‘zbek adabiyotidagi 'Temur Malik' dostonida qanday tarixiy shaxs tasvirlanadi?",
+        "difficulty": "hard",
+        "explanation": "'Temur Malik' dostonida Xorazmshohlar sulolasining so‘nggi vakili Temur Malik tasvirlanadi.",
+        "options": [
+            {"label": "A", "text": "Amir Temur", "is_correct": false},
+            {"label": "B", "text": "Temur Malik", "is_correct": true},
+            {"label": "C", "text": "Ulug‘bek", "is_correct": false},
+            {"label": "D", "text": "Bobur", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Navoiyning 'Haft paykar' dostonida nechta hikoya mavjud?",
+        "difficulty": "hard",
+        "explanation": "'Haft paykar' dostonida yetti hikoya tasvirlanadi, har biri bir sayyora ramzida.",
+        "options": [
+            {"label": "A", "text": "Besh", "is_correct": false},
+            {"label": "B", "text": "Yetti", "is_correct": true},
+            {"label": "C", "text": "To‘rt", "is_correct": false},
+            {"label": "D", "text": "O‘n", "is_correct": false}
+        ]
+    },
+    {
+        "text": "O‘zbek xalq og‘zaki ijodidagi 'Toshbo‘ron' qanday janrga kiradi?",
+        "difficulty": "hard",
+        "explanation": "'Toshbo‘ron' o‘zbek xalq og‘zaki ijodidagi ertak janriga kiradi.",
+        "options": [
+            {"label": "A", "text": "Doston", "is_correct": false},
+            {"label": "B", "text": "Ertak", "is_correct": true},
+            {"label": "C", "text": "Rivoyat", "is_correct": false},
+            {"label": "D", "text": "Maqol", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Abdulla Oripovning 'O‘zbekiston' she’rida qanday mavzu asosiy o‘rin tutadi?",
+        "difficulty": "hard",
+        "explanation": "Abdulla Oripovning 'O‘zbekiston' she’rida vatan va milliy g‘urur mavzusi asosiy o‘rin tutadi.",
+        "options": [
+            {"label": "A", "text": "Sevgi", "is_correct": false},
+            {"label": "B", "text": "Vatan va milliy g‘urur", "is_correct": true},
+            {"label": "C", "text": "Tabiat", "is_correct": false},
+            {"label": "D", "text": "Do‘stlik", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Jahon adabiyotidagi 'Ilohiy komediya' asarining muallifi kim?",
+        "difficulty": "hard",
+        "explanation": "'Ilohiy komediya' Dante Aligyeri tomonidan yozilgan.",
+        "options": [
+            {"label": "A", "text": "Shekspir", "is_correct": false},
+            {"label": "B", "text": "Dante Aligyeri", "is_correct": true},
+            {"label": "C", "text": "Gomer", "is_correct": false},
+            {"label": "D", "text": "Servantes", "is_correct": false}
+        ]
+    },
+    {
+        "text": "O‘zbek adabiyotidagi 'Layli va Majnun' dostonining muallifi kim?",
+        "difficulty": "hard",
+        "explanation": "'Layli va Majnun' dostonining o‘zbek adabiyotidagi versiyasi Alisher Navoiy tomonidan yozilgan.",
+        "options": [
+            {"label": "A", "text": "Fuzuliy", "is_correct": false},
+            {"label": "B", "text": "Alisher Navoiy", "is_correct": true},
+            {"label": "C", "text": "Lutfiy", "is_correct": false},
+            {"label": "D", "text": "Xamza", "is_correct": false}
+        ]
+    },
+    {
+        "text": "O‘zbek xalq dostonlarida 'Barchin' qaysi dostonning qahramoni?",
+        "difficulty": "hard",
+        "explanation": "Barchin 'Alpomish' dostonining asosiy ayol qahramonidir.",
+        "options": [
+            {"label": "A", "text": "G‘o‘ro‘g‘li", "is_correct": false},
+            {"label": "B", "text": "Alpomish", "is_correct": true},
+            {"label": "C", "text": "Temur Malik", "is_correct": false},
+            {"label": "D", "text": "Qirq qiz", "is_correct": false}
+        ]
+    }
+]

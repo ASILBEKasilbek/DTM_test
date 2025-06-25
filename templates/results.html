@@ -1,21 +1,39 @@
 {% extends 'base.html' %}
+{% block title %}Test Natijalari{% endblock %}
 {% block content %}
-<h2>Test Natijalari</h2>
-<p>Fan: {{ session.subject.name }}</p>
-<p>To'g'ri javoblar: {{ result.correct_answers }} / {{ result.total_questions }}</p>
-<p>Foiz: {{ result.percent }}%</p>
-<p>Ball: {{ result.score }}</p>
-<h3>Javoblar</h3>
-<ul>
-{% for answer in answers %}
-    <li>
-        {{ answer.question.text|truncatechars:50 }}:
-        {% if answer.is_correct %}
-            ✅ To'g'ri
-        {% else %}
-            ❌ Noto'g'ri (Tanlangan: {{ answer.selected_option.text }})
-        {% endif %}
-    </li>
-{% endfor %}
-</ul>
+<div class="container mx-auto max-w-4xl px-4 py-8">
+    <h2 class="text-2xl font-bold text-gray-800 mb-6">Test Natijalari</h2>
+    <div class="card bg-white shadow-md rounded-lg p-6 mb-6">
+        <div class="card-body">
+            <p><strong>Fan:</strong> {{ session.subject.name }}</p>
+            <p><strong>To'g'ri javoblar:</strong> {{ result.correct_answers }} / {{ result.total_questions }}</p>
+            <p><strong>Foiz:</strong> {{ result.percent }}%</p>
+        </div>
+    </div>
+    <h3 class="text-xl font-semibold text-gray-800 mb-4">Javoblar</h3>
+    <ul class="list-group space-y-4">
+        {% for answer in answers %}
+        <li class="list-group-item bg-white shadow-sm rounded-lg p-4">
+            <p class="font-medium">{{ forloop.counter }}. {{ answer.question.text|truncatechars:100 }}</p>
+            <p>
+                {% if answer.is_correct %}
+                <span class="text-green-600 font-semibold">✅ To'g'ri</span>
+                {% else %}
+                <span class="text-red-600 font-semibold">❌ Noto'g'ri</span>
+                <span class="text-gray-600"> (Tanlangan: {{ answer.selected_option.text }})</span>
+                <span class="text-gray-600"> (To'g'ri javob: {{ answer.question.get_correct_option.text }})</span>
+                {% endif %}
+            </p>
+            {% if answer.question.explanation %}
+            <p class="text-gray-500 mt-2"><strong>Izoh:</strong> {{ answer.question.explanation }}</p>
+            {% endif %}
+        </li>
+        {% empty %}
+        <li class="list-group-item bg-white shadow-sm rounded-lg p-4 text-gray-600">
+            Hech qanday javob topilmadi.
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'app:home' %}" class="btn btn-primary mt-6 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Bosh sahifaga qaytish</a>
+</div>
 {% endblock %}

@@ -1,6 +1,37 @@
 {% extends 'base.html' %}
 {% block title %}Biz haqimizda{% endblock %}
 {% block content %}
-<h2>Biz haqimizda</h2>
-<p>DTM Test Tizimi oliygohga kirish imtihonlariga tayyorgarlik ko'rish uchun yaratilgan platformadir. Bizning maqsadimiz - sifatli testlar orqali bilim darajangizni oshirish.</p>
+<div class="container mx-auto max-w-4xl px-4 py-8">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Biz haqimizda</h2>
+    
+    <!-- Asosiy ma'lumot -->
+    <div class="bg-white shadow-md rounded-lg p-6 mb-8">
+        <p class="text-gray-600 mb-4">DTM Test Tizimi – oliygohga kirish imtihonlariga tayyorgarlik ko‘rish uchun yaratilgan zamonaviy platforma. Bizning maqsadimiz – sifatli testlar va foydalanuvchi uchun qulay interfeys orqali bilim darajangizni oshirishga yordam berish.</p>
+        <p class="text-gray-600 mb-4">Platformamizda siz turli fanlar bo‘yicha minglab savollarni sinab ko‘rishingiz, o‘z bilimingizni baholashingiz va imtihonlarga muvaffaqiyatli tayyorgarlik ko‘rishingiz mumkin.</p>
+    </div>
+
+    <!-- Missiya va afzalliklar -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Bizning missiyamiz</h3>
+            <p class="text-gray-600">Har bir talabaga oliy ta'lim sari yo‘lda muvaffaqiyatli bo‘lish imkoniyatini berish. Biz sifatli ta'lim resurslarini hamma uchun ochiq va qulay qilishga intilamiz.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Nega biz?</h3>
+            <ul class="list-disc list-inside text-gray-600">
+                <li>Zamonaviy va foydalanuvchi uchun qulay interfeys</li>
+                <li>Turli fanlar bo‘yicha keng testlar to‘plami</li>
+                <li>Natijalarni tahlil qilish va izohlar</li>
+                <li>Tez va ishonchli platforma</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center">
+        <a href="{% url 'app:home' %}" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+            Testni boshlash
+        </a>
+    </div>
+</div>
 {% endblock %}

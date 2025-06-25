@@ -5,95 +5,159 @@
 {% block title %}{{ session.subject.name }} Testi{% endblock %}
 
 {% block content %}
-<div class="container mt-4">
-    <h2 class="mb-3">{{ session.subject.name }} Testi</h2>
+<div class="container mx-auto max-w-4xl px-4 py-8">
+    <h1 class="text-3xl font-bold text-gray-800 mb-6">{{ session.subject.name }} Testi</h1>
 
     {% if error %}
-        <div class="alert alert-danger" role="alert">
-            {{ error }}
+        <div class="bg-red-100 border border-red-400 text-red-700 px-6 py-4 rounded relative mb-6">
+            <strong class="font-bold">Xatolik!</strong>
+            <span class="block sm:inline">{{ error }}</span>
+            <a href="{% url 'app:home' %}" class="ml-4 inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition">Bosh sahifaga qaytish</a>
         </div>
-        <a href="{% url 'app:home' %}" class="btn btn-primary">Bosh sahifaga qaytish</a>
     {% else %}
-        <div class="progress mb-3">
-            <div class="progress-bar" role="progressbar"
-                style="width: {{ current_index|div:total_questions|mul:100|floatformat:0 }}%;"
-                aria-valuenow="{{ current_index }}" aria-valuemin="1" aria-valuemax="{{ total_questions }}">
-                {{ current_index }} / {{ total_questions }}
+        <div class="mb-6">
+            <div class="flex justify-between text-sm text-gray-600 mb-1">
+                <span>Savollar: {{ questions|length }} ta</span>
+                <span>{{ answered_count }} / {{ questions|length }} javob berildi</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+                <div class="bg-blue-600 h-3 rounded-full transition-all duration-700"
+                     style="width: {{ answered_count|div:questions_count|mul:100|floatformat:0 }}%;">
+                </div>
             </div>
         </div>
 
-        <div class="card">
-            <div class="card-header">
-                <h5>Savol {{ current_index }} / {{ total_questions }}</h5>
-            </div>
-            <div class="card-body">
-                <p class="card-text">{{ question.text }}</p>
+        <form id="test-form" action="{% url 'app:submit_test' session_id=session.id %}" method="POST">
+            {% csrf_token %}
+            {% for question in questions %}
+                <div class="bg-white rounded-xl shadow-md p-6 mb-6 border">
+                    <div class="flex items-start mb-4">
+                        <div class="text-lg font-semibold text-blue-700 mr-3">{{ forloop.counter }}.</div>
+                        <div class="flex-1">
+                            <p class="text-gray-800 mb-2">{{ question.text }}</p>
+                            {% if question.image %}
+                                <img src="{{ question.image.url }}" class="rounded-lg shadow w-full max-w-sm mb-4" alt="Savol rasmi">
+                            {% endif %}
 
-                {% if question.image %}
-                    <img src="{{ question.image.url }}" alt="Savol rasmi" class="img-fluid mb-3" style="max-width: 300px;">
-                {% endif %}
+                            <div class="space-y-2">
+                                {% for option in question.options.all %}
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="radio"
+                                            name="answer_{{ question.id }}"
+                                            id="option_{{ option.id }}"
+                                            value="{{ option.id }}"
+                                            {% if selected_answers|get_item:question.id|stringformat:"s" == option.id|stringformat:"s" %}checked{% endif %}
+                                            data-question-id="{{ question.id }}"
+                                            data-session-id="{{ session.id }}"
+                                            class="h-5 w-5 text-blue-600 focus:ring-blue-500">
 
-                <form id="answer-form" action="{% url 'app:save_answer' session_id=session.id question_id=question.id %}" method="POST">
-                    {% csrf_token %}
-                    {% for option in options %}
-                        <div class="form-check mb-2">
-                            <input class="form-check-input" type="radio" name="answer_id" id="option_{{ option.id }}" 
-                                   value="{{ option.id }}" required>
-                            <label class="form-check-label" for="option_{{ option.id }}">
-                                {{ option.label }}. {{ option.text }}
-                            </label>
+                                        <span class="ml-2 text-gray-700">{{ option.text }}</span>
+                                    </label>
+                                {% empty %}
+                                    <p class="text-yellow-700 bg-yellow-100 p-3 rounded">Variantlar mavjud emas.</p>
+                                {% endfor %}
+                            </div>
                         </div>
-                    {% empty %}
-                        <div class="alert alert-warning">Bu savol uchun variantlar mavjud emas.</div>
-                    {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
 
-                    <button type="submit" class="btn btn-primary mt-3" disabled>Javobni saqlash</button>
-                </form>
+            <div class="text-right mt-8">
+                <button id="submit-test" type="submit"
+                        class="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 transition flex items-center justify-center gap-2">
+                    <span id="submit-text">Testni yakunlash</span>
+                    <svg id="loading-spinner" class="hidden animate-spin h-5 w-5 text-white"
+                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>
+                        <path class="opacity-75" fill="currentColor"
+                              d="M4 12a8 8 0 018-8V0C5.4 0 0 5.4 0 12h4zm2 5.3A8 8 0 014 12H0c0 3 1.1 5.8 3 7.9l3-2.6z"/>
+                    </svg>
+                </button>
             </div>
-        </div>
+        </form>
     {% endif %}
 </div>
 {% endblock %}
 
 {% block scripts %}
 {% if not error %}
-<script src="{% static 'js/test.js' %}"></script>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const form = document.getElementById("answer-form");
-        const submitBtn = form.querySelector("button[type='submit']");
-        const radios = form.querySelectorAll("input[name='answer_id']");
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("test-form");
+    const csrfToken = form.querySelector("[name='csrfmiddlewaretoken']").value;
+    const submitBtn = document.getElementById("submit-test");
+    const submitText = document.getElementById("submit-text");
+    const spinner = document.getElementById("loading-spinner");
 
-        radios.forEach(radio => {
-            radio.addEventListener("change", () => {
-                submitBtn.disabled = false;
-            });
-        });
+    // Avtomatik saqlash
+    form.querySelectorAll("input[type='radio']").forEach(radio => {
+        radio.addEventListener("change", function () {
+            const questionId = this.getAttribute("data-question-id");
+            const answerId = this.value;
+            const sessionId = this.getAttribute("data-session-id");
 
-        form.addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            fetch(form.action, {
+            fetch(`{% url 'app:save_answer' session_id=session.id question_id=0 %}`.replace("0", questionId), {
                 method: "POST",
+                credentials: 'same-origin',
                 headers: {
-                    "X-CSRFToken": form.querySelector("[name='csrfmiddlewaretoken']").value,
+                    "X-CSRFToken": csrfToken,
                     "Content-Type": "application/x-www-form-urlencoded"
                 },
-                body: new URLSearchParams(new FormData(form))
+                body: new URLSearchParams({
+                    answer_id: answerId,
+                    session_id: sessionId
+                })
             })
-            .then(response => response.json())
+            .then(res => res.json())
             .then(data => {
-                if (data.status === "success") {
-                    window.location.reload();  // Keyingi savol
-                } else {
+                if (data.status !== "success") {
+                    console.error("Error saving answer:", data.message);
                     alert("Xatolik: " + (data.message || "Javob saqlanmadi."));
                 }
             })
-            .catch(error => {
-                alert("Xatolik yuz berdi: " + error);
+            .catch(err => {
+                console.error("Fetch error:", err);
+                alert("Xatolik: " + err);
             });
         });
     });
+
+    // Testni yakunlash
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        submitBtn.disabled = true;
+        submitText.textContent = "Yuborilmoqda...";
+        spinner.classList.remove("hidden");
+
+        fetch(form.action, {
+            method: "POST",
+            credentials: 'same-origin',
+            headers: {
+                "X-CSRFToken": csrfToken,
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: new URLSearchParams(new FormData(form))
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.status === "success") {
+                window.location.href = data.redirect_url || `{% url 'app:view_results' session_id=session.id %}`;
+            } else {
+                submitBtn.disabled = false;
+                submitText.textContent = "Testni yakunlash";
+                spinner.classList.add("hidden");
+                alert("Xatolik: " + (data.message || "Test yakunlanmadi."));
+            }
+        })
+        .catch(error => {
+            submitBtn.disabled = false;
+            submitText.textContent = "Testni yakunlash";
+            spinner.classList.add("hidden");
+            console.error("Submit error:", error);
+            alert("Xatolik yuz berdi: " + error);
+        });
+    });
+});
 </script>
 {% endif %}
 {% endblock %}

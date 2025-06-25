@@ -1,0 +1,354 @@
+[
+    {
+        "text": "Agar 5x - 3y = 15 va 2x + y = 7 bo‘lsa, x + y qiymati nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "2x + y = 7 ⇒ y = 7 - 2x. 5x - 3(7 - 2x) = 15 ⇒ 5x - 6 + 21x = 15 ⇒ 11x = 21 ⇒ x = 21/11 ≈ 1.91, y ≈ 7 - 2*1.91 = 3.18. x + y ≈ 5.09",
+        "options": [
+            {"label": "A", "text": "5", "is_correct": false},
+            {"label": "B", "text": "5.09", "is_correct": true},
+            {"label": "C", "text": "6", "is_correct": false},
+            {"label": "D", "text": "7", "is_correct": false}
+        ]
+    },
+    {
+        "text": "sin²(60°) + cos²(30°) ni hisoblang. (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "sin(60°) = √3/2, cos(30°) = √3/2. sin²(60°) + cos²(30°) = (√3/2)² + (√3/2)² = 3/4 + 3/4 = 3/2",
+        "options": [
+            {"label": "A", "text": "1", "is_correct": false},
+            {"label": "B", "text": "3/2", "is_correct": true},
+            {"label": "C", "text": "2", "is_correct": false},
+            {"label": "D", "text": "√3", "is_correct": false}
+        ]
+    },
+    {
+        "text": "(x² - 16)/(x - 4) ifodasini soddalashtiring (x ≠ 4). (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "x² - 16 = (x - 4)(x + 4), shuning uchun (x - 4)(x + 4)/(x - 4) = x + 4",
+        "options": [
+            {"label": "A", "text": "x - 4", "is_correct": false},
+            {"label": "B", "text": "x + 4", "is_correct": true},
+            {"label": "C", "text": "x² + 4", "is_correct": false},
+            {"label": "D", "text": "x - 16", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Doiraning uzunligi 25.12 sm. Radiusini toping (π ≈ 3.14). (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "C = 2πr ⇒ 25.12 = 2 * 3.14 * r ⇒ r = 25.12 / (2 * 3.14) = 4 sm",
+        "options": [
+            {"label": "A", "text": "3", "is_correct": false},
+            {"label": "B", "text": "4", "is_correct": true},
+            {"label": "C", "text": "5", "is_correct": false},
+            {"label": "D", "text": "6", "is_correct": false}
+        ]
+    },
+    {
+        "text": "4ˣ = 64 bo‘lsa, x qiymati nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "64 = 4³, shuning uchun 4ˣ = 4³ ⇒ x = 3",
+        "options": [
+            {"label": "A", "text": "2", "is_correct": false},
+            {"label": "B", "text": "3", "is_correct": true},
+            {"label": "C", "text": "4", "is_correct": false},
+            {"label": "D", "text": "5", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Agar a + b = 15 va a - b = 7 bo‘lsa, ab ni toping. (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "a + b = 15, a - b = 7. Qo‘shib: 2a = 22 ⇒ a = 11, b = 4. ab = 11 * 4 = 44",
+        "options": [
+            {"label": "A", "text": "40", "is_correct": false},
+            {"label": "B", "text": "44", "is_correct": true},
+            {"label": "C", "text": "48", "is_correct": false},
+            {"label": "D", "text": "52", "is_correct": false}
+        ]
+    },
+    {
+        "text": "log₂(16) + log₂(4) ni hisoblang. (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "log₂(16) = log₂(2⁴) = 4, log₂(4) = log₂(2²) = 2. 4 + 2 = 6",
+        "options": [
+            {"label": "A", "text": "4", "is_correct": false},
+            {"label": "B", "text": "6", "is_correct": true},
+            {"label": "C", "text": "8", "is_correct": false},
+            {"label": "D", "text": "10", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Teng yonli uchburchakning yon tomoni 8 sm, asosidagi burchak 45°. Yuzasini toping. (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Balandlik h = 8 * sin(45°) = 8 * √2/2 = 4√2. S = (8 * 4√2)/2 = 16√2 sm²",
+        "options": [
+            {"label": "A", "text": "12√2", "is_correct": false},
+            {"label": "B", "text": "16√2", "is_correct": true},
+            {"label": "C", "text": "20√2", "is_correct": false},
+            {"label": "D", "text": "24√2", "is_correct": false}
+        ]
+    },
+    {
+        "text": "2x² - 12x + 18 = 0 tenglamaning ildizlarini toping. (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "2x² - 12x + 18 = 0 ⇒ x² - 6x + 9 = 0 ⇒ (x - 3)² = 0 ⇒ x = 3",
+        "options": [
+            {"label": "A", "text": "x = 2", "is_correct": false},
+            {"label": "B", "text": "x = 3", "is_correct": true},
+            {"label": "C", "text": "x = 4", "is_correct": false},
+            {"label": "D", "text": "x = 5", "is_correct": false}
+        ]
+    },
+    {
+        "text": "1 + 2 + 3 + ... + 15 yig‘indisini toping. (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "n(n+1)/2 = 15 * 16 / 2 = 120",
+        "options": [
+            {"label": "A", "text": "100", "is_correct": false},
+            {"label": "B", "text": "120", "is_correct": true},
+            {"label": "C", "text": "130", "is_correct": false},
+            {"label": "D", "text": "150", "is_correct": false}
+        ]
+    },
+    {
+        "text": "x² - 7x + 12 = 0 tenglamaning ildizlari nima? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "x² - 7x + 12 = (x - 3)(x - 4) = 0 ⇒ x = 3, x = 4",
+        "options": [
+            {"label": "A", "text": "x = 2, 5", "is_correct": false},
+            {"label": "B", "text": "x = 3, 4", "is_correct": true},
+            {"label": "C", "text": "x = -3, -4", "is_correct": false},
+            {"label": "D", "text": "x = 1, 6", "is_correct": false}
+        ]
+    },
+    {
+        "text": "sin(2x) = √3/2 bo‘lsa, x ning 0° ≤ x ≤ 180° oralig‘idagi qiymatlari nima? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "sin(2x) = √3/2 ⇒ 2x = 60°, 120° ⇒ x = 30°, 60°",
+        "options": [
+            {"label": "A", "text": "30°, 60°", "is_correct": true},
+            {"label": "B", "text": "45°, 90°", "is_correct": false},
+            {"label": "C", "text": "0°, 180°", "is_correct": false},
+            {"label": "D", "text": "90°, 150°", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Agar a, b, c arifmetik progressiya bo‘lsa va a = 3, c = 15 bo‘lsa, b nima? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "b = (a + c)/2 = (3 + 15)/2 = 9",
+        "options": [
+            {"label": "A", "text": "6", "is_correct": false},
+            {"label": "B", "text": "9", "is_correct": true},
+            {"label": "C", "text": "12", "is_correct": false},
+            {"label": "D", "text": "15", "is_correct": false}
+        ]
+    },
+    {
+        "text": "(x + 2)/(x - 3) = 3 bo‘lsa, x qiymati nima? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "(x + 2) = 3(x - 3) ⇒ x + 2 = 3x - 9 ⇒ 2x = 11 ⇒ x = 11/2",
+        "options": [
+            {"label": "A", "text": "4", "is_correct": false},
+            {"label": "B", "text": "11/2", "is_correct": true},
+            {"label": "C", "text": "6", "is_correct": false},
+            {"label": "D", "text": "7", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Trapetsiyaning asoslari 12 sm va 8 sm, yon tomoni 5 sm, asosidagi burchak 60°. Yuzasini toping. (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Balandlik h = 5 * sin(60°) = 5 * √3/2 = 5√3/2. S = (12 + 8) * (5√3/2) / 2 = 25√3 sm²",
+        "options": [
+            {"label": "A", "text": "20√3", "is_correct": false},
+            {"label": "B", "text": "25√3", "is_correct": true},
+            {"label": "C", "text": "30√3", "is_correct": false},
+            {"label": "D", "text": "35√3", "is_correct": false}
+        ]
+    },
+    {
+        "text": "log₅(x) + log₅(x - 4) = 1 bo‘lsa, x qiymati nima? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "log₅(x(x - 4)) = 1 ⇒ x(x - 4) = 5 ⇒ x² - 4x - 5 = 0 ⇒ x = 5 (x = -1 mos emas)",
+        "options": [
+            {"label": "A", "text": "3", "is_correct": false},
+            {"label": "B", "text": "5", "is_correct": true},
+            {"label": "C", "text": "7", "is_correct": false},
+            {"label": "D", "text": "9", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Agar x + y = 7 va xy = 12 bo‘lsa, x² + y² qiymati nima? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "(x + y)² = x² + y² + 2xy ⇒ 49 = x² + y² + 24 ⇒ x² + y² = 25",
+        "options": [
+            {"label": "A", "text": "21", "is_correct": false},
+            {"label": "B", "text": "25", "is_correct": true},
+            {"label": "C", "text": "29", "is_correct": false},
+            {"label": "D", "text": "33", "is_correct": false}
+        ]
+    },
+    {
+        "text": "|x - 3| + |x + 2| = 7 bo‘lsa, x ning barcha qiymatlari nima? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "x ≤ -2: -(x - 3) - (x + 2) = 7 ⇒ x = -6; -2 < x < 3: -(x - 3) + (x + 2) = 7 ⇒ x = 1; x ≥ 3: x - 3 + x + 2 = 7 ⇒ x = 4. Javob: x = -6, 1, 4",
+        "options": [
+            {"label": "A", "text": "-6, 1, 4", "is_correct": true},
+            {"label": "B", "text": "-5, 2, 3", "is_correct": false},
+            {"label": "C", "text": "-4, 0, 5", "is_correct": false},
+            {"label": "D", "text": "-7, 1, 6", "is_correct": false}
+        ]
+    },
+    {
+        "text": "2ˣ = 16ˣ⁻² bo‘lsa, x qiymati nima? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "16 = 2⁴, shuning uchun 2ˣ = (2⁴)ˣ⁻² = 2⁴ˣ⁻⁸. 2ˣ = 2⁴ˣ⁻⁸ ⇒ x = 4x - 8 ⇒ x = 8/3",
+        "options": [
+            {"label": "A", "text": "2",
+            "is_correct": false
+        },
+        {
+            "label": "B",
+            "text": "8/3",
+            "is_correct": true
+        },
+            {
+            "label": "C",
+            "text": "3",
+            "is_correct": false
+        },
+            {
+            "label": "D",
+            "text": "4",
+            "is_correct": false
+        }
+    ]
+  },
+    {
+        "text": "cos(3x) = -1 bo‘lsa, x ning 0° ≤ x ≤ 360° oralig‘idagi qiymatlari nima? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "cos(3x) = -1 ⇒ 3x = 180°, 540°, 900° ⇒ x = 60°, 180°, 300°",
+        "options": [
+            {"label": "A", "text": "60°, 180°, 300°", "is_correct": true},
+            {"label": "B", "text": "90°, 270°", "is_correct": false},
+            {"label": "C", "text": "0°, 120°, 240°", "is_correct": false},
+            {"label": "D", "text": "30°, 150°, 330°", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Agar x³ - 3x² - 4x + 12 = 0 bo‘lsa, x ning barcha ildizlari nima? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "x²(x - 3) - 4(x - 3) = 0 ⇒ (x - 3)(x² - 4) = 0 ⇒ x = 3, x = ±2",
+        "options": [
+            {"label": "A", "text": "-2, 2, 3", "is_correct": true},
+            {"label": "B", "text": "-1, 1, 4", "is_correct": false},
+            {"label": "C", "text": "-3, 0, 4", "is_correct": false},
+            {"label": "D", "text": "-2, 1, 5", "is_correct": false}
+        ]
+    },
+    {
+        "text": "5 raqamli parol faqat 1, 2, 3 raqamlaridan iborat bo‘lsa va 1 raqami kamida bir marta ishlatilishi kerak bo‘lsa, nechta parol hosil bo‘ladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Jami parollar: 3⁵ = 243. 1 raqamisiz parollar: 2⁵ = 32. 1 raqami bilan parollar: 243 - 32 = 211",
+        "options": [
+            {"label": "A", "text": "181", "is_correct": false},
+            {"label": "B", "text": "211", "is_correct": true},
+            {"label": "C", "text": "243", "is_correct": false},
+            {"label": "D", "text": "275", "is_correct": false}
+        ]
+    },
+    {
+        "text": "log₃(x - 2) > 2 bo‘lsa, x ning qanday qiymatlari mos keladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "log₃(x - 2) > 2 ⇒ x - 2 > 3² ⇒ x - 2 > 9 ⇒ x > 11",
+        "options": [
+            {"label": "A", "text": "x > 11", "is_correct": true},
+            {"label": "B", "text": "x > 9", "is_correct": false},
+            {"label": "C", "text": "x < 11", "is_correct": false},
+            {"label": "D", "text": "x < 5", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Teng yonli uchburchakning yon tomi 10 sm, balandligi 8 sm. Uning asosini toping. (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Yon tom a = 10, balandlik h = 8. Asos b/2 = √(a² - h²) = √(100 - 64) = 6 → b = 12 sm",
+        "options": [
+            {"label": "A", "text": "10", "is_correct": false},
+            {"label": "B", "text": "12", "is_correct": true},
+            {"label": "C", "text": "14", "is_correct": false},
+            {"label": "D", "text": "16", "is_correct": false}
+        ]
+    },
+    {
+        "text": "(x² + 2x - 3)/(x² - 1) = 0 bo‘lsa, x qiymati nima? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "(x² + 2x - 3)/(x² - 1) = (x + 3)(x - 1)/(x - 1)(x + 1) = 0 ⇒ x + 3 = 0 ⇒ x = -3 (x ≠ ±1)",
+        "options": [
+            {"label": "A", "text": "-3", "is_correct": true},
+            {"label": "B", "text": "1", "is_correct": false},
+            {"label": "C", "text": "-1", "is_correct": false},
+            {"label": "D", "text": "3", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Agar 2x² - 3x - 5 > 0 bo‘lsa, x ning qanday qiymatlari mos keladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "2x² - 3x - 5 = 0 → x = (3 ± √(9 + 40))/4 = (3 ± 7)/4 → x = -1, x = 5/2. 2x² - 3x - 5 > 0 → x < -1 yoki x > 5/2",
+        "options": [
+            {"label": "A", "text": "x < -1 yoki x > 5/2", "is_correct": true},
+            {"label": "B", "text": "-1 < x < 5/2", "is_correct": false},
+            {"label": "C", "text": "x < 5/2", "is_correct": false},
+            {"label": "D", "text": "x > -1", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Doira va to‘g‘ri chiziqning 2 ta kesishish nuqtasi bor. Agar doira markazi (0,0), radiusi 5, to‘g‘ri chiziq y = 3 bo‘lsa, kesishish nuqtalarini toping. (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Doira: x² + y² = 25, chiziq: y = 3. x² + 9 = 25 → x² = 16 → x = ±4. Nuqtalar: (4, 3), (-4, 3)",
+        "options": [
+            {"label": "A", "text": "(4, 3), (-4, 3)", "is_correct": true},
+            {"label": "B", "text": "(3, 4), (-3, 4)", "is_correct": false},
+            {"label": "C", "text": "(5, 0), (-5, 0)", "is_correct": false},
+            {"label": "D", "text": "(0, 3), (0, -3)", "is_correct": false}
+        ]
+    },
+    {
+        "text": "7 ta harfdan (A, B, C, D, E, F, G) 4 tasini tanlab, tartibda joylashtirish yo‘llari soni nechta? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "P(7,4) = 7 * 6 * 5 * 4 = 840",
+        "options": [
+            {"label": "A", "text": "720",
+            "is_correct": false},
+            {"label": "B", "text": "840",
+            "is_correct": true},
+            {"label": "C", "text": "960",
+            "is_correct": false},
+            {"label": "D", "text": "1008",
+            "is_correct": false}
+        ]
+      },
+    {
+        "text": "tan(4x) = 1 bo‘lsa, x ning 0° ≤ x ≤ 90° oralig‘idagi qiymatlari nima? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "tan(4x) = 1 → 4x = 45°, 225°, 4x = 405° → x = 11.25°, 56.25°",
+        "options": [
+            {"label": "A", "text": "11.25°, 56.25°",
+            "is_correct": true},
+            {"label": "B", "text": "22.5°, 67.5°",
+            "is_correct": false},
+            {"label": "C", "text": "15°, 75°",
+            "is_correct": false},
+            {"label": "D", "text": "30°, 60°",
+            "is_correct": false}
+        ]
+    },
+    {
+        "text": "x² + y² + 2x - 4y - 4 = 0 doirasining markazi va radiusini toping. (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "x² + 2x + 1) + (y² - 4y + 4) = 1 + 4 - 4 → (x + 1)² + (y - 2)² = 1 → markaz (-1, 2), r = 1",
+        "options": [
+            {"label": "A", "text": "(-1, 2), r = 1", "is_correct": true},
+            {"label": "B", "text": "(1, -2), r = 2", "is_correct": false},
+            {"label": "C", "text": "(0, 0), r = 4", "is_correct": false},
+            {"label": "D", "text": "(-2, 2), r = 3", "is_correct": false}
+        ]
+    }
+]

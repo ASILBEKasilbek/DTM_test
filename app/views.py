@@ -13,28 +13,94 @@ from django.db import transaction
 from django.db.models import Count
 from django.views.decorators.http import require_POST
 from django_ratelimit.decorators import ratelimit
-
-from .models import Subject, TestSession, UserAnswer, Result, UserProfile, Question, AnswerOption
-
+import re
+from .models import *
 logger = logging.getLogger(__name__)
 
-# Konstantalar (settings.py da aniqlanishi kerak)
-DEFAULT_QUESTION_COUNT = getattr(settings, 'DEFAULT_QUESTION_COUNT', 10)
+# Konstantalar
+DEFAULT_QUESTION_COUNT = getattr(settings, 'DEFAULT_QUESTION_COUNT', 30)
 OPTIONS_PER_QUESTION = getattr(settings, 'OPTIONS_PER_QUESTION', 4)
+# views.py
 
+from django.http import HttpResponse
+from testlarni_yaratish import yukla_testlar
+from app.models import Question
+from django.contrib.admin.views.decorators import staff_member_required
+
+
+@staff_member_required
+def testlarni_yuklash_view(request):
+    # Agar biron bir fan uchun savollar mavjud bo‘lsa, yuklashni to‘xtatamiz
+    if Question.objects.exists():
+        return HttpResponse("⚠️ Testlar allaqachon yuklangan.")
+    try:
+        yukla_testlar()
+        return HttpResponse("✅ Barcha fanlar bo‘yicha testlar muvaffaqiyatli yuklandi.")
+    except Exception as e:
+        return HttpResponse(f"❌ Xatolik yuz berdi: {str(e)}")
+    
 def home(request):
     subjects = Subject.objects.filter(is_deleted=False)
     return render(request, 'home.html', {'subjects': subjects})
 
+@ratelimit(key='user_or_ip', rate='5/m')
 def contact(request):
-    return render(request, 'contact.html')
+    if request.method == 'POST':
+        try:
+            name = request.POST.get('name', '').strip()
+            phone = request.POST.get('phone', '').strip()
+            message = request.POST.get('message', '').strip()
 
+            # Validatsiya
+            if not name or len(name) < 2:
+                return JsonResponse({'status': 'error', 'message': 'Ism kamida 2 harfdan iborat bo‘lishi kerak.'})
+            if not re.match(r'^\+998\s?\d{2}\s?\d{3}\s?\d{2}\s?\d{2}$', phone):
+                return JsonResponse({'status': 'error', 'message': 'Telefon raqami +998 XX XXX XX XX formatida bo‘lishi kerak.'})
+            if not message or len(message) < 10:
+                return JsonResponse({'status': 'error', 'message': 'Xabar kamida 10 harfdan iborat bo‘lishi kerak.'})
+
+            # Feedback modeliga saqlash
+            with transaction.atomic():
+                feedback = Feedback.objects.create(
+                    user=request.user if request.user.is_authenticated else None,
+                    subject=f"Aloqa formasi: {name}",
+                    message=f"Ism: {name}\nTelefon: {phone}\nXabar: {message}",
+                    status='pending'
+                )
+
+            # Telegramga xabar yuborish
+            telegram_message = (
+                f"📬 Yangi xabar:\n"
+                f"Ism: {name}\n"
+                f"Telefon: {phone}\n"
+                f"Xabar: {message}\n"
+                f"Vaqt: {timezone.now().strftime('%Y-%m-%d %H:%M')}"
+            )
+            telegram_url = f"https://api.telegram.org/bot{settings.TELEGRAM_BOT_TOKEN}/sendMessage"
+            telegram_data = {
+                'chat_id': settings.ADMIN_TELEGRAM_ID,
+                'text': telegram_message
+            }
+            try:
+                response = requests.post(telegram_url, data=telegram_data)
+                response.raise_for_status()
+                logger.info(f"Telegram message sent for feedback from {phone}")
+            except requests.RequestException as e:
+                logger.error(f"Failed to send Telegram message for feedback: {e}")
+                return JsonResponse({'status': 'error', 'message': 'Xabar Telegramga yuborilmadi, lekin saqlandi.'})
+
+            return JsonResponse({'status': 'success', 'message': 'Xabar muvaffaqiyatli yuborildi!'})
+
+        except Exception as e:
+            logger.error(f"Error processing contact form: {e}")
+            return JsonResponse({'status': 'error', 'message': 'Xabar yuborishda xato yuz berdi.'})
+    else:
+        return render(request, 'contact.html')
 def about(request):
     return render(request, 'about.html')
 
 def telegram_auth(request, telegram_id):
     try:
-        # Telegram ID ni tasdiqlash (misol uchun, bot API orqali)
         response = requests.get(
             f"https://api.telegram.org/bot{settings.TELEGRAM_BOT_TOKEN}/getChat",
             params={'chat_id': telegram_id}
@@ -59,20 +125,8 @@ def telegram_auth(request, telegram_id):
         logger.info(f"New user created: {telegram_id}")
 
     login(request, user, backend='django.contrib.auth.backends.ModelBackend')
-    # return render(request,'home.html', {'user': user})
-    subject = Subject.objects.filter(is_deleted=False).first()
-    subject_all=Subject.objects.all()
-
     subjects = Subject.objects.filter(is_deleted=False)
     return render(request, 'home.html', {'subjects': subjects})
-
-    # print(subject_all)
-    # print(subject)
-    # if not subject:
-    #     logger.warning("No subjects available")
-    #     return render(request, 'home.html', {'error': "Hech qanday fan mavjud emas."})
-
-    # return redirect('app:start_test', subject_slug=subject.slug)
 
 def start_test(request, subject_slug):
     if not request.user.is_authenticated:
@@ -104,7 +158,7 @@ def start_test(request, subject_slug):
         selected_ids = random.sample(question_ids, min(DEFAULT_QUESTION_COUNT, len(question_ids)))
         session.randomized_question_ids = selected_ids
         session.save()
-        request.session[f'session_{session.id}_current_index'] = 0
+        request.session['selected_answers'] = {}
         logger.info(f"Test session {session.id} started for user {request.user.username}")
 
     return redirect('app:test_session', session_id=session.id)
@@ -115,7 +169,7 @@ def test_session(request, session_id):
             id=session_id, user=request.user, is_deleted=False
         )
     except TestSession.DoesNotExist:
-        logger.error(f"Test session {session_id} not found for user {request.user.username}")
+        logger.error(f"Test session {session_id} not found for user喧_0x1Ffor user {request.user.username}")
         raise Http404("Test sessiyasi topilmadi.")
 
     if session.completed:
@@ -130,30 +184,61 @@ def test_session(request, session_id):
         send_telegram_result(request.user.username, session)
         return redirect('app:view_results', session_id=session.id)
 
-    current_index = request.session.get(f'session_{session.id}_current_index', 0)
-    if current_index >= len(question_ids):
-        session.completed = True
-        session.ended_at = timezone.now()
-        session.score = session.calculate_score()
-        session.save()
-        calculate_result(session)
-        send_telegram_result(request.user.username, session)
-        return redirect('app:view_results', session_id=session.id)
+    questions = Question.objects.filter(id__in=question_ids).prefetch_related('options')
+    answered_count = UserAnswer.objects.filter(test_session=session).count()
 
-    current_question = Question.objects.get(id=question_ids[current_index])
-    options = current_question.get_shuffled_options()[:OPTIONS_PER_QUESTION]
+    # Sessiya va ma'lumotlar bazasidagi javoblarni sinxronlashtirish
+    selected_answers = request.session.get("selected_answers", {}).get(str(session_id), {})
+    # Ma'lumotlar bazasidagi javoblarni qo'shish
+    user_answers = UserAnswer.objects.filter(test_session=session).select_related('selected_option')
+    for answer in user_answers:
+        selected_answers[str(answer.question.id)] = str(answer.selected_option.id)
+    request.session['selected_answers'][str(session_id)] = selected_answers
+    request.session.modified = True
 
     return render(request, 'test_session.html', {
         'session': session,
-        'question': current_question,
-        'options': options,
-        'current_index': current_index + 1,
-        'total_questions': len(question_ids)
+        'questions': questions,
+        'answered_count': answered_count,
+        'questions_count': questions.count(),
+        'selected_answers': selected_answers,
     })
+
+
+@require_POST
+def save_answer_session(request, session_id, question_id):
+    answer_id = request.POST.get("answer_id")
+    if not answer_id:
+        return JsonResponse({"status": "error", "message": "answer_id topilmadi"})
+
+    try:
+        with transaction.atomic():
+            session = TestSession.objects.get(id=session_id, user=request.user, is_deleted=False)
+            question = Question.objects.get(id=question_id, is_deleted=False)
+            selected_option = AnswerOption.objects.get(id=answer_id, is_deleted=False)
+            user_answer, created = UserAnswer.objects.update_or_create(
+                test_session=session,
+                question=question,
+                defaults={'selected_option': selected_option, 'is_correct': selected_option.is_correct}
+            )
+            logger.info(f"Answer saved for question {question_id} in session {session_id} by user {request.user.username}")
+    except Exception as e:
+        logger.error(f"Error saving answer to DB: {e}")
+        return JsonResponse({"status": "error", "message": "Javobni saqlashda xato yuz berdi."})
+
+    selected_answers = request.session.get("selected_answers", {})
+    session_key = str(session_id)
+    if session_key not in selected_answers:
+        selected_answers[session_key] = {}
+    selected_answers[session_key][str(question_id)] = answer_id
+    request.session["selected_answers"] = selected_answers
+    request.session.modified = True
+
+    return JsonResponse({"status": "success"})
 
 @require_POST
 @ratelimit(key='user', rate='10/m')
-def save_answer(request, session_id, question_id):
+def save_answer_db(request, session_id, question_id):
     try:
         with transaction.atomic():
             session = TestSession.objects.select_for_update().get(
@@ -165,12 +250,15 @@ def save_answer(request, session_id, question_id):
                 return JsonResponse({'status': 'error', 'message': 'Javob tanlanmadi.'})
 
             selected_option = question.options.get(id=answer_id, is_deleted=False)
-            UserAnswer.objects.update_or_create(
+            user_answer, created = UserAnswer.objects.update_or_create(
                 test_session=session,
                 question=question,
-                defaults={'selected_option': selected_option}
+                defaults={'selected_option': selected_option, 'is_correct': selected_option.is_correct}
             )
-            request.session[f'session_{session.id}_current_index'] += 1
+            if 'selected_answers' not in request.session:
+                request.session['selected_answers'] = {}
+            request.session['selected_answers'][str(question_id)] = str(selected_option.id)
+            request.session.modified = True
             logger.info(f"Answer saved for question {question_id} in session {session_id} by user {request.user.username}")
             return JsonResponse({'status': 'success'})
     except TestSession.DoesNotExist:
@@ -185,6 +273,62 @@ def save_answer(request, session_id, question_id):
     except Exception as e:
         logger.error(f"Unexpected error in save_answer: {e}")
         return JsonResponse({'status': 'error', 'message': 'Xato yuz berdi.'})
+
+@require_POST
+@ratelimit(key='user', rate='5/m')
+def submit_test(request, session_id):
+    try:
+        with transaction.atomic():
+            session = TestSession.objects.select_for_update().get(
+                id=session_id, user=request.user, is_deleted=False
+            )
+
+            if session.completed:
+                logger.info(f"Test session {session_id} already completed")
+                return JsonResponse({
+                    'status': 'success',
+                    'redirect_url': reverse('app:view_results', kwargs={'session_id': session.id})
+                })
+
+            # Sessiyadagi vaqtincha javoblarni saqlash
+            selected_answers = request.session.get('selected_answers', {}).get(str(session_id), {})
+            for question_id, answer_id in selected_answers.items():
+                try:
+                    question = Question.objects.get(id=question_id, is_deleted=False)
+                    selected_option = question.options.get(id=answer_id, is_deleted=False)
+                    UserAnswer.objects.update_or_create(
+                        test_session=session,
+                        question=question,
+                        defaults={'selected_option': selected_option}
+                    )
+                except Exception as e:
+                    logger.warning(f"Error saving answer for question {question_id}: {e}")
+                    continue
+
+            # Sessiyani yakunlash
+            odi = TestSession.objects.get(id=session.id)
+            session.completed = True
+            session.ended_at = timezone.now()
+            session.score = odi.calculate_score() if hasattr(odi, 'calculate_score') else 0
+            session.save()
+
+            # Natijalarni hisoblash va xabar yuborish
+            calculate_result(session)
+            send_telegram_result(request.user.username, session)
+
+            logger.info(f"Test session {session_id} completed for user {request.user.username}")
+
+            return JsonResponse({
+                'status': 'success',
+                'redirect_url': reverse('app:view_results', kwargs={'session_id': session.id})
+            })
+
+    except TestSession.DoesNotExist:
+        logger.error(f"Test session {session_id} not found")
+        return JsonResponse({'status': 'error', 'message': 'Test sessiyasi topilmadi.'})
+    except Exception as e:
+        logger.error(f"Unexpected error in submit_test: {e}")
+        return JsonResponse({'status': 'error', 'message': f'Xato yuz berdi: {str(e)}'})
 
 def calculate_result(session):
     with transaction.atomic():
