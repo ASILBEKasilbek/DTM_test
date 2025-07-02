@@ -1,0 +1,332 @@
+[
+    {
+        "text": "Yerning eng baland cho‘qqisi qaysi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Everest cho‘qqisi Himalay tog‘larida joylashgan bo‘lib, uning balandligi taxminan 8,848 metrni tashkil qiladi.",
+        "options": [
+            {"label": "A", "text": "K2", "is_correct": false},
+            {"label": "B", "text": "Everest", "is_correct": true},
+            {"label": "C", "text": "Kilimanjaro", "is_correct": false},
+            {"label": "D", "text": "Elbrus", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Dunyodagi eng katta okean qaysi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Tinch okeani dunyodagi eng katta okean bo‘lib, uning maydoni taxminan 155 million km² ni tashkil qiladi.",
+        "options": [
+            {"label": "A", "text": "Atlantika okeani", "is_correct": false},
+            {"label": "B", "text": "Tinch okeani", "is_correct": true},
+            {"label": "C", "text": "Hind okeani", "is_correct": false},
+            {"label": "D", "text": "Shimoliy Muz okeani", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Amazonka daryosi qaysi qit’ada joylashgan? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Amazonka daryosi Janubiy Amerikada, asosan Braziliya va Peru hududlarida joylashgan.",
+        "options": [
+            {"label": "A", "text": "Afrika", "is_correct": false},
+            {"label": "B", "text": "Janubiy Amerika", "is_correct": true},
+            {"label": "C", "text": "Osiyo", "is_correct": false},
+            {"label": "D", "text": "Avstraliya", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Yerning ekvator uzunligi taxminan nechaga teng? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Yerning ekvator uzunligi taxminan 40,075 km ni tashkil qiladi.",
+        "options": [
+            {"label": "A", "text": "30,075 km", "is_correct": false},
+            {"label": "B", "text": "40,075 km", "is_correct": true},
+            {"label": "C", "text": "50,075 km", "is_correct": false},
+            {"label": "D", "text": "60,075 km", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Saxara cho‘li qaysi qit’ada joylashgan? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Saxara cho‘li Afrikada joylashgan bo‘lib, dunyodagi eng katta issiq cho‘ldir.",
+        "options": [
+            {"label": "A", "text": "Osiyo", "is_correct": false},
+            {"label": "B", "text": "Afrika", "is_correct": true},
+            {"label": "C", "text": "Avstraliya", "is_correct": false},
+            {"label": "D", "text": "Janubiy Amerika", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Dunyodagi eng uzun daryo qaysi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Nil daryosi taxminan 6,650 km uzunlikda bo‘lib, dunyodagi eng uzun daryo hisoblanadi.",
+        "options": [
+            {"label": "A", "text": "Amazonka", "is_correct": false},
+            {"label": "B", "text": "Nil", "is_correct": true},
+            {"label": "C", "text": "Yanszi", "is_correct": false},
+            {"label": "D", "text": "Missisipi", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Grinvich meridiani qaysi uzunlik sifatida qabul qilinadi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Grinvich meridiani 0° uzunlik sifatida qabul qilinadi.",
+        "options": [
+            {"label": "A", "text": "0°", "is_correct": true},
+            {"label": "B", "text": "90°", "is_correct": false},
+            {"label": "C", "text": "180°", "is_correct": false},
+            {"label": "D", "text": "360°", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Antarktida qit’asining asosiy iqlimi qanday? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Antarktida qit’asida polar iqlim hukmronlik qiladi, bu hudud doimiy sovuq va muz bilan qoplangan.",
+        "options": [
+            {"label": "A", "text": "Tropik iqlim", "is_correct": false},
+            {"label": "B", "text": "Polar iqlim", "is_correct": true},
+            {"label": "C", "text": "Mo‘tadil iqlim", "is_correct": false},
+            {"label": "D", "text": "Cho‘l iqlimi", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Dunyodagi eng katta orol qaysi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Grenlandiya dunyodagi eng katta orol bo‘lib, uning maydoni taxminan 2.13 million km².",
+        "options": [
+            {"label": "A", "text": "Madagaskar", "is_correct": false},
+            {"label": "B", "text": "Grenlandiya", "is_correct": true},
+            {"label": "C", "text": "Borneo", "is_correct": false},
+            {"label": "D", "text": "Yangi Gvineya", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Qaysi davlat aholisi soni bo‘yicha dunyoda birinchi o‘rinda turadi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Hindiston 2022-yilda Xitoyni ortda qoldirib, aholisi soni bo‘yicha dunyoda birinchi o‘ringa chiqdi.",
+        "options": [
+            {"label": "A", "text": "Xitoy", "is_correct": false},
+            {"label": "B", "text": "Hindiston", "is_correct": true},
+            {"label": "C", "text": "AQSh", "is_correct": false},
+            {"label": "D", "text": "Indoneziya", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Himalay tog‘lari qaysi qit’ada joylashgan? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Himalay tog‘lari Osiyoda, asosan Hindiston, Nepal, Butan va Xitoy hududlarida joylashgan.",
+        "options": [
+            {"label": "A", "text": "Afrika", "is_correct": false},
+            {"label": "B", "text": "Osiyo", "is_correct": true},
+            {"label": "C", "text": "Yevropa", "is_correct": false},
+            {"label": "D", "text": "Janubiy Amerika", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Dunyodagi eng chuqur ko‘l qaysi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Baykal ko‘li (Rossiya) dunyodagi eng chuqur ko‘l bo‘lib, chuqurligi taxminan 1,642 metr.",
+        "options": [
+            {"label": "A", "text": "Tanganika", "is_correct": false},
+            {"label": "B", "text": "Baykal", "is_correct": true},
+            {"label": "C", "text": "Viktoriya", "is_correct": false},
+            {"label": "D", "text": "Kaspian", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Tropik iqlim zonasi qaysi kengliklarda joylashgan? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Tropik iqlim zonasi ekvator atrofida, taxminan 23.5° shimoliy kenglik (Tropik of Cancer) va 23.5° janubiy kenglik (Tropik of Capricorn) orasida joylashgan.",
+        "options": [
+            {"label": "A", "text": "0°-23.5°", "is_correct": true},
+            {"label": "B", "text": "23.5°-66.5°", "is_correct": false},
+            {"label": "C", "text": "66.5°-90°", "is_correct": false},
+            {"label": "D", "text": "45°-90°", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Kaspian dengizi qaysi davlatlar orasida joylashgan? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Kaspian dengizi Rossiya, Qozog‘iston, Turkmaniston, Eron va Ozarbayjon orasida joylashgan.",
+        "options": [
+            {"label": "A", "text": "Rossiya, Qozog‘iston, Turkmaniston, Eron, Ozarbayjon", "is_correct": true},
+            {"label": "B", "text": "Rossiya, Turkiya, Eron, Gruziya", "is_correct": false},
+            {"label": "C", "text": "Qozog‘iston, O‘zbekiston, Turkiya", "is_correct": false},
+            {"label": "D", "text": "Eron, Iroq, Suriya", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Yerning umumiy maydoni taxminan nechaga teng? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Yerning umumiy maydoni taxminan 510 million km² ni tashkil qiladi.",
+        "options": [
+            {"label": "A", "text": "410 million km²", "is_correct": false},
+            {"label": "B", "text": "510 million km²", "is_correct": true},
+            {"label": "C", "text": "610 million km²", "is_correct": false},
+            {"label": "D", "text": "710 million km²", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Qaysi davlat neft ishlab chiqarish bo‘yicha dunyoda yetakchi hisoblanadi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "2025-yil holatiga ko‘ra, Saudiya Arabistoni neft ishlab chiqarish bo‘yicha dunyoda yetakchi hisoblanadi.",
+        "options": [
+            {"label": "A", "text": "AQSh", "is_correct": false},
+            {"label": "B", "text": "Saudiya Arabistoni", "is_correct": true},
+            {"label": "C", "text": "Rossiya", "is_correct": false},
+            {"label": "D", "text": "Eron", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Dunyodagi eng katta iqtisodiy blok qaysi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Yevropa Ittifoqi (EI) iqtisodiy jihatdan eng katta blok sifatida tan olinadi, chunki u ko‘plab rivojlangan davlatlarni birlashtiradi.",
+        "options": [
+            {"label": "A", "text": "ASEAN", "is_correct": false},
+            {"label": "B", "text": "Yevropa Ittifoqi", "is_correct": true},
+            {"label": "C", "text": "NAFTA", "is_correct": false},
+            {"label": "D", "text": "BRICS", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Qaysi vulqon 2024-yilda eng faol vulqonlardan biri sifatida qayd etilgan? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Kilauea vulqoni (Havayi, AQSh) so‘nggi yillarda faol vulqonlardan biri sifatida qayd etilgan.",
+        "options": [
+            {"label": "A", "text": "Vezuviy", "is_correct": false},
+            {"label": "B", "text": "Kilauea", "is_correct": true},
+            {"label": "C", "text": "Etna", "is_correct": false},
+            {"label": "D", "text": "Fudzi", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Dunyodagi eng katta shirin suv ko‘li qaysi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Yukari ko‘l (Superior, AQSh va Kanada) shirin suv bo‘yicha eng katta ko‘l hisoblanadi, hajmi taxminan 82,100 km³.",
+        "options": [
+            {"label": "A", "text": "Baykal", "is_correct": false},
+            {"label": "B", "text": "Yukari ko‘l", "is_correct": true},
+            {"label": "C", "text": "Viktoriya", "is_correct": false},
+            {"label": "D", "text": "Tanganika", "is_correct": false}
+        ]
+    },
+    {
+        "text": "O‘zbekistonning eng baland cho‘qqisi qaysi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Xazrati Sulton cho‘qqisi (Pamir-Alay) O‘zbekistonning eng baland nuqtasi bo‘lib, 4,643 metr balandlikda joylashgan.",
+        "options": [
+            {"label": "A", "text": "Ayribobo", "is_correct": false},
+            {"label": "B", "text": "Xazrati Sulton", "is_correct": true},
+            {"label": "C", "text": "Chimyon", "is_correct": false},
+            {"label": "D", "text": "G‘issar", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Dunyodagi eng katta savdo porti qaysi shaharda joylashgan? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Shanxay (Xitoy) porti dunyodagi eng katta savdo porti sifatida tan olinadi.",
+        "options": [
+            {"label": "A", "text": "Singapur", "is_correct": false},
+            {"label": "B", "text": "Shanxay", "is_correct": true},
+            {"label": "C", "text": "Rotterdam", "is_correct": false},
+            {"label": "D", "text": "Los-Anjeles", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Yerning quruqlik maydonining qancha foizi cho‘llar hisobiga to‘g‘ri keladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Yerning quruqlik maydonining taxminan 33 foizi cho‘llar hisobiga to‘g‘ri keladi.",
+        "options": [
+            {"label": "A", "text": "20%", "is_correct": false},
+            {"label": "B", "text": "33%", "is_correct": true},
+            {"label": "C", "text": "50%", "is_correct": false},
+            {"label": "D", "text": "66%", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Qaysi davlatda aholi zichligi eng yuqori? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Monako aholi zichligi bo‘yicha dunyoda birinchi o‘rinda turadi, taxminan 19,000 kishi/km².",
+        "options": [
+            {"label": "A", "text": "Singapur", "is_correct": false},
+            {"label": "B", "text": "Monako", "is_correct": true},
+            {"label": "C", "text": "Bangladesh", "is_correct": false},
+            {"label": "D", "text": "Maldivlar", "is_correct": false}
+        ]
+    },
+    {
+        "text": "And tog‘lari qaysi qit’ada joylashgan? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "And tog‘lari Janubiy Amerikada, asosan Chili, Argentina, Peru va Boliviya hududlarida joylashgan.",
+        "options": [
+            {"label": "A", "text": "Afrika", "is_correct": false},
+            {"label": "B", "text": "Janubiy Amerika", "is_correct": true},
+            {"label": "C", "text": "Osiyo", "is_correct": false},
+            {"label": "D", "text": "Yevropa", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Dunyodagi eng katta gidroelektrik stansiya qaysi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Uch dara (Three Gorges) gidroelektrik stansiyasi (Xitoy) dunyodagi eng katta hisoblanadi.",
+        "options": [
+            {"label": "A", "text": "Itaipu", "is_correct": false},
+            {"label": "B", "text": "Uch dara", "is_correct": true},
+            {"label": "C", "text": "Guvor", "is_correct": false},
+            {"label": "D", "text": "Grand Coulee", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Qaysi mintaqa eng ko‘p tabiiy gaz zaxirasiga ega? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Yaqin Sharq, xususan Qatar va Eron, tabiiy gaz zaxiralari bo‘yicha dunyoda yetakchilik qiladi.",
+        "options": [
+            {"label": "A", "text": "Shimoliy Amerika", "is_correct": false},
+            {"label": "B", "text": "Yaqin Sharq", "is_correct": true},
+            {"label": "C", "text": "Yevropa", "is_correct": false},
+            {"label": "D", "text": "Afrika", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Yerning atmosferasida eng ko‘p uchraydigan gaz qaysi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Atmosferada azot (N₂) taxminan 78% ni tashkil qiladi.",
+        "options": [
+            {"label": "A", "text": "Kislorod", "is_correct": false},
+            {"label": "B", "text": "Azot", "is_correct": true},
+            {"label": "C", "text": "Karbonat angidrid", "is_correct": false},
+            {"label": "D", "text": "Argon", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Qaysi davlat eng ko‘p qahva ishlab chiqaradi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Braziliya dunyodagi eng yirik qahva ishlab chiqaruvchi davlat hisoblanadi.",
+        "options": [
+            {"label": "A", "text": "Kolumbiya", "is_correct": false},
+            {"label": "B", "text": "Braziliya", "is_correct": true},
+            {"label": "C", "text": "Vyetnam", "is_correct": false},
+            {"label": "D", "text": "Efiopiya", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Dunyodagi eng katta mangrov o‘rmonlari qayerda joylashgan? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Sundarban mangrov o‘rmonlari Hindiston va Bangladeshda joylashgan bo‘lib, dunyodagi eng katta mangrov o‘rmoni hisoblanadi.",
+        "options": [
+            {"label": "A", "text": "Avstraliya", "is_correct": false},
+            {"label": "B", "text": "Sundarban", "is_correct": true},
+            {"label": "C", "text": "Indoneziya", "is_correct": false},
+            {"label": "D", "text": "Braziliya", "is_correct": false}
+        ]
+    },
+    {
+        "text": "O‘zbekistonning eng katta daryosi qaysi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Amudaryo O‘zbekistonning eng katta daryosi bo‘lib, uzunligi taxminan 2,400 km.",
+        "options": [
+            {"label": "A", "text": "Sirdaryo", "is_correct": false},
+            {"label": "B", "text": "Amudaryo", "is_correct": true},
+            {"label": "C", "text": "Zarafshon", "is_correct": false},
+            {"label": "D", "text": "Chirchiq", "is_correct": false}
+        ]
+    }
+]

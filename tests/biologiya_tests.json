@@ -1,0 +1,332 @@
+[
+    {
+        "text": "Hujayra yadrosining asosiy vazifasi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Hujayra yadrosining asosiy vazifasi genetik axborotni saqlash va hujayra faoliyatini boshqarishdir. U DNKni o‘z ichiga oladi va transkripsiya orqali oqsillar sintezini nazorat qiladi.",
+        "options": [
+            {"label": "A", "text": "Energiya ishlab chiqarish", "is_correct": false},
+            {"label": "B", "text": "Genetik axborotni saqlash", "is_correct": true},
+            {"label": "C", "text": "Moddalarni tashish", "is_correct": false},
+            {"label": "D", "text": "Hujayra bo‘linishini to‘xtatish", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fotosintez jarayonida qaysi gaz chiqariladi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Fotosintez jarayonida o‘simliklar CO₂ va suvdan foydalanib, glikoz hosil qiladi va kislorod (O₂) chiqaradi.",
+        "options": [
+            {"label": "A", "text": "Karbonat angidrid", "is_correct": false},
+            {"label": "B", "text": "Kislorod", "is_correct": true},
+            {"label": "C", "text": "Azot", "is_correct": false},
+            {"label": "D", "text": "Vodorod", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Mitoxondriyaning asosiy vazifasi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Mitoxondriya hujayraning energiya markazi bo‘lib, oksidlovchi fosforilanish orqali ATP molekulalarini ishlab chiqaradi.",
+        "options": [
+            {"label": "A", "text": "Oqsillar sintezi", "is_correct": false},
+            {"label": "B", "text": "Energiya ishlab chiqarish", "is_correct": true},
+            {"label": "C", "text": "Hujayra devorini shakllantirish", "is_correct": false},
+            {"label": "D", "text": "DNK replikatsiyasi", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Genetik kod qanday molekulada saqlanadi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Genetik kod DNK molekulasida saqlanadi, u hujayra yadrosida xromosomalar tarkibida joylashgan.",
+        "options": [
+            {"label": "A", "text": "RNK", "is_correct": false},
+            {"label": "B", "text": "DNK", "is_correct": true},
+            {"label": "C", "text": "Oqsillar", "is_correct": false},
+            {"label": "D", "text": "Lipidlar", "is_correct": false}
+        ]
+    },
+    {
+        "text": "O‘simliklarda organik moddalarni tashish uchun qaysi to‘qima javob beradi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Floema to‘qimasi o‘simliklarda organik moddalarni, xususan, fotosintez natijasida hosil bo‘lgan shakarni tashishga xizmat qiladi.",
+        "options": [
+            {"label": "A", "text": "Ksilema", "is_correct": false},
+            {"label": "B", "text": "Floema", "is_correct": true},
+            {"label": "C", "text": "Parenchima", "is_correct": false},
+            {"label": "D", "text": "Sklerenchima", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Qon aylanish tizimida yurakning o‘ng qorinchasining vazifasi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "O‘ng qorincha qonni o‘pka arteriyasi orqali o‘pkaga haydaydi, u yerda qon kislorod bilan boyitiladi.",
+        "options": [
+            {"label": "A", "text": "Qonni tanaga haydash", "is_correct": false},
+            {"label": "B", "text": "Qonni o‘pkaga haydash", "is_correct": true},
+            {"label": "C", "text": "Qonni filtrlash", "is_correct": false},
+            {"label": "D", "text": "Qonni tozalash", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Ekologiyada populyatsiya nima deb ataladi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Populyatsiya – bir hududda yashovchi va bir-biri bilan juftlashadigan bir turdagi organizmlar guruhidir.",
+        "options": [
+            {"label": "A", "text": "Turli turlarning guruxi", "is_correct": false},
+            {"label": "B", "text": "Bir turdagi organizmlar guruxi", "is_correct": true},
+            {"label": "C", "text": "Ekotizimning butun qismi", "is_correct": false},
+            {"label": "D", "text": "Faqat o‘simliklar guruxi", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Hujayra bo‘linishida mitozning asosiy maqsadi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Mitoz hujayra bo‘linishi orqali organizmning o‘sishi va to‘qimalarni yangilanishini ta’minlaydi, genetik jihatdan bir xil ikkita hujayra hosil qiladi.",
+        "options": [
+            {"label": "A", "text": "Gameta hosil qilish", "is_correct": false},
+            {"label": "B", "text": "O‘sish va yangilanish", "is_correct": true},
+            {"label": "C", "text": "Energiya ishlab chiqarish", "is_correct": false},
+            {"label": "D", "text": "Mutatsiya hosil qilish", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nerv tizimida signalni uzatuvchi kimyoviy modda nima deb ataladi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Nerv tizimida signalni neyronlar orasida uzatuvchi kimyoviy moddalar neyrotransmitterlar deb ataladi, masalan, asetilxolin yoki dopamin.",
+        "options": [
+            {"label": "A", "text": "Gormonlar", "is_correct": false},
+            {"label": "B", "text": "Neyrotransmitterlar", "is_correct": true},
+            {"label": "C", "text": "Fermentlar", "is_correct": false},
+            {"label": "D", "text": "Antitellar", "is_correct": false}
+        ]
+    },
+    {
+        "text": "O‘simliklarda transpiratsiya jarayoni nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Transpiratsiya – o‘simliklarning barglaridagi stomalar orqali suv bug‘ini yo‘qotish jarayonidir, bu suv harakatini ta’minlaydi.",
+        "options": [
+            {"label": "A", "text": "Fotosintez jarayoni", "is_correct": false},
+            {"label": "B", "text": "Suv bug‘ini yo‘qotish", "is_correct": true},
+            {"label": "C", "text": "Ozuqa moddalar sintezi", "is_correct": false},
+            {"label": "D", "text": "Hujayra bo‘linishi", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Evolyutsiyada Lamarck nazariyasining asosiy g‘oyasi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Lamarck nazariyasiga ko‘ra, organizmlar hayoti davomida orttirgan belgilari irsiy yo‘l bilan avlodlarga o‘tadi.",
+        "options": [
+            {"label": "A", "text": "Tabiiy tanlanish", "is_correct": false},
+            {"label": "B", "text": "Orttirilgan belgilarni irsiy uzatish", "is_correct": true},
+            {"label": "C", "text": "Genetik drift", "is_correct": false},
+            {"label": "D", "text": "Mutatsiya", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Qaysi organoida oqsillar sintezi amalga oshiriladi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Oqsillar sintezi ribosomalar tomonidan amalga oshiriladi, ular mRNKdan o‘qilgan axborot asosida oqsillarni yig‘adi.",
+        "options": [
+            {"label": "A", "text": "Mitoxondriya", "is_correct": false},
+            {"label": "B", "text": "Ribosomalar", "is_correct": true},
+            {"label": "C", "text": "Golji apparati", "is_correct": false},
+            {"label": "D", "text": "Lizosomalar", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Insonning qonida kislorodni tashuvchi oqsil nima deb ataladi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Gemoglobin qonning qizil hujayralarida joylashgan bo‘lib, kislorodni tanaga tashish vazifasini bajaradi.",
+        "options": [
+            {"label": "A", "text": "Albumin", "is_correct": false},
+            {"label": "B", "text": "Gemoglobin", "is_correct": true},
+            {"label": "C", "text": "Fibrinogen", "is_correct": false},
+            {"label": "D", "text": "Keratin", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Bakteriyalarda genetik material qayerda joylashgan? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Bakteriyalarda genetik material (DNK) sitoplazmada, nukleoid deb ataluvchi maxsus hududda joylashgan.",
+        "options": [
+            {"label": "A", "text": "Yadroda", "is_correct": false},
+            {"label": "B", "text": "Nukleoidda", "is_correct": true},
+            {"label": "C", "text": "Mitoxondriyada", "is_correct": false},
+            {"label": "D", "text": "Ribosomada", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Ekologiyada biomassa piramidasining asosini nima tashkil qiladi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Biomassa piramidasining asosini prodyuserlar (o‘simliklar) tashkil qiladi, chunki ular organik moddalarni ishlab chiqaradi.",
+        "options": [
+            {"label": "A", "text": "Iste’molchilar", "is_correct": false},
+            {"label": "B", "text": "Prodyuserlar", "is_correct": true},
+            {"label": "C", "text": "Redutsentlar", "is_correct": false},
+            {"label": "D", "text": "Apex yirtqichlar", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Agar organizmning genotipi AABB bo‘lsa, nechta turdagi gameta hosil bo‘ladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "AABB genotipi gomozigot bo‘lib, faqat bitta turdagi gameta (AB) hosil qiladi, chunki genlar mustaqil bo‘lsa ham, geterozigotlik yo‘q.",
+        "options": [
+            {"label": "A", "text": "1", "is_correct": true},
+            {"label": "B", "text": "2", "is_correct": false},
+            {"label": "C", "text": "4", "is_correct": false},
+            {"label": "D", "text": "8", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fotosintezning yorug‘lik fazasida qaysi molekula hosil bo‘ladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Fotosintezning yorug‘lik fazasida yorug‘lik energiyasi yordamida ATP va NADPH molekulalari hosil bo‘ladi, ular Kalvin tsiklida ishlatiladi.",
+        "options": [
+            {"label": "A", "text": "Glikoz", "is_correct": false},
+            {"label": "B", "text": "ATP va NADPH", "is_correct": true},
+            {"label": "C", "text": "CO₂", "is_correct": false},
+            {"label": "D", "text": "H₂O", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Agar ikkita geterozigot organizm (AaBb x AaBb) chatishtirilsa, dominant fenotipdagi avlodlar ulushi qancha? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Ikki gen bo‘yicha geterozigot chatishtirilganda dominant fenotip nisbati 9:3:3:1 bo‘ladi. Dominant fenotip (kamida bitta A yoki B) 9/16 = 56.25%.",
+        "options": [
+            {"label": "A", "text": "25%", "is_correct": false},
+            {"label": "B", "text": "56.25%", "is_correct": true},
+            {"label": "C", "text": "75%", "is_correct": false},
+            {"label": "D", "text": "100%", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Translyatsiya jarayoni qayerda amalga oshiriladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Translyatsiya ribosomalar tomonidan sitoplazmada yoki endoplazmatik retikulumda amalga oshiriladi, bu jarayonda mRNKdan oqsillar sintezlanadi.",
+        "options": [
+            {"label": "A", "text": "Yadroda", "is_correct": false},
+            {"label": "B", "text": "Ribosomada", "is_correct": true},
+            {"label": "C", "text": "Mitoxondriyada", "is_correct": false},
+            {"label": "D", "text": "Golji apparatida", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Hardi-Vaynberg muvozanatida populyatsiyada allel chastotalari qanday saqlanadi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Hardi-Vaynberg muvozanatida allel chastotalari doimiy bo‘lib, tabiiy tanlanish, mutatsiya, genetik drift va migratsiya bo‘lmaganda saqlanadi.",
+        "options": [
+            {"label": "A", "text": "Tabiiy tanlanish orqali", "is_correct": false},
+            {"label": "B", "text": "Doimiy saqlanadi", "is_correct": true},
+            {"label": "C", "text": "Mutatsiya orqali", "is_correct": false},
+            {"label": "D", "text": "Gen oqimi orqali", "is_correct": false}
+        ]
+    },
+    {
+        "text": "O‘roqsimon hujayra anemiyasi qanday mutatsiya natijasida yuzaga keladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "O‘roqsimon hujayra anemiyasi nuqta mutatsiyasi natijasida yuzaga keladi, bu gemoglobin genidagi bitta nukleotid almashishi tufayli ro‘y beradi.",
+        "options": [
+            {"label": "A", "text": "Deletsiya", "is_correct": false},
+            {"label": "B", "text": "Nuqta mutatsiyasi", "is_correct": true},
+            {"label": "C", "text": "Inserciya", "is_correct": false},
+            {"label": "D", "text": "Translokatsiya", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Ekologik piramidada energiya o‘tishi qanday foizda bo‘ladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Ekologik piramidada energiyaning taxminan 10% keyingi trofik darajaga o‘tadi, qolgan qismi issiqlik sifatida yo‘qotiladi.",
+        "options": [
+            {"label": "A", "text": "10%", "is_correct": true},
+            {"label": "B", "text": "50%", "is_correct": false},
+            {"label": "C", "text": "25%", "is_correct": false},
+            {"label": "D", "text": "75%", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Agar organizmda xromosomalar soni 2n = 38 bo‘lsa, gametalarida nechta xromosoma bo‘ladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Gametalarda xromosomalar soni haploid (n) bo‘lib, diploid sonning yarmi, ya’ni 2n = 38 bo‘lsa, n = 19 xromosoma bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "19", "is_correct": true},
+            {"label": "B", "text": "38", "is_correct": false},
+            {"label": "C", "text": "76", "is_correct": false},
+            {"label": "D", "text": "9", "is_correct": false}
+        ]
+    },
+    {
+        "text": "O‘simliklarda auksin gormoni qanday vazifani bajaradi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Auksin gormoni o‘simliklarda hujayra cho‘zilishini va poya o‘sishini rag‘batlantiradi, shuningdek, fototropizm va gravitropizmda ishtirok etadi.",
+        "options": [
+            {"label": "A", "text": "Urug‘ unib chiqishini tezlashtirish", "is_correct": false},
+            {"label": "B", "text": "Hujayra cho‘zilishi va o‘sish", "is_correct": true},
+            {"label": "C", "text": "Fotosintezni tezlashtirish", "is_correct": false},
+            {"label": "D", "text": "Hujayra bo‘linishini to‘xtatish", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Agar populyatsiyada resessiv allel chastotasi 0.3 bo‘lsa, geterozigotlar chastotasi qancha? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Resessiv allel chastotasi q = 0.3, shuning uchun dominant allel p = 1 - 0.3 = 0.7. Geterozigotlar chastotasi 2pq = 2 * 0.7 * 0.3 = 0.42 yoki 42%.",
+        "options": [
+            {"label": "A", "text": "42%", "is_correct": true},
+            {"label": "B", "text": "9%", "is_correct": false},
+            {"label": "C", "text": "49%", "is_correct": false},
+            {"label": "D", "text": "21%", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Lizosomalar hujayrada qanday vazifani bajaradi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Lizosomalar hujayradagi keraksiz moddalarni yoki shikastlangan organoidlarni hazm qilish va yo‘q qilish vazifasini bajaradi.",
+        "options": [
+            {"label": "A", "text": "Oqsillar sintezi", "is_correct": false},
+            {"label": "B", "text": "Moddalarni hazm qilish", "is_correct": true},
+            {"label": "C", "text": "Energiya ishlab chiqarish", "is_correct": false},
+            {"label": "D", "text": "DNK replikatsiyasi", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fotosintezning Kalvin tsiklida qaysi ferment CO₂ ni bog‘laydi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Kalvin tsiklida CO₂ ni bog‘lashda RuBisCO (ribuloza-1,5-bisfosfat karboksilaza/oksigenaza) fermenti ishtirok etadi.",
+        "options": [
+            {"label": "A", "text": "Pepsin", "is_correct": false},
+            {"label": "B", "text": "RuBisCO", "is_correct": true},
+            {"label": "C", "text": "Amilaza", "is_correct": false},
+            {"label": "D", "text": "Lipaza", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Meioz jarayonida xromosomalar soni qanday o‘zgaradi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Meioz jarayonida diploid hujayradan (2n) haploid hujayralar (n) hosil bo‘ladi, ya’ni xromosomalar soni yarmiga kamayadi.",
+        "options": [
+            {"label": "A", "text": "Ikki baravar ko‘payadi", "is_correct": false},
+            {"label": "B", "text": "Yarmiga kamayadi", "is_correct": true},
+            {"label": "C", "text": "O‘zgarmaydi", "is_correct": false},
+            {"label": "D", "text": "To‘rt baravar ko‘payadi", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Ekologiyada keystone turlari nima? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Keystone turlari ekotizimda muhim rol o‘ynaydi, ularning yo‘qolishi ekotizim muvozanatini keskin o‘zgartiradi.",
+        "options": [
+            {"label": "A", "text": "Eng ko‘p tarqalgan turlar", "is_correct": false},
+            {"label": "B", "text": "Ekotizim muvozanatida muhim turlar", "is_correct": true},
+            {"label": "C", "text": "Faqat o‘simlik turlari", "is_correct": false},
+            {"label": "D", "text": "Kichik populyatsiyali turlar", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Agar genotipi AaBbCc bo‘lgan organizmda gametalarning nechta turi hosil bo‘ladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Gametalarning turlari soni 2ⁿ formulasi bilan hisoblanadi, bu erda n = 3 (Aa, Bb, Cc). Shuning uchun 2³ = 8 ta gameta hosil bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "4", "is_correct": false},
+            {"label": "B", "text": "8", "is_correct": true},
+            {"label": "C", "text": "16", "is_correct": false},
+            {"label": "D", "text": "2", "is_correct": false}
+        ]
+    }
+]

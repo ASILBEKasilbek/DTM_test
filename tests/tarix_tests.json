@@ -1,0 +1,332 @@
+[
+    {
+        "text": "Who was the first Emperor of the Roman Empire? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Augustus, originally named Octavian, became the first Roman Emperor in 27 BCE after defeating Mark Antony.",
+        "options": [
+            {"label": "A", "text": "Julius Caesar", "is_correct": false},
+            {"label": "B", "text": "Augustus", "is_correct": true},
+            {"label": "C", "text": "Nero", "is_correct": false},
+            {"label": "D", "text": "Constantine", "is_correct": false}
+        ]
+    },
+    {
+        "text": "In which year did Christopher Columbus first reach the Americas? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Columbus landed in the Americas, specifically the Caribbean, in 1492 during his first voyage.",
+        "options": [
+            {"label": "A", "text": "1453", "is_correct": false},
+            {"label": "B", "text": "1492", "is_correct": true},
+            {"label": "C", "text": "1519", "is_correct": false},
+            {"label": "D", "text": "1607", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which event sparked the beginning of World War I? (Medium)",
+        "difficulty": "medium",
+        "explanation": "The assassination of Archduke Franz Ferdinand of Austria-Hungary in 1914 triggered a chain of events leading to World War I.",
+        "options": [
+            {"label": "A", "text": "Sinking of the Lusitania", "is_correct": false},
+            {"label": "B", "text": "Assassination of Franz Ferdinand", "is_correct": true},
+            {"label": "C", "text": "Russian Revolution", "is_correct": false},
+            {"label": "D", "text": "Treaty of Versailles", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Who led the Bolshevik Revolution in Russia in 1917? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Vladimir Lenin was the leader of the Bolsheviks, who overthrew the Russian Provisional Government in 1917.",
+        "options": [
+            {"label": "A", "text": "Joseph Stalin", "is_correct": false},
+            {"label": "B", "text": "Vladimir Lenin", "is_correct": true},
+            {"label": "C", "text": "Leon Trotsky", "is_correct": false},
+            {"label": "D", "text": "Nicholas II", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which ancient civilization built the pyramids of Giza? (Medium)",
+        "difficulty": "medium",
+        "explanation": "The ancient Egyptians constructed the pyramids of Giza around 2630–2500 BCE as tombs for pharaohs.",
+        "options": [
+            {"label": "A", "text": "Mesopotamians", "is_correct": false},
+            {"label": "B", "text": "Egyptians", "is_correct": true},
+            {"label": "C", "text": "Mayans", "is_correct": false},
+            {"label": "D", "text": "Incas", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What was the primary cause of the French Revolution (1789–1799)? (Hard)",
+        "difficulty": "hard",
+        "explanation": "Social inequalities, economic crises, and Enlightenment ideas fueled discontent with the monarchy, leading to the revolution.",
+        "options": [
+            {"label": "A", "text": "Foreign invasion", "is_correct": false},
+            {"label": "B", "text": "Social inequalities", "is_correct": true},
+            {"label": "C", "text": "Religious conflicts", "is_correct": false},
+            {"label": "D", "text": "Colonial expansion", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which treaty ended the Thirty Years’ War in 1648? (Hard)",
+        "difficulty": "hard",
+        "explanation": "The Peace of Westphalia, signed in 1648, ended the Thirty Years’ War and reshaped European political boundaries.",
+        "options": [
+            {"label": "A", "text": "Treaty of Versailles", "is_correct": false},
+            {"label": "B", "text": "Peace of Westphalia", "is_correct": true},
+            {"label": "C", "text": "Treaty of Tordesillas", "is_correct": false},
+            {"label": "D", "text": "Treaty of Utrecht", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Who was the first woman to win a Nobel Prize? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Marie Curie won the Nobel Prize in Physics in 1903 and Chemistry in 1911 for her work on radioactivity.",
+        "options": [
+            {"label": "A", "text": "Jane Addams", "is_correct": false},
+            {"label": "B", "text": "Marie Curie", "is_correct": true},
+            {"label": "C", "text": "Mother Teresa", "is_correct": false},
+            {"label": "D", "text": "Ada Lovelace", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which empire was known as the 'Sick Man of Europe' in the 19th century? (Hard)",
+        "difficulty": "hard",
+        "explanation": "The Ottoman Empire was called the 'Sick Man of Europe' due to its declining power and territorial losses.",
+        "options": [
+            {"label": "A", "text": "Austro-Hungarian Empire", "is_correct": false},
+            {"label": "B", "text": "Ottoman Empire", "is_correct": true},
+            {"label": "C", "text": "Russian Empire", "is_correct": false},
+            {"label": "D", "text": "British Empire", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What was the main purpose of the Marshall Plan after World War II? (Medium)",
+        "difficulty": "medium",
+        "explanation": "The Marshall Plan (1948–1952) provided U.S. financial aid to rebuild Western European economies after World War II.",
+        "options": [
+            {"label": "A", "text": "Military defense", "is_correct": false},
+            {"label": "B", "text": "Economic recovery", "is_correct": true},
+            {"label": "C", "text": "Colonial expansion", "is_correct": false},
+            {"label": "D", "text": "Space exploration", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which ancient Greek philosopher was the teacher of Alexander the Great? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Aristotle tutored Alexander the Great, influencing his education in philosophy and science.",
+        "options": [
+            {"label": "A", "text": "Socrates", "is_correct": false},
+            {"label": "B", "text": "Aristotle", "is_correct": true},
+            {"label": "C", "text": "Plato", "is_correct": false},
+            {"label": "D", "text": "Pythagoras", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What was the primary cause of the American Civil War (1861–1865)? (Medium)",
+        "difficulty": "medium",
+        "explanation": "The main cause was disputes over slavery, particularly its expansion into new territories.",
+        "options": [
+            {"label": "A", "text": "Tax disputes", "is_correct": false},
+            {"label": "B", "text": "Slavery", "is_correct": true},
+            {"label": "C", "text": "Trade tariffs", "is_correct": false},
+            {"label": "D", "text": "Foreign policy", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which event marked the beginning of the Protestant Reformation? (Hard)",
+        "difficulty": "hard",
+        "explanation": "Martin Luther’s posting of the 95 Theses in 1517 challenged the Catholic Church’s practices, sparking the Reformation.",
+        "options": [
+            {"label": "A", "text": "Council of Trent", "is_correct": false},
+            {"label": "B", "text": "95 Theses", "is_correct": true},
+            {"label": "C", "text": "Edict of Nantes", "is_correct": false},
+            {"label": "D", "text": "Peace of Augsburg", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Who was the leader of the Indian independence movement against British rule? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Mahatma Gandhi led the nonviolent resistance movement, achieving India’s independence in 1947.",
+        "options": [
+            {"label": "A", "text": "Jawaharlal Nehru", "is_correct": false},
+            {"label": "B", "text": "Mahatma Gandhi", "is_correct": true},
+            {"label": "C", "text": "Subhas Chandra Bose", "is_correct": false},
+            {"label": "D", "text": "Bhagat Singh", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which dynasty ruled China during the construction of the Great Wall’s major sections? (Hard)",
+        "difficulty": "hard",
+        "explanation": "The Ming Dynasty (1368–1644) built most of the Great Wall’s surviving stone sections.",
+        "options": [
+            {"label": "A", "text": "Han Dynasty", "is_correct": false},
+            {"label": "B", "text": "Ming Dynasty", "is_correct": true},
+            {"label": "C", "text": "Qing Dynasty", "is_correct": false},
+            {"label": "D", "text": "Tang Dynasty", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What was the name of the ship that carried the Pilgrims to America in 1620? (Medium)",
+        "difficulty": "medium",
+        "explanation": "The Mayflower carried the Pilgrims to what is now Massachusetts, establishing the Plymouth Colony.",
+        "options": [
+            {"label": "A", "text": "Santa Maria", "is_correct": false},
+            {"label": "B", "text": "Mayflower", "is_correct": true},
+            {"label": "C", "text": "Nina", "is_correct": false},
+            {"label": "D", "text": "Endeavour", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which battle in 1066 led to the Norman conquest of England? (Medium)",
+        "difficulty": "medium",
+        "explanation": "The Battle of Hastings in 1066 resulted in William the Conqueror’s victory and the Norman conquest.",
+        "options": [
+            {"label": "A", "text": "Battle of Agincourt", "is_correct": false},
+            {"label": "B", "text": "Battle of Hastings", "is_correct": true},
+            {"label": "C", "text": "Battle of Waterloo", "is_correct": false},
+            {"label": "D", "text": "Battle of Bannockburn", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What was the primary goal of the Crusades (11th–13th centuries)? (Medium)",
+        "difficulty": "medium",
+        "explanation": "The Crusades aimed to recapture Jerusalem and the Holy Land from Muslim control.",
+        "options": [
+            {"label": "A", "text": "Expand trade routes", "is_correct": false},
+            {"label": "B", "text": "Recapture Jerusalem", "is_correct": true},
+            {"label": "C", "text": "Promote democracy", "is_correct": false},
+            {"label": "D", "text": "End feudalism", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which country was the first to grant women the right to vote? (Hard)",
+        "difficulty": "hard",
+        "explanation": "New Zealand granted women suffrage in 1893, the first country to do so.",
+        "options": [
+            {"label": "A", "text": "United States", "is_correct": false},
+            {"label": "B", "text": "New Zealand", "is_correct": true},
+            {"label": "C", "text": "United Kingdom", "is_correct": false},
+            {"label": "D", "text": "Sweden", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Who was the Egyptian queen who allied with Mark Antony? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Cleopatra VII allied with Mark Antony to strengthen Egypt’s position against Rome.",
+        "options": [
+            {"label": "A", "text": "Nefertiti", "is_correct": false},
+            {"label": "B", "text": "Cleopatra", "is_correct": true},
+            {"label": "C", "text": "Hatshepsut", "is_correct": false},
+            {"label": "D", "text": "Ankhesenamun", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What was the main purpose of the League of Nations, established in 1920? (Hard)",
+        "difficulty": "hard",
+        "explanation": "The League of Nations was created to maintain world peace and prevent future global conflicts after World War I.",
+        "options": [
+            {"label": "A", "text": "Economic development", "is_correct": false},
+            {"label": "B", "text": "World peace", "is_correct": true},
+            {"label": "C", "text": "Colonial expansion", "is_correct": false},
+            {"label": "D", "text": "Scientific research", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which explorer circumnavigated the globe in 1519–1522? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Ferdinand Magellan led the first expedition that circumnavigated the Earth, though he died during the journey.",
+        "options": [
+            {"label": "A", "text": "Vasco da Gama", "is_correct": false},
+            {"label": "B", "text": "Ferdinand Magellan", "is_correct": true},
+            {"label": "C", "text": "Marco Polo", "is_correct": false},
+            {"label": "D", "text": "Francis Drake", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What was the name of the 1215 English document limiting the king’s power? (Medium)",
+        "difficulty": "medium",
+        "explanation": "The Magna Carta, signed in 1215, established limits on royal authority and influenced modern constitutional law.",
+        "options": [
+            {"label": "A", "text": "Bill of Rights", "is_correct": false},
+            {"label": "B", "text": "Magna Carta", "is_correct": true},
+            {"label": "C", "text": "Petition of Right", "is_correct": false},
+            {"label": "D", "text": "Charter of Liberties", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which war was fought between Athens and Sparta from 431–404 BCE? (Hard)",
+        "difficulty": "hard",
+        "explanation": "The Peloponnesian War was fought between Athens and Sparta, ending with Sparta’s victory.",
+        "options": [
+            {"label": "A", "text": "Trojan War", "is_correct": false},
+            {"label": "B", "text": "Peloponnesian War", "is_correct": true},
+            {"label": "C", "text": "Persian War", "is_correct": false},
+            {"label": "D", "text": "Punic War", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Who was the first president of the United States? (Medium)",
+        "difficulty": "medium",
+        "explanation": "George Washington served as the first U.S. president from 1789 to 1797.",
+        "options": [
+            {"label": "A", "text": "Thomas Jefferson", "is_correct": false},
+            {"label": "B", "text": "George Washington", "is_correct": true},
+            {"label": "C", "text": "Abraham Lincoln", "is_correct": false},
+            {"label": "D", "text": "John Adams", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which event ended World War II in Europe? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Germany’s surrender in May 1945, known as VE Day, marked the end of World War II in Europe.",
+        "options": [
+            {"label": "A", "text": "D-Day", "is_correct": false},
+            {"label": "B", "text": "Germany’s surrender", "is_correct": true},
+            {"label": "C", "text": "Battle of Stalingrad", "is_correct": false},
+            {"label": "D", "text": "Hiroshima bombing", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which Mesoamerican civilization is known for its stepped pyramids? (Hard)",
+        "difficulty": "hard",
+        "explanation": "The Maya civilization built stepped pyramids, such as those at Chichen Itza and Tikal.",
+        "options": [
+            {"label": "A", "text": "Aztec", "is_correct": false},
+            {"label": "B", "text": "Maya", "is_correct": true},
+            {"label": "C", "text": "Inca", "is_correct": false},
+            {"label": "D", "text": "Olmec", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What was the primary trade route connecting Europe and Asia in the Middle Ages? (Medium)",
+        "difficulty": "medium",
+        "explanation": "The Silk Road was a network of trade routes linking Europe, Asia, and Africa, used for centuries.",
+        "options": [
+            {"label": "A", "text": "Spice Route", "is_correct": false},
+            {"label": "B", "text": "Silk Road", "is_correct": true},
+            {"label": "C", "text": "Amber Road", "is_correct": false},
+            {"label": "D", "text": "Salt Route", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Who was the leader of Nazi Germany during World War II? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Adolf Hitler was the dictator of Nazi Germany from 1933 to 1945, leading the country during World War II.",
+        "options": [
+            {"label": "A", "text": "Heinrich Himmler", "is_correct": false},
+            {"label": "B", "text": "Adolf Hitler", "is_correct": true},
+            {"label": "C", "text": "Benito Mussolini", "is_correct": false},
+            {"label": "D", "text": "Joseph Goebbels", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which agreement in 1945 divided Germany into occupation zones? (Hard)",
+        "difficulty": "hard",
+        "explanation": "The Potsdam Agreement, signed in 1945, divided Germany into four zones controlled by the Allies.",
+        "options": [
+            {"label": "A", "text": "Yalta Agreement", "is_correct": false},
+            {"label": "B", "text": "Potsdam Agreement", "is_correct": true},
+            {"label": "C", "text": "Treaty of Versailles", "is_correct": false},
+            {"label": "D", "text": "Munich Agreement", "is_correct": false}
+        ]
+    }
+]

@@ -32,8 +32,8 @@ from django.contrib.admin.views.decorators import staff_member_required
 @staff_member_required
 def testlarni_yuklash_view(request):
     # Agar biron bir fan uchun savollar mavjud bo‘lsa, yuklashni to‘xtatamiz
-    if Question.objects.exists():
-        return HttpResponse("⚠️ Testlar allaqachon yuklangan.")
+    # if Question.objects.exists():
+    #     return HttpResponse("⚠️ Testlar allaqachon yuklangan.")
     try:
         yukla_testlar()
         return HttpResponse("✅ Barcha fanlar bo‘yicha testlar muvaffaqiyatli yuklandi.")

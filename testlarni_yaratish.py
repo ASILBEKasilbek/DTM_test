@@ -6,18 +6,18 @@ from app.models import Subject, Topic, Question, AnswerOption
 def yukla_testlar():
     # Fanlar va ularga mos JSON fayllar ro‘yxati
     fanlar = {
-        "Matematika": "tests/matematika_tests.json",
-        "Adabiyot": "tests/adabiyot.json",
-        # "Biologiya": "tests/biologiya_tests.json",
-        # "Fizika": "tests/fizika_tests.json",
-        # "Geografiya": "tests/geografiya_tests.json",
-        # "Ingliz tili": "tests/ingliz_tili_tests.json",
-        # "Kimyo": "tests/kimyo_tests.json",
-        # "Nemis tili": "tests/nemis_tili_tests.json",
-        # "Fransuz tili": "tests/fransuz_tili_tests.json",
-        # "Ona tili": "tests/ona_tili_tests.json",
-        # "Dari": "tests/dari_tests.json",
-        # "Tarix": "tests/tarix_tests.json",
+        # "Matematika": "tests/matematika_tests.json",
+        # "Adabiyot": "tests/adabiyot.json",
+        "Biologiya": "tests/biologiya_tests.json",
+        "Fizika": "tests/fizika_tests.json",
+        "Geografiya": "tests/geografiya_tests.json",
+        "Ingliz tili": "tests/ingliz_tili_tests.json",
+        "Kimyo": "tests/kimyo_tests.json",
+        "Nemis tili": "tests/nemis_tili_tests.json",
+        "Fransuz tili": "tests/fransuz_tili_tests.json",
+        "Ona tili": "tests/ona_tili_tests.json",
+        "Dari": "tests/dari_tests.json",
+        "Tarix": "tests/tarix_tests.json",
     }
 
     for fan_nomi, fayl_yoli in fanlar.items():

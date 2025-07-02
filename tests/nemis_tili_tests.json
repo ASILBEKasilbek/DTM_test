@@ -1,0 +1,332 @@
+[
+    {
+        "text": "Nemis tilida 'Guten Morgen' so‘zi qanday ma’noni anglatadi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "'Guten Morgen' nemis tilida 'Xayrli tong' ma’nosini anglatadi va ertalab salomlashish uchun ishlatiladi.",
+        "options": [
+            {"label": "A", "text": "Xayrli kun", "is_correct": false},
+            {"label": "B", "text": "Xayrli tong", "is_correct": true},
+            {"label": "C", "text": "Rahmat", "is_correct": false},
+            {"label": "D", "text": "Xayr", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida 'Buch' so‘zi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "'Buch' nemis tilida 'kitob' ma’nosini anglatadi.",
+        "options": [
+            {"label": "A", "text": "Stol", "is_correct": false},
+            {"label": "B", "text": "Kitob", "is_correct": true},
+            {"label": "C", "text": "Qalam", "is_correct": false},
+            {"label": "D", "text": "Daftar", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida artikllar qanday turlarga bo‘linadi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Nemis tilida artikllar aniq (der, die, das) va noaniq (ein, eine) bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "Faqat aniq", "is_correct": false},
+            {"label": "B", "text": "Aniq va noaniq", "is_correct": true},
+            {"label": "C", "text": "Faqat noaniq", "is_correct": false},
+            {"label": "D", "text": "Artikl yo‘q", "is_correct": false}
+        ]
+    },
+    {
+        "text": "‘Ich bin’ iborasining to‘g‘ri tarjimasi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Ich bin’ nemis tilida ‘Menman’ yoki ‘Men ...man’ (masalan, Men talabaman) ma’nosini anglatadi.",
+        "options": [
+            {"label": "A", "text": "Sen", "is_correct": false},
+            {"label": "B", "text": "Menman", "is_correct": true},
+            {"label": "C", "text": "U", "is_correct": false},
+            {"label": "D", "text": "Biz", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida sonlar qanday yoziladi: 20? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Nemis tilida 20 soni ‘zwanzig’ deb yoziladi va talaffuz qilinadi.",
+        "options": [
+            {"label": "A", "text": "Zehn", "is_correct": false},
+            {"label": "B", "text": "Zwanzig", "is_correct": true},
+            {"label": "C", "text": "Dreißig", "is_correct": false},
+            {"label": "D", "text": "Vierzig", "is_correct": false}
+        ]
+    },
+    {
+        "text": "‘Danke’ so‘zining ma’nosi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Danke’ nemis tilida ‘Rahmat’ ma’nosini anglatadi va minnatdorchilik bildirish uchun ishlatiladi.",
+        "options": [
+            {"label": "A", "text": "Kechirasiz", "is_correct": false},
+            {"label": "B", "text": "Rahmat", "is_correct": true},
+            {"label": "C", "text": "Iltimos", "is_correct": false},
+            {"label": "D", "text": "Salom", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida ‘Frau’ so‘zi qanday jinsga ega? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Frau’ so‘zi ayol jinsini (feminin) ifodalaydi va ‘die’ artikli bilan ishlatiladi (die Frau).",
+        "options": [
+            {"label": "A", "text": "Erkak (maskulin)", "is_correct": false},
+            {"label": "B", "text": "Ayol (feminin)", "is_correct": true},
+            {"label": "C", "text": "Neuter", "is_correct": false},
+            {"label": "D", "text": "Hech qanday jins yo‘q", "is_correct": false}
+        ]
+    },
+    {
+        "text": "‘Gehen’ fe’lining hozirgi zamondagi birinchi shaxs shakli qanday? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Gehen’ fe’li hozirgi zamonda birinchi shaxs uchun ‘ich gehe’ shaklida ishlatiladi.",
+        "options": [
+            {"label": "A", "text": "Ich bin", "is_correct": false},
+            {"label": "B", "text": "Ich gehe", "is_correct": true},
+            {"label": "C", "text": "Ich mache", "is_correct": false},
+            {"label": "D", "text": "Ich habe", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida ‘Tschüss’ so‘zining ma’nosi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Tschüss’ nemis tilida ‘Xayr’ yoki ‘Ko‘rishguncha’ ma’nosini anglatadi va norasmiy xayrlashish uchun ishlatiladi.",
+        "options": [
+            {"label": "A", "text": "Salom", "is_correct": false},
+            {"label": "B", "text": "Xayr", "is_correct": true},
+            {"label": "C", "text": "Rahmat", "is_correct": false},
+            {"label": "D", "text": "Iltimos", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida ‘das Wochenende’ qachon ishlatiladi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Das Wochenende’ nemis tilida ‘hafta oxiri’ yoki ‘dam olish kunlari’ ma’nosini anglatadi va shanba-yakshanbani nazarda tutadi.",
+        "options": [
+            {"label": "A", "text": "Ish kunlari", "is_correct": false},
+            {"label": "B", "text": "Hafta oxiri", "is_correct": true},
+            {"label": "C", "text": "O‘quv haftasi", "is_correct": false},
+            {"label": "D", "text": "Bayram kunlari", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida ‘haben’ fe’lining ma’nosi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Haben’ fe’li nemis tilida ‘ega bo‘lmoq’ yoki ‘bor’ ma’nosini anglatadi, masalan, ‘Ich habe ein Buch’ – ‘Menda kitob bor’.",
+        "options": [
+            {"label": "A", "text": "Borish", "is_correct": false},
+            {"label": "B", "text": "Ega bo‘lmoq", "is_correct": true},
+            {"label": "C", "text": "Qilmoq", "is_correct": false},
+            {"label": "D", "text": "Bilmoq", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida ‘Haus’ so‘zi qanday jinsga ega? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Haus’ so‘zi neytral jinsga (neutrum) ega bo‘lib, ‘das’ artikli bilan ishlatiladi (das Haus).",
+        "options": [
+            {"label": "A", "text": "Erkak (maskulin)", "is_correct": false},
+            {"label": "B", "text": "Ayol (feminin)", "is_correct": false},
+            {"label": "C", "text": "Neutra (neutrum)", "is_correct": true},
+            {"label": "D", "text": "Jins yo‘q", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida ‘bitte’ so‘zining ma’nosi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Bitte’ nemis tilida ‘Iltimos’ ma’nosini anglatadi va so‘rov yoki iltimos bildirishda ishlatiladi.",
+        "options": [
+            {"label": "A", "text": "Rahmat", "is_correct": false},
+            {"label": "B", "text": "Iltimos", "is_correct": true},
+            {"label": "C", "text": "Kechirasiz", "is_correct": false},
+            {"label": "D", "text": "Xayr", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida sonlar qanday yoziladi: 50? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Nemis tilida 50 soni ‘fünfzig’ deb yoziladi.",
+        "options": [
+            {"label": "A", "text": "Vierzig", "is_correct": false},
+            {"label": "B", "text": "Fünfzig", "is_correct": true},
+            {"label": "C", "text": "Sechzig", "is_correct": false},
+            {"label": "D", "text": "Siebzig", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida ‘ich esse’ iborasining to‘g‘ri tarjimasi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Ich esse’ nemis tilida ‘Men yeyman’ ma’nosini anglatadi, chunki ‘essen’ fe’li ‘yemoq’ degan ma’noni beradi.",
+        "options": [
+            {"label": "A", "text": "Men ichaman", "is_correct": false},
+            {"label": "B", "text": "Men yeyman", "is_correct": true},
+            {"label": "C", "text": "Men yozaman", "is_correct": false},
+            {"label": "D", "text": "Men o‘qiyman", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida Perfekt zamonini shakllantirishda qaysi fe’llar yordamchi sifatida ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Perfekt zamonida ‘haben’ yoki ‘sein’ fe’llari yordamchi sifatida ishlatiladi, fe’l turiga qarab (masalan, harakat fe’llari ‘sein’ bilan).",
+        "options": [
+            {"label": "A", "text": "Machen va wollen", "is_correct": false},
+            {"label": "B", "text": "Haben va sein", "is_correct": true},
+            {"label": "C", "text": "Gehen va kommen", "is_correct": false},
+            {"label": "D", "text": "Können va müssen", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida ‘man muss’ iborasining ma’nosi nima? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Man muss’ nemis tilida ‘kerak’ yoki ‘zarur’ ma’nosini anglatadi, masalan, ‘Man muss lernen’ – ‘O‘qish kerak’.",
+        "options": [
+            {"label": "A", "text": "Mumkin", "is_correct": false},
+            {"label": "B", "text": "Kerak", "is_correct": true},
+            {"label": "C", "text": "Xohlayman", "is_correct": false},
+            {"label": "D", "text": "Bilaman", "is_correct": false}
+        ]
+    },
+    {
+        "text": "‘Haben’ fe’lining Perfekt zamonidagi uchinchi shaxs shakli qanday? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Haben’ fe’li Perfekt zamonida uchinchi shaxs uchun ‘er/sie/es hat gehabt’ shaklida bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "Er hat gewesen", "is_correct": false},
+            {"label": "B", "text": "Er hat gehabt", "is_correct": true},
+            {"label": "C", "text": "Er war gehabt", "is_correct": false},
+            {"label": "D", "text": "Er hatte gehabt", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida Konjunktiv II zamoni qachon ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Konjunktiv II zamoni shartli holatlarni, taxminlarni yoki muloyim so‘rovlarni ifodalashda ishlatiladi, masalan, ‘Ich würde kommen’.",
+        "options": [
+            {"label": "A", "text": "Faqat o‘tmishni ifodalashda", "is_correct": false},
+            {"label": "B", "text": "Shartli holatlarni ifodalashda", "is_correct": true},
+            {"label": "C", "text": "Faqat kelasi zamonda", "is_correct": false},
+            {"label": "D", "text": "Oddiy holatni ifodalashda", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida ‘der’ va ‘die’ artikllari qanday farqlanadi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Der’ erkak jinsli (maskulin) otlar bilan, ‘die’ esa ayol jinsli (feminin) otlar bilan ishlatiladi, masalan, ‘der Mann’ va ‘die Frau’.",
+        "options": [
+            {"label": "A", "text": "‘Der’ ayol jins, ‘die’ erkak jins", "is_correct": false},
+            {"label": "B", "text": "‘Der’ erkak jins, ‘die’ ayol jins", "is_correct": true},
+            {"label": "C", "text": "Ikkalasi bir xil", "is_correct": false},
+            {"label": "D", "text": "‘Der’ ko‘plik, ‘die’ yalklik", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida sonlar qanday yoziladi: 99? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Nemis tilida 99 soni ‘neunundneunzig’ deb yoziladi (neun = 9, und = va, neunzig = 90).",
+        "options": [
+            {"label": "A", "text": "Achtundneunzig", "is_correct": false},
+            {"label": "B", "text": "Neunundneunzig", "is_correct": true},
+            {"label": "C", "text": "Hundertneun", "is_correct": false},
+            {"label": "D", "text": "Neunzig", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida ‘gehen’ fe’lining Perfekt shakli qanday? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Gehen’ fe’li ‘sein’ yordamchi fe’li bilan Perfekt zamonida ishlatiladi, masalan, ‘ich bin gegangen’.",
+        "options": [
+            {"label": "A", "text": "Ich habe gegangen", "is_correct": false},
+            {"label": "B", "text": "Ich bin gegangen", "is_correct": true},
+            {"label": "C", "text": "Ich war gegangen", "is_correct": false},
+            {"label": "D", "text": "Ich habe gehe", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida ‘seit’ predlogi qanday ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Seit’ predlogi vaqtdan beri davomiylikni ifodalashda ishlatiladi, masalan, ‘Ich wohne seit 2010 hier’ – ‘Men 2010 yildan beri bu yerda yashayman’.",
+        "options": [
+            {"label": "A", "text": "Joyni ifodalashda", "is_correct": false},
+            {"label": "B", "text": "Davomiylikni ifodalashda", "is_correct": true},
+            {"label": "C", "text": "Sebarni ifodalashda", "is_correct": false},
+            {"label": "D", "text": "Miqdorni ifodalashda", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida Konjunktiv I zamoni nima uchun ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Konjunktiv I zamoni bilvosita nutqni yoki boshqa birovning so‘zini yetkazishda ishlatiladi, masalan, ‘Er sagt, er sei krank’.",
+        "options": [
+            {"label": "A", "text": "Shartli holatlarni ifodalashda", "is_correct": false},
+            {"label": "B", "text": "Bilvosita nutqda", "is_correct": true},
+            {"label": "C", "text": "Faqat kelasi zamonda", "is_correct": false},
+            {"label": "D", "text": "Oddiy holatni ifodalashda", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida ‘welcher’ va ‘welche’ so‘roq olmoshlari qanday farqlanadi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Welcher’ erkak jinsli (maskulin) va neytral (neutrum) otlar bilan, ‘welche’ esa ayol jinsli (feminin) otlar bilan ishlatiladi, masalan, ‘Welcher Mann?’ va ‘Welche Frau?’.",
+        "options": [
+            {"label": "A", "text": "‘Welcher’ ayol jins, ‘welche’ erkak jins", "is_correct": false},
+            {"label": "B", "text": "‘Welcher’ erkak va neutrum, ‘welche’ ayol jins", "is_correct": true},
+            {"label": "C", "text": "Ikkalasi bir xil", "is_correct": false},
+            {"label": "D", "text": "‘Welcher’ ko‘plik, ‘welche’ yalklik", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida ‘machen’ fe’lining Konjunktiv II shakli birinchi shaxsda qanday? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Machen’ fe’li Konjunktiv II zamonda birinchi shaxs uchun ‘ich machte’ shaklida bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "Ich mache", "is_correct": false},
+            {"label": "B", "text": "Ich machte", "is_correct": true},
+            {"label": "C", "text": "Ich würde machen", "is_correct": false},
+            {"label": "D", "text": "Ich habe gemacht", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida ‘in’ predlogi qanday ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘In’ predlogi joy, vaqt yoki yo‘nalishni ifodalashda ishlatiladi, masalan, ‘in der Stadt’ (shaharda), ‘in einer Stunde’ (bir soatda).",
+        "options": [
+            {"label": "A", "text": "Faqat vaqtni ifodalashda", "is_correct": false},
+            {"label": "B", "text": "Joy, vaqt va yo‘nalishni ifodalashda", "is_correct": true},
+            {"label": "C", "text": "Faqat joyni ifodalashda", "is_correct": false},
+            {"label": "D", "text": "Sebarni ifodalashda", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida ‘derjenige’ olmoshi qanday ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Derjenige’ (va uning shakllari: diejenige, dasjenige) aniq bir shaxs yoki narsani ko‘rsatish uchun ishlatiladi, masalan, ‘Derjenige, der kommt’.",
+        "options": [
+            {"label": "A", "text": "Umumiy so‘roq sifatida", "is_correct": false},
+            {"label": "B", "text": "Aniq shaxs yoki narsani ko‘rsatishda", "is_correct": true},
+            {"label": "C", "text": "Faqat ko‘plikda", "is_correct": false},
+            {"label": "D", "text": "Vaqtni ifodalashda", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida Präteritum zamoni qachon ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Präteritum zamoni yozma nutqda yoki o‘tmishdagi tugallangan harakatlarni ifodalashda ishlatiladi, masalan, ‘Ich ging’.",
+        "options": [
+            {"label": "A", "text": "Kelasi zamonni ifodalashda", "is_correct": false},
+            {"label": "B", "text": "O‘tmishdagi tugallangan harakatlarda", "is_correct": true},
+            {"label": "C", "text": "Faqat shartli holatlarda", "is_correct": false},
+            {"label": "D", "text": "Davomiy harakatlarda", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Nemis tilida ‘nicht’ inkor so‘zi qanday ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Nicht’ inkor so‘zi fe’lni yoki gapning bir qismini inkor qilish uchun ishlatiladi, masalan, ‘Ich spreche nicht Deutsch’ – ‘Men nemischa gapirmayman’.",
+        "options": [
+            {"label": "A", "text": "Tasdiqlash uchun", "is_correct": false},
+            {"label": "B", "text": "Inkor qilish uchun", "is_correct": true},
+            {"label": "C", "text": "So‘roq shaklida", "is_correct": false},
+            {"label": "D", "text": "Shartli holatlarda", "is_correct": false}
+        ]
+    }
+]

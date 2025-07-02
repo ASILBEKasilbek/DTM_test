@@ -1,0 +1,332 @@
+[
+    {
+        "text": "1 g vodorod gazining (H₂) mol soni nechaga teng? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Vodorod gazining molyar massasi 2 g/mol. 1 g H₂ uchun mol soni: n = m/M = 1/2 = 0.5 mol.",
+        "options": [
+            {"label": "A", "text": "0.25 mol", "is_correct": false},
+            {"label": "B", "text": "0.5 mol", "is_correct": true},
+            {"label": "C", "text": "1 mol", "is_correct": false},
+            {"label": "D", "text": "2 mol", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Karbonat angidrid (CO₂) molekulasining molyar massasi nechaga teng? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "CO₂ molyar massasi: C (12 g/mol) + 2×O (16 g/mol) = 12 + 32 = 44 g/mol.",
+        "options": [
+            {"label": "A", "text": "32 g/mol", "is_correct": false},
+            {"label": "B", "text": "44 g/mol", "is_correct": true},
+            {"label": "C", "text": "48 g/mol", "is_correct": false},
+            {"label": "D", "text": "56 g/mol", "is_correct": false}
+        ]
+    },
+    {
+        "text": "1 mol natriy xlorid (NaCl) necha grammga teng? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "NaCl molyar massasi: Na (23 g/mol) + Cl (35.5 g/mol) = 58.5 g/mol. 1 mol = 58.5 g.",
+        "options": [
+            {"label": "A", "text": "46 g", "is_correct": false},
+            {"label": "B", "text": "58.5 g", "is_correct": true},
+            {"label": "C", "text": "64 g", "is_correct": false},
+            {"label": "D", "text": "72 g", "is_correct": false}
+        ]
+    },
+    {
+        "text": "22.4 litr kislorod gazining (O₂) massasi nechaga teng (standart sharoitda)? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "22.4 l = 1 mol (standart sharoitda). O₂ molyar massasi 32 g/mol. Massasi: 1 × 32 = 32 g.",
+        "options": [
+            {"label": "A", "text": "16 g", "is_correct": false},
+            {"label": "B", "text": "32 g", "is_correct": true},
+            {"label": "C", "text": "44 g", "is_correct": false},
+            {"label": "D", "text": "64 g", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Suvning (H₂O) molekulasidagi kovalent bog‘lar soni nechta? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "H₂O molekulasida 2 ta H-O kovalent bog‘ mavjud.",
+        "options": [
+            {"label": "A", "text": "1", "is_correct": false},
+            {"label": "B", "text": "2", "is_correct": true},
+            {"label": "C", "text": "3", "is_correct": false},
+            {"label": "D", "text": "4", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Kimyoviy reaksiyada 2 mol H₂ va 1 mol O₂ reaksiyaga kirishsa, nechta mol suv (H₂O) hosil bo‘ladi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Reaksiya: 2H₂ + O₂ → 2H₂O. O₂ cheklovchi reaktant, shuning uchun 1 mol O₂ dan 2 mol H₂O hosil bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "1 mol", "is_correct": false},
+            {"label": "B", "text": "2 mol", "is_correct": true},
+            {"label": "C", "text": "3 mol", "is_correct": false},
+            {"label": "D", "text": "4 mol", "is_correct": false}
+        ]
+    },
+    {
+        "text": "pH = 2 bo‘lgan eritmadagi H⁺ ionlarining konsentratsiyasi nechaga teng? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "pH = -log[H⁺]. pH = 2 → [H⁺] = 10⁻² = 0.01 mol/l.",
+        "options": [
+            {"label": "A", "text": "0.001 mol/l", "is_correct": false},
+            {"label": "B", "text": "0.01 mol/l", "is_correct": true},
+            {"label": "C", "text": "0.1 mol/l", "is_correct": false},
+            {"label": "D", "text": "1 mol/l", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Metan (CH₄) molekulasining shakli qanday? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Metan molekulasi tetraedral shaklga ega (sp³ gibridlanish).",
+        "options": [
+            {"label": "A", "text": "Chiziqli", "is_correct": false},
+            {"label": "B", "text": "Tetraedral", "is_correct": true},
+            {"label": "C", "text": "Trigonal", "is_correct": false},
+            {"label": "D", "text": "Oktaedral", "is_correct": false}
+        ]
+    },
+    {
+        "text": "1 mol natriy gidroksid (NaOH) necha gramm o‘z ichiga oladi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "NaOH molyar massasi: Na (23) + O (16) + H (1) = 40 g/mol. 1 mol = 40 g.",
+        "options": [
+            {"label": "A", "text": "32 g", "is_correct": false},
+            {"label": "B", "text": "40 g", "is_correct": true},
+            {"label": "C", "text": "48 g", "is_correct": false},
+            {"label": "D", "text": "56 g", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Alyuminiyning (Al) oksidlanish darajasi Al₂O₃ birikmasida nechaga teng? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Al₂O₃ neytral, O ning oksidlanish darajasi -2. 2Al + 3(-2) = 0 → Al = +3.",
+        "options": [
+            {"label": "A", "text": "+1", "is_correct": false},
+            {"label": "B", "text": "+3", "is_correct": true},
+            {"label": "C", "text": "+2", "is_correct": false},
+            {"label": "D", "text": "+4", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Kalsiy karbonat (CaCO₃) termik parchalanishida qanday moddalar hosil bo‘ladi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "CaCO₃ → CaO + CO₂.",
+        "options": [
+            {"label": "A", "text": "CaO + CO", "is_correct": false},
+            {"label": "B", "text": "CaO + CO₂", "is_correct": true},
+            {"label": "C", "text": "Ca + CO₂", "is_correct": false},
+            {"label": "D", "text": "CaO₂ + C", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Etanol (C₂H₅OH) molekulasida nechta uglerod atomi mavjud? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "C₂H₅OH formulasida 2 ta uglerod atomi mavjud.",
+        "options": [
+            {"label": "A", "text": "1", "is_correct": false},
+            {"label": "B", "text": "2", "is_correct": true},
+            {"label": "C", "text": "3", "is_correct": false},
+            {"label": "D", "text": "4", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Avogadro soni nechaga teng? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Avogadro soni 6.022 × 10²³ zarra/mol.",
+        "options": [
+            {"label": "A", "text": "6.022 × 10²²", "is_correct": false},
+            {"label": "B", "text": "6.022 × 10²³", "is_correct": true},
+            {"label": "C", "text": "6.022 × 10²⁴", "is_correct": false},
+            {"label": "D", "text": "6.022 × 10²⁵", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Kimyoviy bog‘lanishning qaysi turi eng kuchli hisoblanadi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Kovalent bog‘lanish odatda eng kuchli kimyoviy bog‘ hisoblanadi.",
+        "options": [
+            {"label": "A", "text": "Vodorod bog‘i", "is_correct": false},
+            {"label": "B", "text": "Kovalent bog‘", "is_correct": true},
+            {"label": "C", "text": "Ion bog‘", "is_correct": false},
+            {"label": "D", "text": "Van-der-Vaals bog‘i", "is_correct": false}
+        ]
+    },
+    {
+        "text": "1 litr 2 M NaCl eritmasida nechta mol natriy xlorid mavjud? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "M = n/V → n = M × V = 2 mol/l × 1 l = 2 mol.",
+        "options": [
+            {"label": "A", "text": "1 mol", "is_correct": false},
+            {"label": "B", "text": "2 mol", "is_correct": true},
+            {"label": "C", "text": "3 mol", "is_correct": false},
+            {"label": "D", "text": "4 mol", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Sulfat kislota (H₂SO₄) molyar massasi nechaga teng? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "H₂SO₄: 2×H (1) + S (32) + 4×O (16) = 2 + 32 + 64 = 98 g/mol.",
+        "options": [
+            {"label": "A", "text": "80 g/mol", "is_correct": false},
+            {"label": "B", "text": "98 g/mol", "is_correct": true},
+            {"label": "C", "text": "100 g/mol", "is_correct": false},
+            {"label": "D", "text": "112 g/mol", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Agar 11.2 litr azot (N₂) gazi bo‘lsa, uning mol soni nechaga teng (standart sharoitda)? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "1 mol gaz 22.4 l (standart sharoitda). 11.2 l ÷ 22.4 l/mol = 0.5 mol.",
+        "options": [
+            {"label": "A", "text": "0.25 mol", "is_correct": false},
+            {"label": "B", "text": "0.5 mol", "is_correct": true},
+            {"label": "C", "text": "1 mol", "is_correct": false},
+            {"label": "D", "text": "2 mol", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Kalsiy (Ca) necha valent elektronlarga ega? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Ca (2, 8, 8, 2) – 2 valent elektronga ega.",
+        "options": [
+            {"label": "A", "text": "1", "is_correct": false},
+            {"label": "B", "text": "2", "is_correct": true},
+            {"label": "C", "text": "3", "is_correct": false},
+            {"label": "D", "text": "4", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Organik birikmalarda qaysi element asosiy hisoblanadi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Organik birikmalarda uglerod (C) asosiy element hisoblanadi.",
+        "options": [
+            {"label": "A", "text": "Vodorod", "is_correct": false},
+            {"label": "B", "text": "Uglerod", "is_correct": true},
+            {"label": "C", "text": "Kislorod", "is_correct": false},
+            {"label": "D", "text": "Azot", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Agar 1 mol temir (Fe) oksid (Fe₂O₃) bo‘lsa, unda nechta gramm temir mavjud? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Fe₂O₃ molyar massasi: 2×56 + 3×16 = 112 + 48 = 160 g/mol. Temir massasi: (2×56)/160 × 1 mol = 112 g.",
+        "options": [
+            {"label": "A", "text": "80 g", "is_correct": false},
+            {"label": "B", "text": "112 g", "is_correct": true},
+            {"label": "C", "text": "128 g", "is_correct": false},
+            {"label": "D", "text": "160 g", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Reaksiyada 4 g vodorod (H₂) yonsa, nechta gramm suv hosil bo‘ladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "2H₂ + O₂ → 2H₂O. 4 g H₂ = 2 mol. 2 mol H₂ → 2 mol H₂O. H₂O molyar massasi 18 g/mol, shuning uchun 2 × 18 = 36 g.",
+        "options": [
+            {"label": "A", "text": "18 g", "is_correct": false},
+            {"label": "B", "text": "36 g", "is_correct": true},
+            {"label": "C", "text": "54 g", "is_correct": false},
+            {"label": "D", "text": "72 g", "is_correct": false}
+        ]
+    },
+    {
+        "text": "0.1 M H₂SO₄ eritmasining 500 ml da nechta mol kislota mavjud? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "n = M × V = 0.1 mol/l × 0.5 l = 0.05 mol.",
+        "options": [
+            {"label": "A", "text": "0.01 mol", "is_correct": false},
+            {"label": "B", "text": "0.05 mol", "is_correct": true},
+            {"label": "C", "text": "0.1 mol", "is_correct": false},
+            {"label": "D", "text": "0.2 mol", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Agar 10 g CaCO₃ to‘liq parchalanadigan bo‘lsa, nechta litr CO₂ hosil bo‘ladi (standart sharoitda)? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "CaCO₃ → CaO + CO₂. CaCO₃ molyar massasi 100 g/mol. 10 g = 0.1 mol. 0.1 mol CO₂ = 0.1 × 22.4 = 2.24 l.",
+        "options": [
+            {"label": "A", "text": "1.12 l", "is_correct": false},
+            {"label": "B", "text": "2.24 l", "is_correct": true},
+            {"label": "C", "text": "4.48 l", "is_correct": false},
+            {"label": "D", "text": "11.2 l", "is_correct": false}
+        ]
+    },
+    {
+        "text": "CH₄ + 2O₂ → CO₂ + 2H₂O reaksiyasida 8 g metan yonsa, nechta mol CO₂ hosil bo‘ladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "CH₄ molyar massasi 16 g/mol. 8 g = 0.5 mol. 0.5 mol CH₄ → 0.5 mol CO₂.",
+        "options": [
+            {"label": "A", "text": "0.25 mol", "is_correct": false},
+            {"label": "B", "text": "0.5 mol", "is_correct": true},
+            {"label": "C", "text": "1 mol", "is_correct": false},
+            {"label": "D", "text": "2 mol", "is_correct": false}
+        ]
+    },
+    {
+        "text": "pH = 12 bo‘lgan eritmadagi OH⁻ ionlarining konsentratsiyasi nechaga teng? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "pH = 12 → pOH = 14 - 12 = 2. [OH⁻] = 10⁻² = 0.01 mol/l.",
+        "options": [
+            {"label": "A", "text": "0.001 mol/l", "is_correct": false},
+            {"label": "B", "text": "0.01 mol/l", "is_correct": true},
+            {"label": "C", "text": "0.1 mol/l", "is_correct": false},
+            {"label": "D", "text": "1 mol/l", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Etan (C₂H₆) molekulasida nechta sigma va pi bog‘lari mavjud? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "C₂H₆: 1 ta C-C sigma bog‘i, 6 ta C-H sigma bog‘i. Pi bog‘ yo‘q. Jami: 7 sigma, 0 pi.",
+        "options": [
+            {"label": "A", "text": "6 sigma, 1 pi", "is_correct": false},
+            {"label": "B", "text": "7 sigma, 0 pi", "is_correct": true},
+            {"label": "C", "text": "6 sigma, 0 pi", "is_correct": false},
+            {"label": "D", "text": "7 sigma, 1 pi", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Agar 2 mol NH₃ 3 mol O₂ bilan reaksiyaga kirishsa, nechta mol NO hosil bo‘ladi? (4NH₃ + 5O₂ → 4NO + 6H₂O) (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "O₂ cheklovchi reaktant: 3 mol O₂ → (4/5) × 3 = 2.4 mol NO.",
+        "options": [
+            {"label": "A", "text": "1.6 mol", "is_correct": false},
+            {"label": "B", "text": "2.4 mol", "is_correct": true},
+            {"label": "C", "text": "3 mol", "is_correct": false},
+            {"label": "D", "text": "4 mol", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Benzol (C₆H₆) molekulasida nechta uglerod-uglerod pi bog‘lari mavjud? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Benzolda 6 ta C-C bog‘i bor, ulardan 3 tasi pi bog‘ (sp² gibridlanish tufayli).",
+        "options": [
+            {"label": "A", "text": "1", "is_correct": false},
+            {"label": "B", "text": "3", "is_correct": true},
+            {"label": "C", "text": "6", "is_correct": false},
+            {"label": "D", "text": "9", "is_correct": false}
+        ]
+    },
+    {
+        "text": "1 litr 0.2 M KOH eritmasini neytrallash uchun nechta litr 0.1 M HCl kerak? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "KOH + HCl → KCl + H₂O. n(KOH) = 0.2 × 1 = 0.2 mol. n(HCl) = 0.2 mol → V(HCl) = 0.2 / 0.1 = 2 l.",
+        "options": [
+            {"label": "A", "text": "1 l", "is_correct": false},
+            {"label": "B", "text": "2 l", "is_correct": true},
+            {"label": "C", "text": "3 l", "is_correct": false},
+            {"label": "D", "text": "4 l", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Agar 5 g Al 6 mol HCl bilan reaksiyaga kirishsa, nechta litr H₂ hosil bo‘ladi (standart sharoitda)? (2Al + 6HCl → 2AlCl₃ + 3H₂) (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Al molyar massasi 27 g/mol. 5 g = 5/27 ≈ 0.185 mol. 0.185 mol Al → (3/2) × 0.185 ≈ 0.278 mol H₂. V(H₂) = 0.278 × 22.4 ≈ 6.22 l.",
+        "options": [
+            {"label": "A", "text": "4.48 l", "is_correct": false},
+            {"label": "B", "text": "6.22 l", "is_correct": true},
+            {"label": "C", "text": "8.96 l", "is_correct": false},
+            {"label": "D", "text": "11.2 l", "is_correct": false}
+        ]
+    }
+]

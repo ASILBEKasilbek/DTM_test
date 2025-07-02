@@ -1,0 +1,332 @@
+[
+    {
+        "text": "Fransuz tilida 'Bonjour' so‘zi qanday ma’noni anglatadi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "'Bonjour' fransuz tilida 'Salom' yoki 'Xayrli kun' ma’nosini anglatadi va kunduzi salomlashish uchun ishlatiladi.",
+        "options": [
+            {"label": "A", "text": "Xayr", "is_correct": false},
+            {"label": "B", "text": "Salom", "is_correct": true},
+            {"label": "C", "text": "Rahmat", "is_correct": false},
+            {"label": "D", "text": "Kechirasiz", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida 'livre' so‘zi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "'Livre' fransuz tilida 'kitob' ma’nosini anglatadi.",
+        "options": [
+            {"label": "A", "text": "Stol", "is_correct": false},
+            {"label": "B", "text": "Kitob", "is_correct": true},
+            {"label": "C", "text": "Qalam", "is_correct": false},
+            {"label": "D", "text": "Daftar", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida maqol (artikel) qaysi bo‘lib keladi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Fransuz tilida maqollar (articles) aniq (le, la, l’, les) va noaniq (un, une, des) bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "Faqat aniq", "is_correct": false},
+            {"label": "B", "text": "Aniq va noaniq", "is_correct": true},
+            {"label": "C", "text": "Faqat noaniq", "is_correct": false},
+            {"label": "D", "text": "Hech qanday maqol yo‘q", "is_correct": false}
+        ]
+    },
+    {
+        "text": "‘Je suis’ iborasining to‘g‘ri tarjimasi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Je suis’ fransuz tilida ‘Menman’ yoki ‘Men ...man’ (masalan, Men talabaman) ma’nosini anglatadi.",
+        "options": [
+            {"label": "A", "text": "Sen", "is_correct": false},
+            {"label": "B", "text": "Menman", "is_correct": true},
+            {"label": "C", "text": "U", "is_correct": false},
+            {"label": "D", "text": "Biz", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida sonlar qanday yoziladi: 25? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Fransuz tilida 25 soni ‘vingt-cinq’ deb yoziladi va talaffuz qilinadi.",
+        "options": [
+            {"label": "A", "text": "Vingt-deux", "is_correct": false},
+            {"label": "B", "text": "Vingt-cinq", "is_correct": true},
+            {"label": "C", "text": "Trente-cinq", "is_correct": false},
+            {"label": "D", "text": "Vingt-et-un", "is_correct": false}
+        ]
+    },
+    {
+        "text": "‘Merci’ so‘zining ma’nosi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Merci’ fransuz tilida ‘Rahmat’ ma’nosini anglatadi va minnatdorchilik bildirish uchun ishlatiladi.",
+        "options": [
+            {"label": "A", "text": "Kechirasiz", "is_correct": false},
+            {"label": "B", "text": "Rahmat", "is_correct": true},
+            {"label": "C", "text": "Iltimos", "is_correct": false},
+            {"label": "D", "text": "Salom", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida ‘femme’ so‘zi qanday jinsga ega? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Femme’ so‘zi ayol jinsini (feminin) ifodalaydi va une maqoli bilan ishlatiladi (une femme).",
+        "options": [
+            {"label": "A", "text": "Erkak (maskulin)", "is_correct": false},
+            {"label": "B", "text": "Ayol (feminin)", "is_correct": true},
+            {"label": "C", "text": "Neuter", "is_correct": false},
+            {"label": "D", "text": "Hech qanday jins yo‘q", "is_correct": false}
+        ]
+    },
+    {
+        "text": "‘Aller’ fe’lining hozirgi zamondagi birinchi shaxs shakli qanday? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Aller’ fe’li hozirgi zamonda birinchi shaxs uchun ‘je vais’ shaklida ishlatiladi.",
+        "options": [
+            {"label": "A", "text": "Je suis", "is_correct": false},
+            {"label": "B", "text": "Je vais", "is_correct": true},
+            {"label": "C", "text": "Je fais", "is_correct": false},
+            {"label": "D", "text": "J’ai", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida ‘au revoir’ iborasining ma’nosi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Au revoir’ fransuz tilida ‘Xayr’ yoki ‘Ko‘rishguncha’ ma’nosini anglatadi va xayrlashish uchun ishlatiladi.",
+        "options": [
+            {"label": "A", "text": "Salom", "is_correct": false},
+            {"label": "B", "text": "Xayr", "is_correct": true},
+            {"label": "C", "text": "Rahmat", "is_correct": false},
+            {"label": "D", "text": "Iltimos", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida ‘le weekend’ qachon ishlatiladi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Le weekend’ fransuz tilida ‘dam olish kunlari’ yoki ‘hafta oxiri’ ma’nosini anglatadi va odatda shanba va yakshanbani nazarda tutadi.",
+        "options": [
+            {"label": "A", "text": "Ish kunlari", "is_correct": false},
+            {"label": "B", "text": "Hafta oxiri", "is_correct": true},
+            {"label": "C", "text": "O‘quv haftasi", "is_correct": false},
+            {"label": "D", "text": "Bayram kunlari", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida ‘avoir’ fe’lining ma’nosi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Avoir’ fe’li fransuz tilida ‘ega bo‘lmoq’ yoki ‘bor’ ma’nosini anglatadi, masalan, ‘J’ai un livre’ – ‘Menda kitob bor’.",
+        "options": [
+            {"label": "A", "text": "Borish", "is_correct": false},
+            {"label": "B", "text": "Ega bo‘lmoq", "is_correct": true},
+            {"label": "C", "text": "Qilmoq", "is_correct": false},
+            {"label": "D", "text": "Bilmoq", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida ‘maison’ so‘zi qanday jinsga ega? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Maison’ so‘zi ayol jinsiga (feminin) ega bo‘lib, une maqoli bilan ishlatiladi (une maison).",
+        "options": [
+            {"label": "A", "text": "Erkak (maskulin)", "is_correct": false},
+            {"label": "B", "text": "Ayol (feminin)", "is_correct": true},
+            {"label": "C", "text": "Neuter", "is_correct": false},
+            {"label": "D", "text": "Jins yo‘q", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida ‘s’il vous plaît’ iborasining ma’nosi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘S’il vous plaît’ fransuz tilida ‘Iltimos’ ma’nosini anglatadi va iltimos so‘rashda ishlatiladi.",
+        "options": [
+            {"label": "A", "text": "Rahmat", "is_correct": false},
+            {"label": "B", "text": "Iltimos", "is_correct": true},
+            {"label": "C", "text": "Kechirasiz", "is_correct": false},
+            {"label": "D", "text": "Xayr", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida sonlar qanday yoziladi: 70? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Fransuz tilida 70 soni ‘soixante-dix’ deb yoziladi (soixante = 60, dix = 10).",
+        "options": [
+            {"label": "A", "text": "Soixante", "is_correct": false},
+            {"label": "B", "text": "Soixante-dix", "is_correct": true},
+            {"label": "C", "text": "Septante", "is_correct": false},
+            {"label": "D", "text": "Quatre-vingts", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida ‘je mange’ iborasining to‘g‘ri tarjimasi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Je mange’ fransuz tilida ‘Men yeyman’ ma’nosini anglatadi, chunki ‘manger’ fe’li ‘yemoq’ degan ma’noni beradi.",
+        "options": [
+            {"label": "A", "text": "Men ichaman", "is_correct": false},
+            {"label": "B", "text": "Men yeyman", "is_correct": true},
+            {"label": "C", "text": "Men yozaman", "is_correct": false},
+            {"label": "D", "text": "Men o‘qiyman", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida passé composé zamonini shakllantirishda qaysi fe’llar yordamchi sifatida ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Passé composé zamonida ‘avoir’ yoki ‘être’ fe’llari yordamchi sifatida ishlatiladi, fe’l turiga qarab (masalan, harakat fe’llari ‘être’ bilan).",
+        "options": [
+            {"label": "A", "text": "Faire va vouloir", "is_correct": false},
+            {"label": "B", "text": "Avoir va être", "is_correct": true},
+            {"label": "C", "text": "Aller va venir", "is_correct": false},
+            {"label": "D", "text": "Pouvoir va devoir", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida ‘il faut’ iborasining ma’nosi nima? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Il faut’ fransuz tilida ‘kerak’ yoki ‘zarur’ ma’nosini anglatadi, masalan, ‘Il faut étudier’ – ‘O‘qish kerak’.",
+        "options": [
+            {"label": "A", "text": "Mumkin", "is_correct": false},
+            {"label": "B", "text": "Kerak", "is_correct": true},
+            {"label": "C", "text": "Xohlayman", "is_correct": false},
+            {"label": "D", "text": "Bilaman", "is_correct": false}
+        ]
+    },
+    {
+        "text": "‘Avoir’ fe’lining passé composé zamonidagi uchinchi shaxs shakli qanday? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Avoir’ fe’li passé composé zamonida uchinchi shaxs uchun ‘il/elle a eu’ shaklida bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "Il a été", "is_correct": false},
+            {"label": "B", "text": "Il a eu", "is_correct": true},
+            {"label": "C", "text": "Il était", "is_correct": false},
+            {"label": "D", "text": "Il avait", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida ‘subjonctif’ zamoni qachon ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Subjonctif zamoni istak, shubha, ehtimol yoki hissiyotni ifodalovchi gaplarda ishlatiladi, masalan, ‘Il faut que je sois là’.",
+        "options": [
+            {"label": "A", "text": "Faqat o‘tmishni ifodalashda", "is_correct": false},
+            {"label": "B", "text": "Istak va shubhani ifodalashda", "is_correct": true},
+            {"label": "C", "text": "Faqat kelasi zamonda", "is_correct": false},
+            {"label": "D", "text": "Oddiy holatni ifodalashda", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida ‘ce’ va ‘cette’ olmoshlari qanday farqlanadi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Ce’ erkak jinsli (maskulin) otlar bilan, ‘cette’ esa ayol jinsli (feminin) otlar bilan ishlatiladi, masalan, ‘ce livre’ va ‘cette table’.",
+        "options": [
+            {"label": "A", "text": "‘Ce’ ayol jins, ‘cette’ erkak jins", "is_correct": false},
+            {"label": "B", "text": "‘Ce’ erkak jins, ‘cette’ ayol jins", "is_correct": true},
+            {"label": "C", "text": "Ikkalasi bir xil", "is_correct": false},
+            {"label": "D", "text": "‘Ce’ ko‘plik, ‘cette’ yalklik", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida sonlar qanday yoziladi: 99? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Fransuz tilida 99 soni ‘quatre-vingt-dix-neuf’ deb yoziladi (quatre-vingts = 80, dix = 10, neuf = 9).",
+        "options": [
+            {"label": "A", "text": "Quatre-vingt-neuf", "is_correct": false},
+            {"label": "B", "text": "Quatre-vingt-dix-neuf", "is_correct": true},
+            {"label": "C", "text": "Cent-neuf", "is_correct": false},
+            {"label": "D", "text": "Quatre-vingt-dix", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida ‘partir’ fe’lining passé composé shakli qanday? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Partir’ fe’li ‘être’ yordamchi fe’li bilan passé composéda ishlatiladi, masalan, ‘je suis parti(e)’ (jinsga qarab).",
+        "options": [
+            {"label": "A", "text": "J’ai parti", "is_correct": false},
+            {"label": "B", "text": "Je suis parti", "is_correct": true},
+            {"label": "C", "text": "J’étais parti", "is_correct": false},
+            {"label": "D", "text": "J’ai été parti", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida ‘depuis’ predlogi qanday ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Depuis’ predlogi davomiylikni yoki vaqtdan beri biror narsa davom etayotganini ifodalaydi, masalan, ‘J’habite ici depuis 2010’.",
+        "options": [
+            {"label": "A", "text": "Joyni ifodalashda", "is_correct": false},
+            {"label": "B", "text": "Davomiylikni ifodalashda", "is_correct": true},
+            {"label": "C", "text": "Sebarni ifodalashda", "is_correct": false},
+            {"label": "D", "text": "Miqdorni ifodalashda", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida ‘conditionnel’ zamoni nima uchun ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Conditionnel zamoni shartli holatlarni, ehtimollarni yoki muloyim so‘rovlarni ifodalashda ishlatiladi, masalan, ‘Je voudrais un café’.",
+        "options": [
+            {"label": "A", "text": "Faqat o‘tmishni ifodalashda", "is_correct": false},
+            {"label": "B", "text": "Shartli holatlarni ifodalashda", "is_correct": true},
+            {"label": "C", "text": "Faqat kelasi zamonda", "is_correct": false},
+            {"label": "D", "text": "Oddiy holatni ifodalashda", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida ‘quel’ va ‘quelle’ so‘roq olmoshlari qanday farqlanadi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Quel’ erkak jinsli otlar bilan, ‘quelle’ esa ayol jinsli otlar bilan ishlatiladi, masalan, ‘Quel livre ?’ va ‘Quelle table ?’",
+        "options": [
+            {"label": "A", "text": "‘Quel’ ayol jins, ‘quelle’ erkak jins", "is_correct": false},
+            {"label": "B", "text": "‘Quel’ erkak jins, ‘quelle’ ayol jins", "is_correct": true},
+            {"label": "C", "text": "Ikkalasi bir xil", "is_correct": false},
+            {"label": "D", "text": "‘Quel’ ko‘plik, ‘quelle’ yalklik", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida ‘faire’ fe’lining subjonctif hozirgi zamondagi birinchi shaxs shakli qanday? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Faire’ fe’li subjonctif hozirgi zamonda birinchi shaxs uchun ‘que je fasse’ shaklida bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "Que je fais", "is_correct": false},
+            {"label": "B", "text": "Que je fasse", "is_correct": true},
+            {"label": "C", "text": "Que je fis", "is_correct": false},
+            {"label": "D", "text": "Que je ferai", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida ‘en’ predlogi qanday ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘En’ predlogi joy, vaqt, holat yoki transport vositasini ifodalashda ishlatiladi, masalan, ‘en France’, ‘en été’, ‘en voiture’.",
+        "options": [
+            {"label": "A", "text": "Faqat vaqtni ifodalashda", "is_correct": false},
+            {"label": "B", "text": "Joy, vaqt va holatni ifodalashda", "is_correct": true},
+            {"label": "C", "text": "Faqat joyni ifodalashda", "is_correct": false},
+            {"label": "D", "text": "Sebarni ifodalashda", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida ‘lequel’ olmoshi qanday ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Lequel’ (va uning shakllari: laquelle, lesquels, lesquelles) aniq bir narsani tanlash yoki narsalar orasidan birini ko‘rsatish uchun ishlatiladi.",
+        "options": [
+            {"label": "A", "text": "Umumiy so‘roq sifatida", "is_correct": false},
+            {"label": "B", "text": "AnIq tanlash uchun", "is_correct": true},
+            {"label": "C", "text": "Faqat ko‘plikda", "is_correct": false},
+            {"label": "D", "text": "Vaqtni ifodalashda", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida ‘imparfait’ zamoni qachon ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Imparfait zamoni o‘tmishdagi davomiy, odatiy yoki takrorlanuvchi harakatlarni ifodalashda ishlatiladi, masalan, ‘Je lisais’.",
+        "options": [
+            {"label": "A", "text": "Kelasi zamonni ifodalashda", "is_correct": false},
+            {"label": "B", "text": "O‘tmishdagi davomiy harakatlarda", "is_correct": true},
+            {"label": "C", "text": "Faqat shartli holatlarda", "is_correct": false},
+            {"label": "D", "text": "Bir marta bo‘lgan harakatlarda", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Fransuz tilida ‘ne...pas’ inkor shakli qanday ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Ne...pas’ inkor shakli fe’lni inkor qilish uchun ishlatiladi, masalan, ‘Je ne parle pas français’ – ‘Men fransuzcha gapirmayman’.",
+        "options": [
+            {"label": "A", "text": "Tasdiqlash uchun", "is_correct": false},
+            {"label": "B", "text": "Inkor qilish uchun", "is_correct": true},
+            {"label": "C", "text": "So‘roq shaklida", "is_correct": false},
+            {"label": "D", "text": "Shartli holatlarda", "is_correct": false}
+        ]
+    }
+]

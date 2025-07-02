@@ -1,0 +1,332 @@
+[
+    {
+        "text": "Choose the correct form of the verb: She ___ to the park every Sunday. (Medium)",
+        "difficulty": "medium",
+        "explanation": "The sentence is in the present simple tense, used for habits. The correct form for 'she' is 'goes'.",
+        "options": [
+            {"label": "A", "text": "go", "is_correct": false},
+            {"label": "B", "text": "goes", "is_correct": true},
+            {"label": "C", "text": "going", "is_correct": false},
+            {"label": "D", "text": "gone", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the synonym of 'happy'? (Medium)",
+        "difficulty": "medium",
+        "explanation": "'Joyful' is a synonym for 'happy', meaning feeling or showing pleasure.",
+        "options": [
+            {"label": "A", "text": "Sad", "is_correct": false},
+            {"label": "B", "text": "Joyful", "is_correct": true},
+            {"label": "C", "text": "Angry", "is_correct": false},
+            {"label": "D", "text": "Tired", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Complete the sentence: If I ___ harder, I would have passed the exam. (Hard)",
+        "difficulty": "hard",
+        "explanation": "This is a third conditional sentence for an unreal past situation. The correct form is 'had studied'.",
+        "options": [
+            {"label": "A", "text": "study", "is_correct": false},
+            {"label": "B", "text": "studied", "is_correct": false},
+            {"label": "C", "text": "had studied", "is_correct": true},
+            {"label": "D", "text": "have studied", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Choose the correct preposition: She is good ___ playing the piano. (Medium)",
+        "difficulty": "medium",
+        "explanation": "The preposition 'at' is used with 'good' when referring to skills or activities.",
+        "options": [
+            {"label": "A", "text": "in", "is_correct": false},
+            {"label": "B", "text": "at", "is_correct": true},
+            {"label": "C", "text": "on", "is_correct": false},
+            {"label": "D", "text": "with", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which sentence is grammatically correct? (Medium)",
+        "difficulty": "medium",
+        "explanation": "'She doesn’t like coffee' is correct in present simple negative form for third person singular.",
+        "options": [
+            {"label": "A", "text": "She don’t like coffee.", "is_correct": false},
+            {"label": "B", "text": "She doesn’t like coffee.", "is_correct": true},
+            {"label": "C", "text": "She not likes coffee.", "is_correct": false},
+            {"label": "D", "text": "She doesn’t likes coffee.", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the meaning of 'exhausted'? (Medium)",
+        "difficulty": "medium",
+        "explanation": "'Exhausted' means very tired or having used up all energy.",
+        "options": [
+            {"label": "A", "text": "Excited", "is_correct": false},
+            {"label": "B", "text": "Very tired", "is_correct": true},
+            {"label": "C", "text": "Happy", "is_correct": false},
+            {"label": "D", "text": "Hungry", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Choose the correct form: By the time we arrive, they ___ dinner. (Hard)",
+        "difficulty": "hard",
+        "explanation": "Future perfect tense is used for an action completed before a future point. Correct form: 'will have finished'.",
+        "options": [
+            {"label": "A", "text": "finish", "is_correct": false},
+            {"label": "B", "text": "will finish", "is_correct": false},
+            {"label": "C", "text": "will have finished", "is_correct": true},
+            {"label": "D", "text": "have finished", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which word is an antonym of 'big'? (Medium)",
+        "difficulty": "medium",
+        "explanation": "'Small' is the opposite of 'big' in terms of size.",
+        "options": [
+            {"label": "A", "text": "Large", "is_correct": false},
+            {"label": "B", "text": "Small", "is_correct": true},
+            {"label": "C", "text": "Tall", "is_correct": false},
+            {"label": "D", "text": "Wide", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Correct the sentence: He go to school yesterday. (Medium)",
+        "difficulty": "medium",
+        "explanation": "Past simple tense requires 'went' for the verb 'go' with 'he'. Correct: He went to school yesterday.",
+        "options": [
+            {"label": "A", "text": "He goes to school yesterday.", "is_correct": false},
+            {"label": "B", "text": "He went to school yesterday.", "is_correct": true},
+            {"label": "C", "text": "He going to school yesterday.", "is_correct": false},
+            {"label": "D", "text": "He gone to school yesterday.", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Choose the correct article: ___ apple is on the table. (Medium)",
+        "difficulty": "medium",
+        "explanation": "'An' is used before a vowel sound like 'apple'.",
+        "options": [
+            {"label": "A", "text": "A", "is_correct": false},
+            {"label": "B", "text": "An", "is_correct": true},
+            {"label": "C", "text": "The", "is_correct": false},
+            {"label": "D", "text": "No article", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the passive form of 'They are painting the house'? (Hard)",
+        "difficulty": "hard",
+        "explanation": "In the present continuous passive, the object becomes the subject: 'The house is being painted.'",
+        "options": [
+            {"label": "A", "text": "The house is painted.", "is_correct": false},
+            {"label": "B", "text": "The house is being painted.", "is_correct": true},
+            {"label": "C", "text": "The house was painted.", "is_correct": false},
+            {"label": "D", "text": "The house has been painted.", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Choose the correct word: I have ___ friends in London. (Medium)",
+        "difficulty": "medium",
+        "explanation": "'A few' is used for a small number of countable nouns like 'friends'.",
+        "options": [
+            {"label": "A", "text": "little", "is_correct": false},
+            {"label": "B", "text": "a few", "is_correct": true},
+            {"label": "C", "text": "much", "is_correct": false},
+            {"label": "D", "text": "a little", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which sentence uses the correct conditional? (Hard)",
+        "difficulty": "hard",
+        "explanation": "Second conditional for unreal present situations: 'If I were rich, I would travel the world.'",
+        "options": [
+            {"label": "A", "text": "If I am rich, I travel the world.", "is_correct": false},
+            {"label": "B", "text": "If I were rich, I would travel the world.", "is_correct": true},
+            {"label": "C", "text": "If I was rich, I will travel the world.", "is_correct": false},
+            {"label": "D", "text": "If I be rich, I would travel the world.", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What does 'postpone' mean? (Medium)",
+        "difficulty": "medium",
+        "explanation": "'Postpone' means to delay or put off to a later time.",
+        "options": [
+            {"label": "A", "text": "Cancel", "is_correct": false},
+            {"label": "B", "text": "Delay", "is_correct": true},
+            {"label": "C", "text": "Hurry", "is_correct": false},
+            {"label": "D", "text": "Start", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Choose the correct tense: She ___ in Paris for two years before she moved. (Hard)",
+        "difficulty": "hard",
+        "explanation": "Past perfect continuous is used for an action that continued until a point in the past: 'had been living'.",
+        "options": [
+            {"label": "A", "text": "lives", "is_correct": false},
+            {"label": "B", "text": "lived", "is_correct": false},
+            {"label": "C", "text": "had been living", "is_correct": true},
+            {"label": "D", "text": "has lived", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which word fits best? The movie was so ___ that I cried. (Medium)",
+        "difficulty": "medium",
+        "explanation": "'Touching' means emotionally moving, fitting the context of crying during a movie.",
+        "options": [
+            {"label": "A", "text": "funny", "is_correct": false},
+            {"label": "B", "text": "touching", "is_correct": true},
+            {"label": "C", "text": "boring", "is_correct": false},
+            {"label": "D", "text": "scary", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Choose the correct reported speech: She said, 'I will call you.' (Hard)",
+        "difficulty": "hard",
+        "explanation": "In reported speech, 'will' changes to 'would': She said that she would call me.",
+        "options": [
+            {"label": "A", "text": "She said that she will call me.", "is_correct": false},
+            {"label": "B", "text": "She said that she would call me.", "is_correct": true},
+            {"label": "C", "text": "She said that she calls me.", "is_correct": false},
+            {"label": "D", "text": "She said that she is calling me.", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the plural form of 'child'? (Medium)",
+        "difficulty": "medium",
+        "explanation": "The plural of 'child' is 'children', an irregular plural form.",
+        "options": [
+            {"label": "A", "text": "Childs", "is_correct": false},
+            {"label": "B", "text": "Children", "is_correct": true},
+            {"label": "C", "text": "Childes", "is_correct": false},
+            {"label": "D", "text": "Childrens", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Choose the correct word: I need ___ information about the course. (Medium)",
+        "difficulty": "medium",
+        "explanation": "'Some' is used for uncountable nouns like 'information' in positive sentences.",
+        "options": [
+            {"label": "A", "text": "any", "is_correct": false},
+            {"label": "B", "text": "some", "is_correct": true},
+            {"label": "C", "text": "many", "is_correct": false},
+            {"label": "D", "text": "few", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which sentence is in the correct passive voice? (Hard)",
+        "difficulty": "hard",
+        "explanation": "Passive voice for present perfect: 'The book has been read by many students.'",
+        "options": [
+            {"label": "A", "text": "The book is read by many students.", "is_correct": false},
+            {"label": "B", "text": "The book has been read by many students.", "is_correct": true},
+            {"label": "C", "text": "The book was reading by many students.", "is_correct": false},
+            {"label": "D", "text": "The book reads by many students.", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What does 'anxious' mean in this context: She was anxious about the test. (Medium)",
+        "difficulty": "medium",
+        "explanation": "In this context, 'anxious' means nervous or worried.",
+        "options": [
+            {"label": "A", "text": "Excited", "is_correct": false},
+            {"label": "B", "text": "Nervous", "is_correct": true},
+            {"label": "C", "text": "Happy", "is_correct": false},
+            {"label": "D", "text": "Confident", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Choose the correct modal verb: You ___ finish your homework before playing. (Medium)",
+        "difficulty": "medium",
+        "explanation": "'Must' indicates obligation or necessity in this context.",
+        "options": [
+            {"label": "A", "text": "can", "is_correct": false},
+            {"label": "B", "text": "must", "is_correct": true},
+            {"label": "C", "text": "might", "is_correct": false},
+            {"label": "D", "text": "will", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which sentence uses the correct relative pronoun? (Hard)",
+        "difficulty": "hard",
+        "explanation": "'Who' is used for people as the subject of the relative clause: 'The man who lives next door is kind.'",
+        "options": [
+            {"label": "A", "text": "The man which lives next door is kind.", "is_correct": false},
+            {"label": "B", "text": "The man who lives next door is kind.", "is_correct": true},
+            {"label": "C", "text": "The man that he lives next door is kind.", "is_correct": false},
+            {"label": "D", "text": "The man whose lives next door is kind.", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the meaning of 'purchase'? (Medium)",
+        "difficulty": "medium",
+        "explanation": "'Purchase' means to buy something.",
+        "options": [
+            {"label": "A", "text": "Sell", "is_correct": false},
+            {"label": "B", "text": "Buy", "is_correct": true},
+            {"label": "C", "text": "Borrow", "is_correct": false},
+            {"label": "D", "text": "Give", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Choose the correct form: I wish I ___ taller. (Hard)",
+        "difficulty": "hard",
+        "explanation": "'Wish' with present unreal situations uses the past subjunctive: 'were'.",
+        "options": [
+            {"label": "A", "text": "am", "is_correct": false},
+            {"label": "B", "text": "were", "is_correct": true},
+            {"label": "C", "text": "was", "is_correct": false},
+            {"label": "D", "text": "will be", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which word completes the sentence: The weather is ___ cold today. (Medium)",
+        "difficulty": "medium",
+        "explanation": "'Quite' means fairly or somewhat, fitting the context of describing the weather.",
+        "options": [
+            {"label": "A", "text": "very", "is_correct": false},
+            {"label": "B", "text": "quite", "is_correct": true},
+            {"label": "C", "text": "too", "is_correct": false},
+            {"label": "D", "text": "so", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Choose the correct reported question: He asked, 'Where are you going?' (Hard)",
+        "difficulty": "hard",
+        "explanation": "Reported questions change word order and tense: 'He asked where I was going.'",
+        "options": [
+            {"label": "A", "text": "He asked where are you going.", "is_correct": false},
+            {"label": "B", "text": "He asked where I was going.", "is_correct": true},
+            {"label": "C", "text": "He asked where you were going.", "is_correct": false},
+            {"label": "D", "text": "He asked where am I going.", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the comparative form of 'good'? (Medium)",
+        "difficulty": "medium",
+        "explanation": "The comparative form of 'good' is 'better'.",
+        "options": [
+            {"label": "A", "text": "Gooder", "is_correct": false},
+            {"label": "B", "text": "Better", "is_correct": true},
+            {"label": "C", "text": "Best", "is_correct": false},
+            {"label": "D", "text": "More good", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Choose the correct phrasal verb: She ___ her old clothes to charity. (Medium)",
+        "difficulty": "medium",
+        "explanation": "'Gave away' means to donate or give something for free.",
+        "options": [
+            {"label": "A", "text": "gave up", "is_correct": false},
+            {"label": "B", "text": "gave away", "is_correct": true},
+            {"label": "C", "text": "gave in", "is_correct": false},
+            {"label": "D", "text": "gave out", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Which sentence uses the correct gerund? (Hard)",
+        "difficulty": "hard",
+        "explanation": "Gerunds are used as nouns after certain verbs like 'enjoy': 'I enjoy swimming.'",
+        "options": [
+            {"label": "A", "text": "I enjoy to swim.", "is_correct": false},
+            {"label": "B", "text": "I enjoy swimming.", "is_correct": true},
+            {"label": "C", "text": "I enjoy swim.", "is_correct": false},
+            {"label": "D", "text": "I enjoy to swimming.", "is_correct": false}
+        ]
+    }
+]

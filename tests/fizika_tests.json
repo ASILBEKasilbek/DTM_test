@@ -1,0 +1,332 @@
+[
+    {
+        "text": "What is the acceleration of a 5 kg object under a net force of 20 N? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Using Newton’s second law, F = ma, solve for a: a = F/m = 20/5 = 4 m/s².",
+        "options": [
+            {"label": "A", "text": "2 m/s²", "is_correct": false},
+            {"label": "B", "text": "4 m/s²", "is_correct": true},
+            {"label": "C", "text": "5 m/s²", "is_correct": false},
+            {"label": "D", "text": "10 m/s²", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the unit of work in the SI system? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Work is force times distance (W = Fd), measured in joules (J), where 1 J = 1 N·m.",
+        "options": [
+            {"label": "A", "text": "Watt", "is_correct": false},
+            {"label": "B", "text": "Joule", "is_correct": true},
+            {"label": "C", "text": "Newton", "is_correct": false},
+            {"label": "D", "text": "Pascal", "is_correct": false}
+        ]
+    },
+    {
+        "text": "A car travels 100 m in 5 s at constant speed. What is its speed? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Speed = distance/time = 100/5 = 20 m/s.",
+        "options": [
+            {"label": "A", "text": "10 m/s", "is_correct": false},
+            {"label": "B", "text": "20 m/s", "is_correct": true},
+            {"label": "C", "text": "25 m/s", "is_correct": false},
+            {"label": "D", "text": "50 m/s", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the potential energy of a 2 kg object raised 10 m above the ground? (g = 9.8 m/s²) (Medium)",
+        "difficulty": "medium",
+        "explanation": "Potential energy PE = mgh = 2 * 9.8 * 10 = 196 J.",
+        "options": [
+            {"label": "A", "text": "98 J", "is_correct": false},
+            {"label": "B", "text": "196 J", "is_correct": true},
+            {"label": "C", "text": "294 J", "is_correct": false},
+            {"label": "D", "text": "392 J", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the frequency of a wave with a period of 0.2 s? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Frequency f = 1/T = 1/0.2 = 5 Hz.",
+        "options": [
+            {"label": "A", "text": "2 Hz", "is_correct": false},
+            {"label": "B", "text": "5 Hz", "is_correct": true},
+            {"label": "C", "text": "10 Hz", "is_correct": false},
+            {"label": "D", "text": "20 Hz", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the resistance of a circuit with 12 V and 4 A of current? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Using Ohm’s law, R = V/I = 12/4 = 3 Ω.",
+        "options": [
+            {"label": "A", "text": "2 Ω", "is_correct": false},
+            {"label": "B", "text": "3 Ω", "is_correct": true},
+            {"label": "C", "text": "4 Ω", "is_correct": false},
+            {"label": "D", "text": "6 Ω", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the momentum of a 10 kg object moving at 3 m/s? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Momentum p = mv = 10 * 3 = 30 kg·m/s.",
+        "options": [
+            {"label": "A", "text": "20 kg·m/s", "is_correct": false},
+            {"label": "B", "text": "30 kg·m/s", "is_correct": true},
+            {"label": "C", "text": "40 kg·m/s", "is_correct": false},
+            {"label": "D", "text": "50 kg·m/s", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the focal length of a convex lens that forms an image at 20 cm when the object is 30 cm away? (Hard)",
+        "difficulty": "hard",
+        "explanation": "Using the lens formula, 1/f = 1/u + 1/v = 1/30 + 1/20 = 1/12. Thus, f = 12 cm.",
+        "options": [
+            {"label": "A", "text": "10 cm", "is_correct": false},
+            {"label": "B", "text": "12 cm", "is_correct": true},
+            {"label": "C", "text": "15 cm", "is_correct": false},
+            {"label": "D", "text": "18 cm", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the kinetic energy of a 4 kg object moving at 5 m/s? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Kinetic energy KE = (1/2)mv² = (1/2) * 4 * 5² = 50 J.",
+        "options": [
+            {"label": "A", "text": "25 J", "is_correct": false},
+            {"label": "B", "text": "50 J", "is_correct": true},
+            {"label": "C", "text": "75 J", "is_correct": false},
+            {"label": "D", "text": "100 J", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the wavelength of a wave traveling at 340 m/s with a frequency of 680 Hz? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Wavelength λ = v/f = 340/680 = 0.5 m.",
+        "options": [
+            {"label": "A", "text": "0.2 m", "is_correct": false},
+            {"label": "B", "text": "0.5 m", "is_correct": true},
+            {"label": "C", "text": "1 m", "is_correct": false},
+            {"label": "D", "text": "2 m", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the power output of a machine that does 500 J of work in 10 s? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Power P = W/t = 500/10 = 50 W.",
+        "options": [
+            {"label": "A", "text": "25 W", "is_correct": false},
+            {"label": "B", "text": "50 W", "is_correct": true},
+            {"label": "C", "text": "100 W", "is_correct": false},
+            {"label": "D", "text": "500 W", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the gravitational force between two 10 kg masses 2 m apart? (G = 6.67×10⁻¹¹ N·m²/kg²) (Hard)",
+        "difficulty": "hard",
+        "explanation": "F = GMm/r² = (6.67×10⁻¹¹ * 10 * 10)/2² = 1.67×10⁻⁹ N.",
+        "options": [
+            {"label": "A", "text": "1.67×10⁻¹⁰ N", "is_correct": false},
+            {"label": "B", "text": "1.67×10⁻⁹ N", "is_correct": true},
+            {"label": "C", "text": "1.67×10⁻⁸ N", "is_correct": false},
+            {"label": "D", "text": "1.67×10⁻⁷ N", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the final velocity of an object dropped from rest after 3 s? (g = 9.8 m/s²) (Medium)",
+        "difficulty": "medium",
+        "explanation": "For free fall, v = gt = 9.8 * 3 = 29.4 m/s.",
+        "options": [
+            {"label": "A", "text": "19.6 m/s", "is_correct": false},
+            {"label": "B", "text": "29.4 m/s", "is_correct": true},
+            {"label": "C", "text": "39.2 m/s", "is_correct": false},
+            {"label": "D", "text": "49.0 m/s", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the electric field strength at a point 2 m from a 4 μC charge? (k = 9×10⁹ N·m²/C²) (Hard)",
+        "difficulty": "hard",
+        "explanation": "E = kq/r² = (9×10⁹ * 4×10⁻⁶)/2² = 9000 N/C.",
+        "options": [
+            {"label": "A", "text": "4500 N/C", "is_correct": false},
+            {"label": "B", "text": "9000 N/C", "is_correct": true},
+            {"label": "C", "text": "18000 N/C", "is_correct": false},
+            {"label": "D", "text": "36000 N/C", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the angle of refraction when light passes from air (n=1) to glass (n=1.5) at an incidence angle of 30°? (Hard)",
+        "difficulty": "hard",
+        "explanation": "Using Snell’s law, n₁sinθ₁ = n₂sinθ₂: 1 * sin30° = 1.5 * sinθ₂ → sinθ₂ = 0.333 → θ₂ ≈ 19.5°.",
+        "options": [
+            {"label": "A", "text": "15°", "is_correct": false},
+            {"label": "B", "text": "19.5°", "is_correct": true},
+            {"label": "C", "text": "25°", "is_correct": false},
+            {"label": "D", "text": "30°", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the specific heat capacity of a substance if 2000 J raises 1 kg by 10°C? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Q = mcΔT → c = Q/(mΔT) = 2000/(1 * 10) = 200 J/kg·°C.",
+        "options": [
+            {"label": "A", "text": "100 J/kg·°C", "is_correct": false},
+            {"label": "B", "text": "200 J/kg·°C", "is_correct": true},
+            {"label": "C", "text": "400 J/kg·°C", "is_correct": false},
+            {"label": "D", "text": "800 J/kg·°C", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the period of a pendulum 2 m long? (g = 9.8 m/s²) (Medium)",
+        "difficulty": "medium",
+        "explanation": "T = 2π√(L/g) = 2π√(2/9.8) ≈ 2.84 s.",
+        "options": [
+            {"label": "A", "text": "1.5 s", "is_correct": false},
+            {"label": "B", "text": "2.84 s", "is_correct": true},
+            {"label": "C", "text": "3.5 s", "is_correct": false},
+            {"label": "D", "text": "4.0 s", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the work done by a 10 N force over a horizontal distance of 5 m? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Work W = Fd cosθ = 10 * 5 * cos0° = 50 J.",
+        "options": [
+            {"label": "A", "text": "25 J", "is_correct": false},
+            {"label": "B", "text": "50 J", "is_correct": true},
+            {"label": "C", "text": "75 J", "is_correct": false},
+            {"label": "D", "text": "100 J", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the equivalent resistance of two 6 Ω resistors in parallel? (Medium)",
+        "difficulty": "medium",
+        "explanation": "For parallel resistors, 1/R_eq = 1/R₁ + 1/R₂ = 1/6 + 1/6 = 1/3 → R_eq = 3 Ω.",
+        "options": [
+            {"label": "A", "text": "2 Ω", "is_correct": false},
+            {"label": "B", "text": "3 Ω", "is_correct": true},
+            {"label": "C", "text": "6 Ω", "is_correct": false},
+            {"label": "D", "text": "12 Ω", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the de Broglie wavelength of an electron moving at 2×10⁶ m/s? (h = 6.63×10⁻³⁴ J·s, m = 9.11×10⁻³¹ kg) (Hard)",
+        "difficulty": "hard",
+        "explanation": "λ = h/(mv) = (6.63×10⁻³⁴)/(9.11×10⁻³¹ * 2×10⁶) ≈ 3.64×10⁻¹⁰ m.",
+        "options": [
+            {"label": "A", "text": "1.82×10⁻¹⁰ m", "is_correct": false},
+            {"label": "B", "text": "3.64×10⁻¹⁰ m", "is_correct": true},
+            {"label": "C", "text": "5.46×10⁻¹⁰ m", "is_correct": false},
+            {"label": "D", "text": "7.28×10⁻¹⁰ m", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the pressure of a gas with 2 moles in a 10 L container at 300 K? (R = 8.31 J/mol·K) (Hard)",
+        "difficulty": "hard",
+        "explanation": "Using PV = nRT, P = nRT/V = (2 * 8.31 * 300)/10 ≈ 4986 Pa.",
+        "options": [
+            {"label": "A", "text": "2493 Pa", "is_correct": false},
+            {"label": "B", "text": "4986 Pa", "is_correct": true},
+            {"label": "C", "text": "7479 Pa", "is_correct": false},
+            {"label": "D", "text": "9962 Pa", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the terminal velocity of an object when air resistance equals its weight? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Terminal velocity occurs when F_air = mg, so net force is zero and acceleration is zero.",
+        "options": [
+            {"label": "A", "text": "Zero acceleration", "is_correct": true},
+            {"label": "B", "text": "Constant acceleration", "is_correct": false},
+            {"label": "C", "text": "Increasing velocity", "is_correct": false},
+            {"label": "D", "text": "Zero velocity", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the energy of a photon with a wavelength of 500 nm? (h = 6.63×10⁻³⁴ J·s, c = 3×10⁸ m/s) (Hard)",
+        "difficulty": "hard",
+        "explanation": "E = hc/λ = (6.63×10⁻³⁴ * 3×10⁸)/(500×10⁻⁹) ≈ 3.98×10⁻¹⁹ J.",
+        "options": [
+            {"label": "A", "text": "1.99×10⁻¹⁹ J", "is_correct": false},
+            {"label": "B", "text": "3.98×10⁻¹⁹ J", "is_correct": true},
+            {"label": "C", "text": "5.97×10⁻¹⁹ J", "is_correct": false},
+            {"label": "D", "text": "7.96×10⁻¹⁹ J", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the centripetal force on a 2 kg object moving in a circle of radius 4 m at 5 m/s? (Medium)",
+        "difficulty": "medium",
+        "explanation": "F_c = mv²/r = (2 * 5²)/4 = 12.5 N.",
+        "options": [
+            {"label": "A", "text": "6.25 N", "is_correct": false},
+            {"label": "B", "text": "12.5 N", "is_correct": true},
+            {"label": "C", "text": "25 N", "is_correct": false},
+            {"label": "D", "text": "50 N", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the capacitance of a capacitor with 10 μC of charge at 5 V? (Medium)",
+        "difficulty": "medium",
+        "explanation": "C = Q/V = 10×10⁻⁶/5 = 2×10⁻⁶ F = 2 μF.",
+        "options": [
+            {"label": "A", "text": "1 μF", "is_correct": false},
+            {"label": "B", "text": "2 μF", "is_correct": true},
+            {"label": "C", "text": "5 μF", "is_correct": false},
+            {"label": "D", "text": "10 μF", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the half-life of a radioactive sample if its activity decreases by 75% in 12 hours? (Hard)",
+        "difficulty": "hard",
+        "explanation": "75% decrease means 25% remains. N/N₀ = (1/2)^(t/T) → 0.25 = (1/2)^(12/T) → 12/T = 2 → T = 6 hours.",
+        "options": [
+            {"label": "A", "text": "3 hours", "is_correct": false},
+            {"label": "B", "text": "6 hours", "is_correct": true},
+            {"label": "C", "text": "9 hours", "is_correct": false},
+            {"label": "D", "text": "12 hours", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the buoyant force on a 0.5 m³ object fully submerged in water? (ρ_water = 1000 kg/m³, g = 9.8 m/s²) (Medium)",
+        "difficulty": "medium",
+        "explanation": "F_b = ρVg = 1000 * 0.5 * 9.8 = 4900 N.",
+        "options": [
+            {"label": "A", "text": "2450 N", "is_correct": false},
+            {"label": "B", "text": "4900 N", "is_correct": true},
+            {"label": "C", "text": "7350 N", "is_correct": false},
+            {"label": "D", "text": "9800 N", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the speed of sound in air at 20°C? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Speed of sound v ≈ 331 + 0.6T = 331 + 0.6 * 20 = 343 m/s.",
+        "options": [
+            {"label": "A", "text": "331 m/s", "is_correct": false},
+            {"label": "B", "text": "343 m/s", "is_correct": true},
+            {"label": "C", "text": "355 m/s", "is_correct": false},
+            {"label": "D", "text": "367 m/s", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the magnetic force on a 2 m wire carrying 5 A in a 0.3 T field perpendicular to the wire? (Hard)",
+        "difficulty": "hard",
+        "explanation": "F = BIL sinθ = 0.3 * 5 * 2 * sin90° = 3 N.",
+        "options": [
+            {"label": "A", "text": "1.5 N", "is_correct": false},
+            {"label": "B", "text": "3 N", "is_correct": true},
+            {"label": "C", "text": "4.5 N", "is_correct": false},
+            {"label": "D", "text": "6 N", "is_correct": false}
+        ]
+    },
+    {
+        "text": "What is the efficiency of a machine that produces 800 J of useful work from 1000 J of input energy? (Medium)",
+        "difficulty": "medium",
+        "explanation": "Efficiency = (useful output energy/total input energy) * 100 = (800/1000) * 100 = 80%.",
+        "options": [
+            {"label": "A", "text": "60%", "is_correct": false},
+            {"label": "B", "text": "80%", "is_correct": true},
+            {"label": "C", "text": "90%", "is_correct": false},
+            {"label": "D", "text": "100%", "is_correct": false}
+        ]
+    }
+]

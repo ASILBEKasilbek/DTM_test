@@ -1,0 +1,332 @@
+[
+    {
+        "text": "O‘zbek tilida “kitob” so‘zining ko‘plik shakli qanday bo‘ladi? (Oson)",
+        "difficulty": "easy",
+        "explanation": "O‘zbek tilida ko‘plik shakli “-lar” yoki “-ler” qo‘shimchasi bilan hosil bo‘ladi. “Kitob” so‘zi uchun bu “kitoblar” bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "Kitoblar", "is_correct": true},
+            {"label": "B", "text": "Kitoblarning", "is_correct": false},
+            {"label": "C", "text": "Kitoblik", "is_correct": false},
+            {"label": "D", "text": "Kitobing", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Yaxshi” so‘zining ma’nosi nima? (Oson)",
+        "difficulty": "easy",
+        "explanation": "“Yaxshi” so‘zi o‘zbek tilida “yomon” so‘zining antonimi bo‘lib, “yaxshi” yoki “yaxshilik” ma’nosini anglatadi.",
+        "options": [
+            {"label": "A", "text": "Yomon", "is_correct": false},
+            {"label": "B", "text": "Yaxshi", "is_correct": true},
+            {"label": "C", "text": "Katta", "is_correct": false},
+            {"label": "D", "text": "Kichik", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“O‘zbekiston” so‘zida nechta unli tovush bor? (Oson)",
+        "difficulty": "easy",
+        "explanation": "“O‘zbekiston” so‘zida unli tovushlar: o‘, e, i, o. Jami 4 ta unli tovush.",
+        "options": [
+            {"label": "A", "text": "3", "is_correct": false},
+            {"label": "B", "text": "4", "is_correct": true},
+            {"label": "C", "text": "5", "is_correct": false},
+            {"label": "D", "text": "6", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Kutubxona” so‘zining to‘g‘ri yozilishini tanlang. (Oson)",
+        "difficulty": "easy",
+        "explanation": "O‘zbek tilida “kutubxona” so‘zi to‘g‘ri yoziladi, bu “kutub” (kitob) va “xona” so‘zlaridan tashkil topgan.",
+        "options": [
+            {"label": "A", "text": "Kutubxona", "is_correct": true},
+            {"label": "B", "text": "Kutupxona", "is_correct": false},
+            {"label": "C", "text": "Kutubkhona", "is_correct": false},
+            {"label": "D", "text": "Kutubxana", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Bog‘” so‘ziga qaysi qo‘shimcha qo‘shilsa, “bog‘da” so‘zi hosil bo‘ladi? (Oson)",
+        "difficulty": "easy",
+        "explanation": "“Bog‘” so‘ziga “-da” kelishik qo‘shimchasi qo‘shiladi, natijada “bog‘da” so‘zi hosil bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "-da", "is_correct": true},
+            {"label": "B", "text": "-ga", "is_correct": false},
+            {"label": "C", "text": "-ni", "is_correct": false},
+            {"label": "D", "text": "-dan", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“O‘qish” so‘zining fe’l yoki ot ekanligini aniqlang. (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "“O‘qish” so‘zi o‘zbek tilida ot shaklida bo‘lib, harakat yoki jarayonni anglatadi.",
+        "options": [
+            {"label": "A", "text": "Fe’l", "is_correct": false},
+            {"label": "B", "text": "Ot", "is_correct": true},
+            {"label": "C", "text": "Sifat", "is_correct": false},
+            {"label": "D", "text": "Ravish", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Yozmoq” fe’lining o‘tgan zamon shaklini tanlang. (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "“Yozmoq” fe’lining o‘tgan zamon shakli “yozdi” bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "Yozdi", "is_correct": true},
+            {"label": "B", "text": "Yozadi", "is_correct": false},
+            {"label": "C", "text": "Yozgan", "is_correct": false},
+            {"label": "D", "text": "Yozyapti", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Uy” so‘ziga qanday qo‘shimcha qo‘shilsa, “uyning” so‘zi hosil bo‘ladi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "“Uy” so‘ziga “-ning” egalik kelishigi qo‘shiladi, natijada “uyning” so‘zi hosil bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "-da", "is_correct": false},
+            {"label": "B", "text": "-ning", "is_correct": true},
+            {"label": "C", "text": "-ga", "is_correct": false},
+            {"label": "D", "text": "-dan", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Katta” so‘zining qiyosiy shaklini tanlang. (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "O‘zbek tilida sifatlarning qiyosiy shakli “-roq” qo‘shimchasi bilan hosil bo‘ladi. “Katta” so‘zi uchun bu “kattaroq” bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "Katta", "is_correct": false},
+            {"label": "B", "text": "Kattaroq", "is_correct": true},
+            {"label": "C", "text": "Eng katta", "is_correct": false},
+            {"label": "D", "text": "Kattalik", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“O‘zbek” so‘zining sinonimi qaysi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "“O‘zbek” so‘zining sinonimi yo‘q, chunki bu o‘ziga xos millat nomi. Ammo test maqsadida eng yaqin ma’no sifatida “o‘zbek xalqi” ishlatilishi mumkin.",
+        "options": [
+            {"label": "A", "text": "O‘zbek xalqi", "is_correct": true},
+            {"label": "B", "text": "Toshkentlik", "is_correct": false},
+            {"label": "C", "text": "Qozoq", "is_correct": false},
+            {"label": "D", "text": "Turk", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Dars” so‘raspberrypi so‘zining ko‘plik shaklini tanlang. (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "“Dars” so‘zining ko‘plik shakli “darslar” bo‘ladi, chunki otlarga ko‘plik shaklida “-lar” qo‘shimchasi qo‘shiladi.",
+        "options": [
+            {"label": "A", "text": "Darslar", "is_correct": true},
+            {"label": "B", "text": "Darslik", "is_correct": false},
+            {"label": "C", "text": "Darslarning", "is_correct": false},
+            {"label": "D", "text": "Darslarni", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Suv” so‘ziga “-ning” qo‘shimchasini qo‘shganda qanday so‘z hosil bo‘ladi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "“Suv” so‘ziga “-ning” egalik kelishigi qo‘shilganda “suvning” so‘zi hosil bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "Suvda", "is_correct": false},
+            {"label": "B", "text": "Suvning", "is_correct": true},
+            {"label": "C", "text": "Suvga", "is_correct": false},
+            {"label": "D", "text": "Suvdan", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“O‘qituvchi” so‘zining to‘g‘ri talaffuzini aniqlang. (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "“O‘qituvchi” so‘zi o‘zbek tilida to‘g‘ri talaffuz qilinadi va “o‘qituvchi” shaklida yoziladi.",
+        "options": [
+            {"label": "A", "text": "O‘qituvchi", "is_correct": true},
+            {"label": "B", "text": "Oqituvchi", "is_correct": false},
+            {"label": "C", "text": "Uqituvchi", "is_correct": false},
+            {"label": "D", "text": "O‘kituvchi", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Kech” so‘zining antonimini toping. (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "“Kech” so‘zining antonimi “kun” yoki “kunduz” bo‘ladi, chunki “kech” kechki vaqtni anglatsa, “kun” kunduzgi vaqtni anglatadi.",
+        "options": [
+            {"label": "A", "text": "Tong", "is_correct": false},
+            {"label": "B", "text": "Kun", "is_correct": true},
+            {"label": "C", "text": "Ertalab", "is_correct": false},
+            {"label": "D", "text": "Kechqurun", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Yurmoq” fe’lining kelasi zamon shaklini tanlang. (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "“Yurmoq” fe’lining kelasi zamon shakli “yuradi” bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "Yurdi", "is_correct": false},
+            {"label": "B", "text": "Yuradi", "is_correct": true},
+            {"label": "C", "text": "Yurgan", "is_correct": false},
+            {"label": "D", "text": "Yuryapti", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“O‘zbekiston Respublikasi” iborasidagi so‘zlar sonini aniqlang. (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "“O‘zbekiston Respublikasi” iborasi ikki so‘zdan iborat: “O‘zbekiston” va “Respublikasi”.",
+        "options": [
+            {"label": "A", "text": "1", "is_correct": false},
+            {"label": "B", "text": "2", "is_correct": true},
+            {"label": "C", "text": "3", "is_correct": false},
+            {"label": "D", "text": "4", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Yurak” so‘zining ko‘chma ma’nosini toping. (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "“Yurak” so‘zining asl ma’nosi insonning organidir. Ko‘chma ma’nosida esa “jasorat” yoki “mehr”ni anglatadi.",
+        "options": [
+            {"label": "A", "text": "Jasad", "is_correct": false},
+            {"label": "B", "text": "Jasorat", "is_correct": true},
+            {"label": "C", "text": "Aql", "is_correct": false},
+            {"label": "D", "text": "Kuch", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“O‘qimoq” fe’lining hozirgi zamon shaklini tanlang. (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "“O‘qimoq” fe’lining hozirgi zamon shakli “o‘qiyapti” bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "O‘qidi", "is_correct": false},
+            {"label": "B", "text": "O‘qiyapti", "is_correct": true},
+            {"label": "C", "text": "O‘qigan", "is_correct": false},
+            {"label": "D", "text": "O‘qiyotgan", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Dono” so‘zining eng yuqori darajadagi shaklini tanlang. (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "O‘zbek tilida sifatlarning eng yuqori darajasi “eng” so‘zi yordamida hosil bo‘ladi. “Dono” so‘zi uchun bu “eng dono” bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "Donoroq", "is_correct": false},
+            {"label": "B", "text": "Eng dono", "is_correct": true},
+            {"label": "C", "text": "Dono", "is_correct": false},
+            {"label": "D", "text": "Donolik", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“O‘zbek tili” iborasida qanday so‘z turlari mavjud? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "“O‘zbek” – ot, “tili” – ot (egallik shaklida).",
+        "options": [
+            {"label": "A", "text": "Ot va sifat", "is_correct": false},
+            {"label": "B", "text": "Ikki ot", "is_correct": true},
+            {"label": "C", "text": "Ot va fe’l", "is_correct": false},
+            {"label": "D", "text": "Sifat va ravish", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Hikmat” so‘zining sinonimini toping. (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "“Hikmat” so‘zining sinonimi “donolik” bo‘ladi, chunki ikkalasi ham aql va bilimning chuqur tushunchasini anglatadi.",
+        "options": [
+            {"label": "A", "text": "Donolik", "is_correct": true},
+            {"label": "B", "text": "Jasorat", "is_correct": false},
+            {"label": "C", "text": "Kuch", "is_correct": false},
+            {"label": "D", "text": "Sevgi", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Olam” so‘zining ko‘chma ma’nosida qanday ishlatilishini aniqlang. (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "“Olam” so‘zi ko‘chma ma’noda “katta olomon” yoki “umumiy dunyo” ma’nosida ishlatiladi.",
+        "options": [
+            {"label": "A", "text": "Katta olomon", "is_correct": true},
+            {"label": "B", "text": "Kichik guruh", "is_correct": false},
+            {"label": "C", "text": "Bir shaxs", "is_correct": false},
+            {"label": "D", "text": "Joy nomi", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Kirmoq” fe’lining o‘tgan zamon shaklida uchunchi shaxs birlik shaklini toping. (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "“Kirmoq” fe’lining o‘tgan zamon shakli uchunchi shaxs birlikda “kirdi” bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "Kirdi", "is_correct": true},
+            {"label": "B", "text": "Kiradi", "is_correct": false},
+            {"label": "C", "text": "Kirgan", "is_correct": false},
+            {"label": "D", "text": "Kiryapti", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Xalq” so‘zining ko‘plik shakli qanday bo‘ladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "“Xalq” so‘zi o‘zbek tilida ko‘p ma’noda ishlatilishi mumkin bo‘lsa-da, ko‘plik shakli “xalqlar” bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "Xalqlar", "is_correct": true},
+            {"label": "B", "text": "Xalqlik", "is_correct": false},
+            {"label": "C", "text": "Xalqning", "is_correct": false},
+            {"label": "D", "text": "Xalqlarning", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Adabiyot” so‘zining tahlilini qiling. (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "“Adabiyot” so‘zi “adabiy” sifatidan “-ot” qo‘shimchasi bilan yasalgan bo‘lib, “adabiy asarlar yig‘indisi” ma’nosini anglatadi.",
+        "options": [
+            {"label": "A", "text": "Adabiy asarlar yig‘indisi", "is_correct": true},
+            {"label": "B", "text": "Bir shaxs", "is_correct": false},
+            {"label": "C", "text": "Ilmiy fan", "is_correct": false},
+            {"label": "D", "text": "Tarixiy joy", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Muallif” so‘zining ma’nosini aniqlang. (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "“Muallif” so‘zi o‘zbek tilida “biror asar yoki ijod muallifi” ma’nosini anglatadi.",
+        "options": [
+            {"label": "A", "text": "Yozuvchi", "is_correct": true},
+            {"label": "B", "text": "O‘qituvchi", "is_correct": false},
+            {"label": "C", "text": "O‘quvchi", "is_correct": false},
+            {"label": "D", "text": "Tadqiqotchi", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“So‘z” so‘zining ko‘chma ma’nosida qanday ishlatilishini aniqlang. (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "“So‘z” so‘zi ko‘chma ma’noda “og‘zaki kelishuv” yoki “va’da” sifatida ishlatiladi.",
+        "options": [
+            {"label": "A", "text": "Va’da", "is_correct": true},
+            {"label": "B", "text": "Yozuv", "is_correct": false},
+            {"label": "C", "text": "Harf", "is_correct": false},
+            {"label": "D", "text": "Kitob", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Barkamol” so‘zining tahlilini qiling. (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "“Barkamol” so‘zi “bar” (to‘liq) va “kamol” (yetuklik) so‘zlaridan tashkil topgan bo‘lib, “to‘la yetuk” ma’nosini anglatadi.",
+        "options": [
+            {"label": "A", "text": "To‘la yetuk", "is_correct": true},
+            {"label": "B", "text": "Katta kuch", "is_correct": false},
+            {"label": "C", "text": "Yosh bolalik", "is_correct": false},
+            {"label": "D", "text": "Kichik yosh", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“Ma’rifat” so‘zining sinonimini toping. (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "“Ma’rifat” so‘zining sinonimi “bilim” yoki “ma’lumot” bo‘ladi, chunki u bilim va ma’lumotni anglatadi.",
+        "options": [
+            {"label": "A", "text": "Bilim", "is_correct": true},
+            {"label": "B", "text": "Jasorat", "is_correct": false},
+            {"label": "C", "text": "Kuch", "is_correct": false},
+            {"label": "D", "text": "Sevgi", "is_correct": false}
+        ]
+    },
+    {
+        "text": "“O‘zbek tili” iborasidagi so‘zlarning grammatik tahlilini qiling. (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "“O‘zbek” – ot, millat nomi; “tili” – ot, egalik shaklida (3-shaxs).",
+        "options": [
+            {"label": "A", "text": "Ot va egalik shaklidagi ot", "is_correct": true},
+            {"label": "B", "text": "Sifat va ot", "is_correct": false},
+            {"label": "C", "text": "Ot va fe’l", "is_correct": false},
+            {"label": "D", "text": "Ravish va ot", "is_correct": false}
+        ]
+    }
+]
