@@ -1,0 +1,332 @@
+[
+    {
+        "text": "Rus tilida 'Здравствуйте' so‘zi qanday ma’noni anglatadi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "'Здравствуйте' rus tilida 'Salom' ma’nosini anglatadi va rasmiy yoki ko‘plik shaklda salomlashish uchun ishlatiladi.",
+        "options": [
+            {"label": "A", "text": "Xayr", "is_correct": false},
+            {"label": "B", "text": "Salom", "is_correct": true},
+            {"label": "C", "text": "Rahmat", "is_correct": false},
+            {"label": "D", "text": "Iltimos", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida 'книга' so‘zi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "'Книга' rus tilida 'kitob' ma’nosini anglatadi.",
+        "options": [
+            {"label": "A", "text": "Stol", "is_correct": false},
+            {"label": "B", "text": "Kitob", "is_correct": true},
+            {"label": "C", "text": "Qalam", "is_correct": false},
+            {"label": "D", "text": "Daftar", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida otlarning jinsi qanday turlarga bo‘linadi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Rus tilida otlar erkak (мужской), ayol (женский) va neutrum (средний) jinslariga bo‘linadi.",
+        "options": [
+            {"label": "A", "text": "Faqat erkak va ayol", "is_correct": false},
+            {"label": "B", "text": "Erkak, ayol va neutrum", "is_correct": true},
+            {"label": "C", "text": "Faqat neutrum", "is_correct": false},
+            {"label": "D", "text": "Jins yo‘q", "is_correct": false}
+        ]
+    },
+    {
+        "text": "‘Я есть’ iborasining to‘g‘ri tarjimasi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Я есть’ rus tilida ‘Menman’ ma’nosini anglatadi, ammo odatda ‘я’ + sifat yoki ot ishlatiladi, masalan, ‘Я студент’.",
+        "options": [
+            {"label": "A", "text": "Sen", "is_correct": false},
+            {"label": "B", "text": "Menman", "is_correct": true},
+            {"label": "C", "text": "U", "is_correct": false},
+            {"label": "D", "text": "Biz", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida sonlar qanday yoziladi: 30? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Rus tilida 30 soni ‘тридцать’ deb yoziladi va talaffuz qilinadi.",
+        "options": [
+            {"label": "A", "text": "Двадцать", "is_correct": false},
+            {"label": "B", "text": "Тридцать", "is_correct": true},
+            {"label": "C", "text": "Сорок", "is_correct": false},
+            {"label": "D", "text": "Пятьдесят", "is_correct": false}
+        ]
+    },
+    {
+        "text": "‘Спасибо’ so‘zining ma’nosi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Спасибо’ rus tilida ‘Rahmat’ ma’nosini anglatadi va minnatdorchilik bildirish uchun ishlatiladi.",
+        "options": [
+            {"label": "A", "text": "Kechirasiz", "is_correct": false},
+            {"label": "B", "text": "Rahmat", "is_correct": true},
+            {"label": "C", "text": "Iltimos", "is_correct": false},
+            {"label": "D", "text": "Salom", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘женщина’ so‘zi qanday jinsga ega? (Yengil)",
+        "difficulty": "medium",
+        "explanation": "‘Женщина’ so‘zi ayol jinsini (женский род) ifodalaydi.",
+        "options": [
+            {"label": "A", "text": "Erkak (мужской)", "is_correct": false},
+            {"label": "B", "text": "Ayol (женский)", "is_correct": true},
+            {"label": "C", "text": "Neutra (средний)", "is_correct": false},
+            {"label": "D", "text": "Hech qanday jins yo‘q", "is_correct": false}
+        ]
+    },
+    {
+        "text": "‘Идти’ fe’lining hozirgi zamondagi birinchi shaxs shakli qanday? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Идти’ fe’li hozirgi zamonda birinchi shaxs uchun ‘я иду’ shaklida ishlatiladi.",
+        "options": [
+            {"label": "A", "text": "Я есть", "is_correct": false},
+            {"label": "B", "text": "Я иду", "is_correct": true},
+            {"label": "C", "text": "Я делаю", "is_correct": false},
+            {"label": "D", "text": "Я имею", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘До свидания’ iborasining ma’nosi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘До свидания’ rus tilida ‘Xayr’ yoki ‘Ko‘rishguncha’ ma’nosini anglatadi va rasmiy xayrlashish uchun ishlatiladi.",
+        "options": [
+            {"label": "A", "text": "Salom", "is_correct": false},
+            {"label": "B", "text": "Xayr", "is_correct": true},
+            {"label": "C", "text": "Rahmat", "is_correct": false},
+            {"label": "D", "text": "Iltimos", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘выходной’ so‘zi qachon ishlatiladi? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Выходной’ rus tilida ‘dam olish kuni’ yoki ‘hafta oxiri’ ma’nosini anglatadi va shanba-yakshanbani nazarda tutadi.",
+        "options": [
+            {"label": "A", "text": "Ish kuni", "is_correct": false},
+            {"label": "B", "text": "Dam olish kuni", "is_correct": true},
+            {"label": "C", "text": "O‘quv haftasi", "is_correct": false},
+            {"label": "D", "text": "Bayram kuni", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘иметь’ fe’lining ma’nosi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Иметь’ fe’li rus tilida ‘ega bo‘lmoq’ yoki ‘bor’ ma’nosini anglatadi, masalan, ‘У меня есть книга’ – ‘Menda kitob bor’.",
+        "options": [
+            {"label": "A", "text": "Borish", "is_correct": false},
+            {"label": "B", "text": "Ega bo‘lmoq", "is_correct": true},
+            {"label": "C", "text": "Qilmoq", "is_correct": false},
+            {"label": "D", "text": "Bilmoq", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘дом’ so‘zi qanday jinsga ega? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Дом’ so‘zi erkak jinsiga (мужской род) ega.",
+        "options": [
+            {"label": "A", "text": "Erkak (мужской)", "is_correct": true},
+            {"label": "B", "text": "Ayol (женский)", "is_correct": false},
+            {"label": "C", "text": "Neutra (средний)", "is_correct": false},
+            {"label": "D", "text": "Jins yo‘q", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘пожалуйста’ so‘zining ma’nosi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Пожалуйста’ rus tilida ‘Iltimos’ yoki ‘Marhamat’ ma’nosini anglatadi va so‘rov yoki iltimos bildirishda ishlatiladi.",
+        "options": [
+            {"label": "A", "text": "Rahmat", "is_correct": false},
+            {"label": "B", "text": "Iltimos", "is_correct": true},
+            {"label": "C", "text": "Kechirasiz", "is_correct": false},
+            {"label": "D", "text": "Xayr", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida sonlar qanday yoziladi: 40? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "Rus tilida 40 soni ‘сорок’ deb yoziladi.",
+        "options": [
+            {"label": "A", "text": "Тридцать", "is_correct": false},
+            {"label": "B", "text": "Сорок", "is_correct": true},
+            {"label": "C", "text": "Пятьдесят", "is_correct": false},
+            {"label": "D", "text": "Шестьдесят", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘я ем’ iborasining to‘g‘ri tarjimasi nima? (O‘rta)",
+        "difficulty": "medium",
+        "explanation": "‘Я ем’ rus tilida ‘Men yeyman’ ma’nosini anglatadi, chunki ‘есть’ fe’li (bu yerda yemoq ma’nosida) ‘yemoq’ degan ma’noni beradi.",
+        "options": [
+            {"label": "A", "text": "Men ichaman", "is_correct": false},
+            {"label": "B", "text": "Men yeyman", "is_correct": true},
+            {"label": "C", "text": "Men yozaman", "is_correct": false},
+            {"label": "D", "text": "Men o‘qiyman", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘прошедшее время’ qanday fe’llar bilan shakllanadi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Rus tilida o‘tmish zamon (прошедшее время) fe’llarning o‘tmish shakli bilan shakllanadi, jins va shaxsga qarab o‘zgaradi, masalan, ‘я делал’ (erkak), ‘я делала’ (ayol).",
+        "options": [
+            {"label": "A", "text": "Yordamchi fe’llar bilan", "is_correct": false},
+            {"label": "B", "text": "Fe’lning o‘tmish shakli bilan", "is_correct": true},
+            {"label": "C", "text": "Faqat kelasi zamon shakli bilan", "is_correct": false},
+            {"label": "D", "text": "Sifatlar bilan", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘надо’ so‘zining ma’nosi nima? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Надо’ rus tilida ‘kerak’ yoki ‘zarur’ ma’nosini anglatadi, masalan, ‘Надо учиться’ – ‘O‘qish kerak’.",
+        "options": [
+            {"label": "A", "text": "Mumkin", "is_correct": false},
+            {"label": "B", "text": "Kerak", "is_correct": true},
+            {"label": "C", "text": "Xohlayman", "is_correct": false},
+            {"label": "D", "text": "Bilaman", "is_correct": false}
+        ]
+    },
+    {
+        "text": "‘Делать’ fe’lining o‘tmish zamondagi ayol jinsdagi shakli qanday? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Делать’ fe’li o‘tmish zamonda ayol jins uchun ‘я делала’ shaklida bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "Я делал", "is_correct": false},
+            {"label": "B", "text": "Я делала", "is_correct": true},
+            {"label": "C", "text": "Я делаю", "is_correct": false},
+            {"label": "D", "text": "Я сделала", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘сослагательное наклонение’ qachon ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Сослагательное наклонение shartli holatlarni, istaklarni yoki ehtimollarni ifodalashda ishlatiladi, masalan, ‘Если бы я был богат’ – ‘Agar boy bo‘lsam edi’.",
+        "options": [
+            {"label": "A", "text": "Faqat o‘tmishni ifodalashda", "is_correct": false},
+            {"label": "B", "text": "Shartli holatlarni ifodalashda", "is_correct": true},
+            {"label": "C", "text": "Faqat kelasi zamonda", "is_correct": false},
+            {"label": "D", "text": "Oddiy holatni ifodalashda", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘этот’ va ‘эта’ olmoshlari qanday farqlanadi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Этот’ erkak jinsli (мужской) va neutrum (средний) otlar bilan, ‘эта’ esa ayol jinsli (женский) otlar bilan ishlatiladi, masalan, ‘этот стол’, ‘эта книга’.",
+        "options": [
+            {"label": "A", "text": "‘Этот’ ayol jins, ‘эта’ erkak jins", "is_correct": false},
+            {"label": "B", "text": "‘Этот’ erkak va neutrum, ‘эта’ ayol jins", "is_correct": true},
+            {"label": "C", "text": "Ikkalasi bir xil", "is_correct": false},
+            {"label": "D", "text": "‘Этот’ ko‘plik, ‘эта’ yalklik", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida sonlar qanday yoziladi: 99? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Rus tilida 99 soni ‘девяносто девять’ deb yoziladi (девяносто = 90, девять = 9).",
+        "options": [
+            {"label": "A", "text": "Восемьдесят девять", "is_correct": false},
+            {"label": "B", "text": "Девяносто девять", "is_correct": true},
+            {"label": "C", "text": "Сто девять", "is_correct": false},
+            {"label": "D", "text": "Девяносто", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘идти’ fe’lining tugallangan shakli qanday? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Идти’ fe’li tugallanmagan shaklda bo‘lib, uning tugallangan shakli ‘пойти’ bo‘ladi, masalan, ‘я пошёл’ (erkak) yoki ‘я пошла’ (ayol).",
+        "options": [
+            {"label": "A", "text": "Я иду", "is_correct": false},
+            {"label": "B", "text": "Я пошёл", "is_correct": true},
+            {"label": "C", "text": "Я шёл", "is_correct": false},
+            {"label": "D", "text": "Я идём", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘с’ predlogi qanday ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘С’ predlogi joy, vaqt yoki birgalikni ifodalashda ishlatiladi, masalan, ‘с горы’ (tog‘dan), ‘с утра’ (ertalabdan), ‘с другом’ (do‘st bilan).",
+        "options": [
+            {"label": "A", "text": "Faqat vaqtni ifodalashda", "is_correct": false},
+            {"label": "B", "text": "Joy, vaqt va birgalikni ifodalashda", "is_correct": true},
+            {"label": "C", "text": "Faqat joyni ifodalashda", "is_correct": false},
+            {"label": "D", "text": "Sebarni ifodalashda", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘повелительное наклонение’ nima uchun ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Повелительное наклонение buyruq, so‘rov yoki maslahat berish uchun ishlatiladi, masalan, ‘Иди!’ – ‘Bor!’.",
+        "options": [
+            {"label": "A", "text": "Shartli holatlarni ifodalashda", "is_correct": false},
+            {"label": "B", "text": "Buyruq va so‘rov berishda", "is_correct": true},
+            {"label": "C", "text": "Faqat kelasi zamonda", "is_correct": false},
+            {"label": "D", "text": "Oddiy holatni ifodalashda", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘какой’ va ‘какая’ so‘roq olmoshlari qanday farqlanadi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Какой’ erkak jinsli (мужской) va neutrum (средний) otlar bilan, ‘какая’ esa ayol jinsli (женский) otlar bilan ishlatiladi, masalan, ‘Какой стол?’ va ‘Какая книга?’.",
+        "options": [
+            {"label": "A", "text": "‘Какой’ ayol jins, ‘какая’ erkak jins", "is_correct": false},
+            {"label": "B", "text": "‘Какой’ erkak va neutrum, ‘какая’ ayol jins", "is_correct": true},
+            {"label": "C", "text": "Ikkalasi bir xil", "is_correct": false},
+            {"label": "D", "text": "‘Какой’ ko‘plik, ‘какая’ yalklik", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘делать’ fe’lining сослагательное наклонение shakli birinchi shaxsda qanday? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Делать’ fe’li сослагательное наклонение’da ‘я бы делал’ (erkak) yoki ‘я бы делала’ (ayol) shaklida bo‘ladi.",
+        "options": [
+            {"label": "A", "text": "Я делаю", "is_correct": false},
+            {"label": "B", "text": "Я бы делала", "is_correct": true},
+            {"label": "C", "text": "Я сделал", "is_correct": false},
+            {"label": "D", "text": "Я буду делать", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘в’ predlogi qanday ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘В’ predlogi joy, vaqt yoki yo‘nalishni ifodalashda ishlatiladi, masalan, ‘в школе’ (maktabda), ‘в понедельник’ (dushanbada), ‘в город’ (shaharga).",
+        "options": [
+            {"label": "A", "text": "Faqat vaqtni ifodalashda", "is_correct": false},
+            {"label": "B", "text": "Joy, vaqt va yo‘nalishni ifodalashda", "is_correct": true},
+            {"label": "C", "text": "Faqat joyni ifodalashda", "is_correct": false},
+            {"label": "D", "text": "Sebarni ifodalashda", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘тот’ olmoshi qanday ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Тот’ (va uning shakllari: та, то, те) aniq bir shaxs yoki narsani ko‘rsatish uchun ishlatiladi, masalan, ‘Тот человек, который пришёл’.",
+        "options": [
+            {"label": "A", "text": "Umumiy so‘roq sifatida", "is_correct": false},
+            {"label": "B", "text": "Aniq shaxs yoki narsani ko‘rsatishda", "is_correct": true},
+            {"label": "C", "text": "Faqat ko‘plikda", "is_correct": false},
+            {"label": "D", "text": "Vaqtni ifodalashda", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘будущее время’ qanday shakllanadi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "Будущее время tugallangan fe’llar uchun ‘буду’ + infinitiv shaklida yoki tugallanmagan fe’llar uchun hozirgi zamon shaklida shakllanadi, masalan, ‘я буду читать’ yoki ‘я прочту’.",
+        "options": [
+            {"label": "A", "text": "Faqat o‘tmish shakli bilan", "is_correct": false},
+            {"label": "B", "text": "‘Буду’ + infinitiv yoki hozirgi zamon shakli", "is_correct": true},
+            {"label": "C", "text": "Faqat sifatlar bilan", "is_correct": false},
+            {"label": "D", "text": "Yordamchi fe’llarsiz", "is_correct": false}
+        ]
+    },
+    {
+        "text": "Rus tilida ‘не’ inkor so‘zi qanday ishlatiladi? (Qiyin)",
+        "difficulty": "hard",
+        "explanation": "‘Не’ inkor so‘zi fe’lni yoki gapning bir qismini inkor qilish uchun ishlatiladi, masalan, ‘Я не говорю по-русски’ – ‘Men ruscha gapirmayman’.",
+        "options": [
+            {"label": "A", "text": "Tasdiqlash uchun", "is_correct": false},
+            {"label": "B", "text": "Inkor qilish uchun", "is_correct": true},
+            {"label": "C", "text": "So‘roq shaklida", "is_correct": false},
+            {"label": "D", "text": "Shartli holatlarda", "is_correct": false}
+        ]
+    }
+]
