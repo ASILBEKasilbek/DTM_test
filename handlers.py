@@ -68,12 +68,30 @@ def get_admin_keyboard():
         [InlineKeyboardButton(text="📈 Statistika", callback_data="stats")],
     ])
 
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
 def get_subscription_keyboard():
-    keyboard = InlineKeyboardMarkup()
+    keyboard_buttons = []
+
     for channel_id in MANDATORY_CHANNELS:
-        keyboard.inline_keyboard.append([InlineKeyboardButton(text=f"Kanalga obuna bo'lish", url=f"https://t.me/{channel_id.lstrip('@')}")])
-    keyboard.inline_keyboard.append([InlineKeyboardButton(text="Tekshirish", callback_data="check_subscription")])
+        button = [InlineKeyboardButton(
+            text="Kanalga obuna bo'lish",
+            url=f"https://t.me/{channel_id.lstrip('@')}"
+        )]
+        keyboard_buttons.append(button)
+
+    # "Tekshirish" tugmasi pastga qo‘shiladi
+    keyboard_buttons.append([
+        InlineKeyboardButton(
+            text="✅ Tekshirish",
+            callback_data="check_subscription"
+        )
+    ])
+
+    # Endi InlineKeyboardMarkup ni to‘g‘ri hosil qilamiz
+    keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
     return keyboard
+
 
 def get_edit_user_keyboard():
     return InlineKeyboardMarkup(inline_keyboard=[
