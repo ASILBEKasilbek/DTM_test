@@ -27,7 +27,9 @@ SECRET_KEY = 'django-insecure-(#f6c_6pd07r^j$v53q6fby&gctarvg=iof%wv5@@%#lshhv24
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG =False
+
 TELEGRAM_BOT_TOKEN=os.getenv("BOT_TOKEN")
+
 ALLOWED_HOSTS = ["*"]
 
 
@@ -122,7 +124,6 @@ SESSION_COOKIE_SAMESITE = 'Lax'
 SESSION_SAVE_EVERY_REQUEST = True
 SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # yoki cached_db
 
-TELEGRAM_BOT_TOKEN=os.getenv("BOT_TOKEN")
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
@@ -130,6 +131,8 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
