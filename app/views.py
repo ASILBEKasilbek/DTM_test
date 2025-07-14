@@ -149,10 +149,8 @@ def telegram_auth(request, telegram_id):
     if not user_data:
         logger.warning(f"Telegram ID {telegram_id} users.db bazasida topilmadi.")
         return render(request, 'home.html', {'error': "Foydalanuvchi bazada topilmadi."})
-    print(user_data)
-    # user_data indekslari: (id, telegram_id, first_name, last_name, phone_number, banned, created_at)
-    _, tg_id, first_name, last_name, phone, created_at = user_data
 
+    _, tg_id, first_name, last_name, phone,banned, created_at = user_data
     try:
         user = User.objects.get(username=tg_id)
     except User.DoesNotExist:
