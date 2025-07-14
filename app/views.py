@@ -53,7 +53,6 @@ def home(request):
         start_date__lte=now,
         end_date__gte=now
     )
-    print(f"Reklamalar: {reklamalar}")
     return render(request, 'home.html', {'subjects': subjects,'reklamalar': reklamalar})
 
 @ratelimit(key='user_or_ip', rate='5/m')
