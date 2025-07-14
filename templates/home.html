@@ -79,7 +79,14 @@
 {% endif %}
 
 
-    <!-- Fanlar bo‘limi -->
+<!-- Fanlar va DTM testlari tugmalari -->
+<div class="text-center my-4">
+    <button id="btnSubjects" class="btn btn-primary me-2" onclick="showSection('subjectsSection', 'btnSubjects')">📘 Fanlar</button>
+    <button id="btnDTM" class="btn btn-outline-primary" onclick="showSection('dtmSection', 'btnDTM')">📝 DTM testlari</button>
+</div>
+
+<!-- Fanlar bo‘limi -->
+<div id="subjectsSection">
     <hr class="my-4">
     <h2 class="mb-4 text-center text-uppercase text-primary">Fanlar</h2>
     <div class="row">
@@ -93,9 +100,47 @@
             </div>
         </div>
         {% empty %}
-        <p>Hech qanday fan mavjud emas.</p>
+        <p class="text-center">Hech qanday fan mavjud emas.</p>
         {% endfor %}
     </div>
+</div>
+
+<!-- DTM testlari bo‘limi -->
+<div id="dtmSection" style="display: none;">
+    <hr class="my-4">
+    <h2 class="mb-4 text-center text-uppercase text-success">DTM testlari</h2>
+    <div class="alert alert-info text-center">
+        Bu yerga keyinchalik DTM testlar qo‘shiladi.
+    </div>
+</div>
+
+<!-- JavaScript: Bo‘limlarni va tugma rangini almashtirish -->
+<script>
+    function showSection(sectionId, btnId) {
+        // Bo‘limlarni yashirish
+        document.getElementById('subjectsSection').style.display = 'none';
+        document.getElementById('dtmSection').style.display = 'none';
+
+        // Tanlangan bo‘limni ko‘rsatish
+        document.getElementById(sectionId).style.display = 'block';
+
+        // Tugmalarni default rangga qaytarish
+        document.getElementById('btnSubjects').classList.remove('btn-primary');
+        document.getElementById('btnSubjects').classList.add('btn-outline-primary');
+
+        document.getElementById('btnDTM').classList.remove('btn-primary');
+        document.getElementById('btnDTM').classList.add('btn-outline-primary');
+
+        // Faol tugmaga rang berish
+        const activeBtn = document.getElementById(btnId);
+        activeBtn.classList.remove('btn-outline-primary');
+        activeBtn.classList.add('btn-primary');
+    }
+</script>
+
+
+
 
 </div>
+
 {% endblock %}
