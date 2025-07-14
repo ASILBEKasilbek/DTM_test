@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-(#f6c_6pd07r^j$v53q6fby&gctarvg=iof%wv5@@%#lshhv24'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG =False
 TELEGRAM_BOT_TOKEN=os.getenv("BOT_TOKEN")
 ALLOWED_HOSTS = ["*"]
 
