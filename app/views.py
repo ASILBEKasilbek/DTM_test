@@ -28,21 +28,33 @@ from testlarni_yaratish import yukla_testlar
 from app.models import Question
 from django.contrib.admin.views.decorators import staff_member_required
 
+from django.shortcuts import render
+from .models import Reklama
+from django.utils import timezone
+
 
 @staff_member_required
 def testlarni_yuklash_view(request):
+    pass
     # Agar biron bir fan uchun savollar mavjud bo‘lsa, yuklashni to‘xtatamiz
     # if Question.objects.exists():
     #     return HttpResponse("⚠️ Testlar allaqachon yuklangan.")
-    try:
-        yukla_testlar()
-        return HttpResponse("✅ Barcha fanlar bo‘yicha testlar muvaffaqiyatli yuklandi.")
-    except Exception as e:
-        return HttpResponse(f"❌ Xatolik yuz berdi: {str(e)}")
+    # try:
+    #     yukla_testlar()
+    #     return HttpResponse("✅ Barcha fanlar bo‘yicha testlar muvaffaqiyatli yuklandi.")
+    # except Exception as e:
+    #     return HttpResponse(f"❌ Xatolik yuz berdi: {str(e)}")
     
 def home(request):
     subjects = Subject.objects.filter(is_deleted=False)
-    return render(request, 'home.html', {'subjects': subjects})
+    now = timezone.now()
+    reklamalar = Reklama.objects.filter(
+        is_active=True,
+        start_date__lte=now,
+        end_date__gte=now
+    )
+    print(f"Reklamalar: {reklamalar}")
+    return render(request, 'home.html', {'subjects': subjects,'reklamalar': reklamalar})
 
 @ratelimit(key='user_or_ip', rate='5/m')
 def contact(request):

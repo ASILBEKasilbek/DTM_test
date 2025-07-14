@@ -1,17 +1,43 @@
 import sqlite3
+import time
 import logging
 from config import DATABASE_PATH
 
 logger = logging.getLogger(__name__)
 
+def safe_db_operation_with_retry(func, *args, retries=3, delay=1, **kwargs):
+    """Ma'lumotlar bazasi operatsiyalarini xavfsiz bajarish uchun qayta urinish."""
+    for attempt in range(retries):
+        try:
+            conn = sqlite3.connect(DATABASE_PATH, timeout=10)
+            cur = conn.cursor()
+            result = func(cur, *args, **kwargs)
+            conn.commit()
+            logger.info(f"Ma'lumotlar bazasi operatsiyasi {func.__name__} muvaffaqiyatli")
+            return result
+        except sqlite3.OperationalError as e:
+            if "database is locked" in str(e) and attempt < retries - 1:
+                logger.warning(f"Ma'lumotlar bazasi qulflangan, qayta urinish {attempt + 1}/{retries}")
+                time.sleep(delay)
+                continue
+            logger.error(f"{func.__name__} da ma'lumotlar bazasi xatosi: {str(e)}")
+            return None
+        except Exception as e:
+            logger.error(f"{func.__name__} da xato: {str(e)}")
+            return None
+        finally:
+            cur.close()
+            conn.close()
+    return None
+
 def init_db():
-    try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cur = conn.cursor()
+    """Ma'lumotlar bazasini ishga tushirish va kerakli jadvallarni yaratish."""
+    def _init_db(cur):
+        # Users jadvali
         cur.execute("""
             CREATE TABLE IF NOT EXISTS users (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
-                telegram_id INTEGER UNIQUE NOT NULL,
+                telegram_id TEXT UNIQUE NOT NULL,
                 first_name TEXT NOT NULL,
                 last_name TEXT NOT NULL,
                 phone_number TEXT NOT NULL,
@@ -19,12 +45,19 @@ def init_db():
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
         """)
+        # Eski jadvallarga banned ustuni qo'shish
+        try:
+            cur.execute("ALTER TABLE users ADD COLUMN banned BOOLEAN DEFAULT 0")
+        except sqlite3.OperationalError:
+            pass  # Agar ustun allaqachon mavjud bo'lsa, o'tkazib yuborish
+        # Channels jadvali
         cur.execute("""
             CREATE TABLE IF NOT EXISTS channels (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 channel_id TEXT UNIQUE NOT NULL
             )
         """)
+        # Ads jadvali
         cur.execute("""
             CREATE TABLE IF NOT EXISTS ads (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -32,279 +65,142 @@ def init_db():
                 sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
         """)
+        # Admins jadvali
         cur.execute("""
             CREATE TABLE IF NOT EXISTS admins (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 admin_id TEXT UNIQUE NOT NULL
             )
         """)
-        conn.commit()
-    except Exception as e:
-        logger.error(f"Database initialization error: {e}")
-    finally:
-        cur.close()
-        conn.close()
+    safe_db_operation_with_retry(_init_db)
 
 def register_user(telegram_id, first_name, last_name, phone_number):
-    try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cur = conn.cursor()
+    """Yangi foydalanuvchini ro'yxatdan o'tkazish."""
+    def _register(cur, telegram_id, first_name, last_name, phone_number):
         cur.execute("""
             INSERT OR IGNORE INTO users (telegram_id, first_name, last_name, phone_number)
             VALUES (?, ?, ?, ?)
-        """, (telegram_id, first_name, last_name, phone_number))
-        result = cur.rowcount > 0
-        conn.commit()
-        return result
-    except Exception as e:
-        logger.error(f"Error in register_user: {e}")
-        return False
-    finally:
-        cur.close()
-        conn.close()
+        """, (str(telegram_id), first_name, last_name, phone_number))
+        return cur.rowcount > 0
+    return safe_db_operation_with_retry(_register, telegram_id, first_name, last_name, phone_number) or False
 
 def is_user_registered(telegram_id):
-    try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cur = conn.cursor()
-        cur.execute("SELECT 1 FROM users WHERE telegram_id = ?", (telegram_id,))
-        exists = cur.fetchone() is not None
-        return exists
-    except Exception as e:
-        logger.error(f"Error: {e}")
-        return False
-    finally:
-        cur.close()
-        conn.close()
+    """Foydalanuvchi ro'yxatdan o'tganligini tekshirish."""
+    def _check_registered(cur, telegram_id):
+        cur.execute("SELECT 1 FROM users WHERE telegram_id = ?", (str(telegram_id),))
+        return cur.fetchone() is not None
+    return safe_db_operation_with_retry(_check_registered, telegram_id) or False
 
 def get_user(telegram_id):
-    try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cur = conn.cursor()
-        cur.execute("SELECT telegram_id, first_name, last_name, phone_number, banned, created_at FROM users WHERE telegram_id = ?", (telegram_id,))
-        user = cur.fetchone()
-        return user
-    except Exception as e:
-        logger.error(f"Error in get_user: {e}")
-        return None
-    finally:
-        cur.close()
-        conn.close()
+    """Foydalanuvchi ma'lumotlarini olish."""
+    def _get_user(cur, telegram_id):
+        cur.execute("SELECT telegram_id, first_name, last_name, phone_number, banned, created_at FROM users WHERE telegram_id = ?", (str(telegram_id),))
+        return cur.fetchone()
+    return safe_db_operation_with_retry(_get_user, telegram_id)
 
 def is_user_banned(telegram_id):
-    try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cur = conn.cursor()
-        cur.execute("SELECT banned FROM users WHERE telegram_id = ?", (telegram_id,))
+    """Foydalanuvchi banlanganligini tekshirish."""
+    def _check_banned(cur, telegram_id):
+        cur.execute("SELECT banned FROM users WHERE telegram_id = ?", (str(telegram_id),))
         result = cur.fetchone()
         return result[0] if result else False
-    except Exception as e:
-        logger.error(f"Error in is_user_banned: {e}")
-        return False
-    finally:
-        cur.close()
-        conn.close()
+    return safe_db_operation_with_retry(_check_banned, telegram_id) or False
 
-def ban_user(user_id):
-    try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cur = conn.cursor()
-        cur.execute("UPDATE users SET banned = 1 WHERE telegram_id = ?", (user_id,))
-        result = cur.rowcount > 0
-        conn.commit()
-        return result
-    except Exception as e:
-        logger.error(f"Error in ban_user: {e}")
-        return False
-    finally:
-        cur.close()
-        conn.close()
+def ban_user(telegram_id):
+    """Foydalanuvchini ban qilish."""
+    def _ban_user(cur, telegram_id):
+        cur.execute("UPDATE users SET banned = 1 WHERE telegram_id = ?", (str(telegram_id),))
+        return cur.rowcount > 0
+    return safe_db_operation_with_retry(_ban_user, telegram_id) or False
 
-def unban_user(user_id):
-    try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cur = conn.cursor()
-        cur.execute("UPDATE users SET banned = 0 WHERE telegram_id = ?", (user_id,))
-        result = cur.rowcount > 0
-        conn.commit()
-        return result
-    except Exception as e:
-        logger.error(f"Error in unban_user: {e}")
-        return False
-    finally:
-        cur.close()
-        conn.close()
+def unban_user(telegram_id):
+    """Foydalanuvchi bandan chiqarish."""
+    def _unban_user(cur, telegram_id):
+        cur.execute("UPDATE users SET banned = 0 WHERE telegram_id = ?", (str(telegram_id),))
+        return cur.rowcount > 0
+    return safe_db_operation_with_retry(_unban_user, telegram_id) or False
 
 def update_user(telegram_id, field, value):
-    try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cur = conn.cursor()
+    """Foydalanuvchi ma'lumotlarini yangilash."""
+    def _update_user(cur, telegram_id, field, value):
         query = f"UPDATE users SET {field} = ? WHERE telegram_id = ?"
-        cur.execute(query, (value, telegram_id))
-        result = cur.rowcount > 0
-        conn.commit()
-        return result
-    except Exception as e:
-        logger.error(f"Error in update_user: {e}")
-        return False
-    finally:
-        cur.close()
-        conn.close()
+        cur.execute(query, (value, str(telegram_id)))
+        return cur.rowcount > 0
+    return safe_db_operation_with_retry(_update_user, telegram_id, field, value) or False
 
 def get_all_users():
-    try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cur = conn.cursor()
+    """Barcha foydalanuvchilarni olish."""
+    def _get_all_users(cur):
         cur.execute("SELECT telegram_id, first_name, last_name, phone_number, banned FROM users")
-        users = cur.fetchall()
-        return users
-    except Exception as e:
-        logger.error(f"Error in get_all_users: {e}")
-        return []
-    finally:
-        cur.close()
-        conn.close()
+        return cur.fetchall()
+    return safe_db_operation_with_retry(_get_all_users) or []
 
 def get_user_count():
-    try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cur = conn.cursor()
+    """Foydalanuvchilar sonini olish."""
+    def _get_user_count(cur):
         cur.execute("SELECT COUNT(*) FROM users")
-        count = cur.fetchone()[0]
-        return count
-    except Exception as e:
-        logger.error(f"Error in get_user_count: {e}")
-        return 0
-    finally:
-        cur.close()
-        conn.close()
+        return cur.fetchone()[0]
+    return safe_db_operation_with_retry(_get_user_count) or 0
 
 def get_users_today():
-    try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cur = conn.cursor()
+    """Bugun ro'yxatdan o'tgan foydalanuvchilar sonini olish."""
+    def _get_users_today(cur):
         cur.execute("SELECT COUNT(*) FROM users WHERE DATE(created_at) = DATE('now')")
-        count = cur.fetchone()[0]
-        return count
-    except Exception as e:
-        logger.error(f"Error in get_users_today: {e}")
-        return 0
-    finally:
-        cur.close()
-        conn.close()
+        return cur.fetchone()[0]
+    return safe_db_operation_with_retry(_get_users_today) or 0
 
 def add_channel(channel_id):
-    try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cur = conn.cursor()
-        cur.execute("INSERT OR IGNORE INTO channels (channel_id) VALUES (?)", (channel_id,))
-        result = cur.rowcount > 0
-        conn.commit()
-        return result
-    except Exception as e:
-        logger.error(f"Error in add_channel: {e}")
-        return False
-    finally:
-        cur.close()
-        conn.close()
+    """Yangi majburiy kanal qo'shish."""
+    def _add_channel(cur, channel_id):
+        cur.execute("INSERT OR IGNORE INTO channels (channel_id) VALUES (?)", (str(channel_id),))
+        return cur.rowcount > 0
+    return safe_db_operation_with_retry(_add_channel, channel_id) or False
 
 def remove_channel(channel_id):
-    try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cur = conn.cursor()
-        cur.execute("DELETE FROM channels WHERE channel_id = ?", (channel_id,))
-        result = cur.rowcount > 0
-        conn.commit()
-        return result
-    except Exception as e:
-        logger.error(f"Error in remove_channel: {e}")
-        return False
-    finally:
-        cur.close()
-        conn.close()
+    """Kanalni o'chirish."""
+    def _remove_channel(cur, channel_id):
+        cur.execute("DELETE FROM channels WHERE channel_id = ?", (str(channel_id),))
+        return cur.rowcount > 0
+    return safe_db_operation_with_retry(_remove_channel, channel_id) or False
 
 def get_channels():
-    try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cur = conn.cursor()
+    """Barcha majburiy kanallarni olish."""
+    def _get_channels(cur):
         cur.execute("SELECT channel_id FROM channels")
-        channels = [row[0] for row in cur.fetchall()]
-        return channels
-    except Exception as e:
-        logger.error(f"Error in get_channels: {e}")
-        return []
-    finally:
-        cur.close()
-        conn.close()
+        return [row[0] for row in cur.fetchall()]
+    return safe_db_operation_with_retry(_get_channels) or []
 
 def save_ad(message):
-    try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cur = conn.cursor()
+    """Reklama xabarini saqlash."""
+    def _save_ad(cur, message):
         cur.execute("INSERT INTO ads (message) VALUES (?)", (message,))
-        conn.commit()
         return True
-    except Exception as e:
-        logger.error(f"Error in save_ad: {e}")
-        return False
-    finally:
-        cur.close()
-        conn.close()
+    return safe_db_operation_with_retry(_save_ad, message) or False
 
 def get_ad_history():
-    try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cur = conn.cursor()
+    """Reklama tarixini olish."""
+    def _get_ad_history(cur):
         cur.execute("SELECT id, message, sent_at FROM ads ORDER BY sent_at DESC")
-        ads = cur.fetchall()
-        return ads
-    except Exception as e:
-        logger.error(f"Error in get_ad_history: {e}")
-        return []
-    finally:
-        cur.close()
-        conn.close()
+        return cur.fetchall()
+    return safe_db_operation_with_retry(_get_ad_history) or []
 
 def add_admin(admin_id):
-    try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cur = conn.cursor()
-        cur.execute("INSERT OR IGNORE INTO admins (admin_id) VALUES (?)", (admin_id,))
-        result = cur.rowcount > 0
-        conn.commit()
-        return result
-    except Exception as e:
-        logger.error(f"Error in add_admin: {e}")
-        return False
-    finally:
-        cur.close()
-        conn.close()
+    """Yangi admin qo'shish."""
+    def _add_admin(cur, admin_id):
+        cur.execute("INSERT OR IGNORE INTO admins (admin_id) VALUES (?)", (str(admin_id),))
+        return cur.rowcount > 0
+    return safe_db_operation_with_retry(_add_admin, admin_id) or False
 
 def remove_admin(admin_id):
-    try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cur = conn.cursor()
-        cur.execute("DELETE FROM admins WHERE admin_id = ?", (admin_id,))
-        result = cur.rowcount > 0
-        conn.commit()
-        return result
-    except Exception as e:
-        logger.error(f"Error in remove_admin: {e}")
-        return False
-    finally:
-        cur.close()
-        conn.close()
+    """Adminni o'chirish."""
+    def _remove_admin(cur, admin_id):
+        cur.execute("DELETE FROM admins WHERE admin_id = ?", (str(admin_id),))
+        return cur.rowcount > 0
+    return safe_db_operation_with_retry(_remove_admin, admin_id) or False
 
 def get_admins():
-    try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cur = conn.cursor()
+    """Barcha adminlarni olish."""
+    def _get_admins(cur):
         cur.execute("SELECT admin_id FROM admins")
-        admins = [row[0] for row in cur.fetchall()]
-        return admins
-    except Exception as e:
-        logger.error(f"Error in get_admins: {e}")
-        return []
-    finally:
-        cur.close()
-        conn.close()
+        return [row[0] for row in cur.fetchall()]
+    return safe_db_operation_with_retry(_get_admins) or []

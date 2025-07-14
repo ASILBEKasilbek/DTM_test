@@ -1,26 +1,101 @@
 {% extends 'base.html' %}
 {% block title %}Bosh sahifa{% endblock %}
+
 {% block content %}
-<div class="jumbotron text-center bg-light p-5 rounded">
-    <h1>Xush kelibsiz!</h1>
-    <p>DTM test tizimida o'zingizni sinab ko'ring va oliygohga tayyorgarlik ko'ring.</p>
-    {% if error %}
-    <div class="alert alert-danger">{{ error }}</div>
-    {% endif %}
+<!-- Google Fonts va umumiy dizayn -->
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f8f9fa;
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .carousel-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+    }
+
+    .hover-shadow:hover {
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+        transform: translateY(-5px);
+        transition: all 0.3s ease-in-out;
+    }
+</style>
+
+<!-- Container -->
+<div class="container my-4">
+
+{% if reklamalar %}
+<div id="reklamaCarousel" class="carousel slide mb-5 rounded-4 overflow-hidden shadow" data-bs-ride="carousel" data-bs-interval="3000" style="max-height: 360px;">
+
+    <div class="carousel-inner">
+        {% for reklama in reklamalar %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+            {% if reklama.link %}
+            <a href="{{ reklama.link }}" target="_blank" class="text-decoration-none">
+            {% endif %}
+
+                <div class="position-relative w-100" style="height: 360px;">
+                    {% if reklama.image %}
+                    <img src="{{ reklama.image.url }}" alt="{{ reklama.title }}" class="w-100 h-100" style="object-fit: cover;">
+                    {% endif %}
+
+                    <!-- Overlay -->
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8));"></div>
+
+                    <!-- Matn -->
+                    <div class="position-absolute bottom-0 start-0 p-4 w-100 text-white">
+                        <h4 class="mb-1 fw-semibold">{{ reklama.title }}</h4>
+                        <p class="mb-0 small">{{ reklama.description|truncatechars:100 }}</p>
+                    </div>
+                </div>
+
+            {% if reklama.link %}
+            </a>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Tugmalar -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#reklamaCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark bg-opacity-75 rounded-circle p-2" aria-hidden="true"></span>
+        <span class="visually-hidden">Oldingi</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#reklamaCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark bg-opacity-75 rounded-circle p-2" aria-hidden="true"></span>
+        <span class="visually-hidden">Keyingi</span>
+    </button>
 </div>
-<h2>Fanlar</h2>
-<div class="row">
-    {% for subject in subjects %}
-    <div class="col-md-4 mb-3">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">{{ subject.name }}</h5>
-                <a href="{% url 'app:start_test' subject_slug=subject.slug %}" class="btn btn-primary">Test boshlash</a>
+{% endif %}
+
+
+    <!-- Fanlar bo‘limi -->
+    <hr class="my-4">
+    <h2 class="mb-4 text-center text-uppercase text-primary">Fanlar</h2>
+    <div class="row">
+        {% for subject in subjects %}
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0 hover-shadow rounded-4">
+                <div class="card-body">
+                    <h5 class="card-title fw-semibold text-primary">{{ subject.name }}</h5>
+                    <a href="{% url 'app:start_test' subject_slug=subject.slug %}" class="btn btn-outline-primary w-100 mt-3">Testni boshlash</a>
+                </div>
             </div>
         </div>
+        {% empty %}
+        <p>Hech qanday fan mavjud emas.</p>
+        {% endfor %}
     </div>
-    {% empty %}
-    <p>Hech qanday fan mavjud emas.</p>
-    {% endfor %}
+
 </div>
 {% endblock %}

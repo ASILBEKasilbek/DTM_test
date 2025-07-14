@@ -2,7 +2,33 @@ from django import forms
 from django.contrib import admin
 from django.utils.translation import gettext_lazy as _
 from django.utils import timezone
-from .models import Subject, Topic, Question, AnswerOption, TestSession, UserAnswer, Result, UserProfile, Feedback
+from .models import Subject, Topic, Question, AnswerOption, TestSession, UserAnswer, Result, UserProfile, Feedback,Reklama
+@admin.register(Reklama)
+class ReklamaAdmin(admin.ModelAdmin):
+    list_display = ('title', 'is_active', 'start_date', 'end_date')
+    list_filter = ('is_active', 'start_date', 'end_date')
+    search_fields = ('title', 'description')
+    ordering = ('-start_date',)
+    readonly_fields = ('preview_image',)
+
+    fieldsets = (
+        (None, {
+            'fields': ('title', 'link', 'description', 'is_active')
+        }),
+        ('Media', {
+            'fields': ('image', 'preview_image')
+        }),
+        ('Davr', {
+            'fields': ('start_date', 'end_date')
+        }),
+    )
+
+    def preview_image(self, obj):
+        if obj.image:
+            return f'<img src="{obj.image.url}" width="200" style="border-radius: 10px;" />'
+        return "(Rasm yo‘q)"
+    preview_image.allow_tags = True
+    preview_image.short_description = "Rasm ko‘rinishi"
 
 # AnswerOption uchun maxsus form
 class AnswerOptionInlineForm(forms.ModelForm):

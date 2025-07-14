@@ -16,7 +16,7 @@ def yukla_testlar():
         # "Nemis tili": "tests/nemis_tili_tests.json",
         # "Fransuz tili": "tests/fransuz_tili_tests.json",
         # "Ona tili": "tests/ona_tili_tests.json",
-        "Rus tili": "tests/rus_tili_tests.json",
+        # "Rus tili": "tests/rus_tili_tests.json",
         # "Tarix": "tests/tarix_tests.json",
     }
 
